@@ -1,0 +1,6 @@
+.claude/
+Skills/
+epirusfm-hell/
+epirusfm-v2/
+*.pyc
+__pycache__/
