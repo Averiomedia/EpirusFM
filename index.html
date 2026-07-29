@@ -1,0 +1,490 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epirus FM – Professionelles Facility Management für Gewerbeimmobilien & Hotels</title>
+  <meta name="description" content="Epirus FM – Ihr zuverlässiger Partner für Gebäudereinigung, Hausmeisterservice, technisches Facility Management und Winterdienst. Für Gewerbeimmobilien und Hotels in Deutschland.">
+  <meta name="keywords" content="Facility Management, Gebäudereinigung, Hausmeisterservice, Winterdienst, Gewerbeimmobilien, Hotels, Gebäudemanagement">
+  <meta property="og:title" content="Epirus FM – Premium Facility Management">
+  <meta property="og:description" content="Zuverlässiges Facility Management für Gewerbeimmobilien und Hotels. Alle Leistungen aus einer Hand.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="pre-logo">EPIRUS <span style="color:var(--white);opacity:.6">FM</span></div>
+  <div class="pre-bar-wrap"><div class="pre-bar" id="preBar"></div></div>
+  <div class="pre-pct" id="prePct">0%</div>
+</div>
+
+<!-- Custom Cursor -->
+<div id="cursor">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+</div>
+
+<!-- Navigation -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo magnetic">EPIRUS <span>FM</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Leistungen</a></li>
+    <li><a href="#why">Über uns</a></li>
+    <li><a href="#process">Ablauf</a></li>
+    <li><a href="#testimonials">Referenzen</a></li>
+    <li><a href="#cta" class="nav-cta magnetic">Angebot anfragen</a></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-tag">
+      <div class="hero-tag-dot"></div>
+      Facility Management auf höchstem Niveau
+    </div>
+    <h1 class="hero-title">
+      <div class="line"><span>Ihr Gebäude.</span></div>
+      <div class="line"><span>Unsere <em>Expertise.</em></span></div>
+      <div class="line"><span>Ihr Erfolg.</span></div>
+    </h1>
+    <p class="hero-sub">
+      Professionelles Facility Management für Gewerbeimmobilien und Hotels —
+      zuverlässig, effizient und kompromisslos in der Qualität.
+    </p>
+    <div class="hero-ctas">
+      <a href="#cta" class="btn-primary magnetic">
+        <span>Kostenloses Angebot</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="tel:+49XXXXXXXXXX" class="btn-ghost magnetic">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72c.12 1 .33 1.97.66 2.9a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.93.33 1.9.54 2.9.66A2 2 0 0122 15.92z"/></svg>
+        Jetzt anrufen
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll" id="heroScroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-num" data-target="500">0</span>
+      <span class="stat-label">Betreute Objekte</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="15">0</span>
+      <span class="stat-label">Jahre Erfahrung</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="200">0</span>
+      <span class="stat-label">Mitarbeiter</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="99">0</span>
+      <span class="stat-label">% Kundenzufriedenheit</span>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="services-head">
+    <div>
+      <p class="section-tag">Unsere Leistungen</p>
+      <h2 class="section-title">
+        <div class="word"><span>Alles</span></div>
+        <div class="word"><span>aus</span></div>
+        <div class="word"><span>einer</span></div>
+        <div class="word"><span>Hand</span></div>
+      </h2>
+    </div>
+    <p class="section-sub">
+      Von der täglichen Unterhaltsreinigung bis zum technischen Gebäudemanagement —
+      wir sind Ihr Full-Service-Partner für Immobilien jeder Größe.
+    </p>
+  </div>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <span class="service-num">01</span>
+      <div class="service-icon">🧹</div>
+      <h3 class="service-title">Gebäude&shy;reinigung</h3>
+      <p class="service-desc">Professionelle Unterhalts-, Glas- und Sonderreinigung für Bürogebäude, Hotels und Gewerbeimmobilien nach höchsten Hygienestandards.</p>
+      <div class="service-features">
+        <span class="service-feat">Unterhaltsreinigung</span>
+        <span class="service-feat">Glasreinigung</span>
+        <span class="service-feat">Sonderreinigung</span>
+      </div>
+      <a href="lp-gebaeudereinigung.html" class="service-link">
+        Mehr erfahren
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="service-card">
+      <span class="service-num">02</span>
+      <div class="service-icon">🔧</div>
+      <h3 class="service-title">Hausmeister&shy;service</h3>
+      <p class="service-desc">Zuverlässige Hausmeister und Facility-Techniker für Instandhaltung, Reparaturen und den reibungslosen Betrieb Ihrer Liegenschaft.</p>
+      <div class="service-features">
+        <span class="service-feat">Instandhaltung</span>
+        <span class="service-feat">Kleinreparaturen</span>
+        <span class="service-feat">24/7 Bereitschaft</span>
+      </div>
+      <a href="lp-hausmeisterservice.html" class="service-link">
+        Mehr erfahren
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="service-card">
+      <span class="service-num">03</span>
+      <div class="service-icon">⚙️</div>
+      <h3 class="service-title">Technisches FM</h3>
+      <p class="service-desc">Wartung, Prüfung und Betrieb technischer Anlagen — HVAC, Elektro, Aufzüge und Sicherheitstechnik in einer Hand.</p>
+      <div class="service-features">
+        <span class="service-feat">HVAC-Wartung</span>
+        <span class="service-feat">Anlagenprüfung</span>
+        <span class="service-feat">Störungsmanagement</span>
+      </div>
+      <a href="lp-technisches-fm.html" class="service-link">
+        Mehr erfahren
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="service-card">
+      <span class="service-num">04</span>
+      <div class="service-icon">❄️</div>
+      <h3 class="service-title">Winterdienst</h3>
+      <p class="service-desc">Schneeräumung und Streudienst mit garantierten Reaktionszeiten — damit Ihre Liegenschaft bei jedem Wetter sicher und verkehrssicher bleibt.</p>
+      <div class="service-features">
+        <span class="service-feat">Schneeräumung</span>
+        <span class="service-feat">Streudienst</span>
+        <span class="service-feat">Bereitschaftsdienst</span>
+      </div>
+      <a href="lp-winterdienst.html" class="service-link">
+        Mehr erfahren
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="service-card">
+      <span class="service-num">05</span>
+      <div class="service-icon">🌿</div>
+      <h3 class="service-title">Grünflächen&shy;pflege</h3>
+      <p class="service-desc">Ganzjährige Pflege von Außenanlagen, Grünflächen und Außenbereichen — vom Rasenmähen bis zur saisonalen Bepflanzung.</p>
+      <div class="service-features">
+        <span class="service-feat">Rasenpflege</span>
+        <span class="service-feat">Gehölzschnitt</span>
+        <span class="service-feat">Außenanlagen</span>
+      </div>
+      <a href="lp-gruenflaechen.html" class="service-link">
+        Mehr erfahren
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="service-card" style="background:linear-gradient(135deg,rgba(200,164,98,.08),rgba(200,164,98,.03));border-color:var(--border-h)">
+      <span class="service-num">+</span>
+      <div class="service-icon">📋</div>
+      <h3 class="service-title">Individuelle Lösung</h3>
+      <p class="service-desc">Kein Objekt ist gleich. Wir entwickeln maßgeschneiderte FM-Konzepte für Ihre spezifischen Anforderungen — sprechen Sie uns an.</p>
+      <div class="service-features">
+        <span class="service-feat">Bestandsaufnahme</span>
+        <span class="service-feat">FM-Konzept</span>
+        <span class="service-feat">SLA-Verträge</span>
+      </div>
+      <a href="#cta" class="service-link">
+        Anfrage stellen
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Why Us -->
+<section id="why">
+  <div class="why-inner container">
+    <div class="why-visual parallax-wrap">
+      <div class="why-visual-img parallax-el" style="
+        background:linear-gradient(135deg,var(--bg-3) 0%,var(--bg-2) 100%);
+        display:flex;align-items:center;justify-content:center;
+        width:100%;height:100%;
+        font-size:8rem;
+      ">🏢</div>
+      <div class="why-badge">
+        <div class="why-badge-icon">🏆</div>
+        <div class="why-badge-text">
+          <strong>Ausgezeichnete Qualität</strong>
+          <span>Zertifiziert nach ISO 9001:2015</span>
+        </div>
+      </div>
+    </div>
+    <div class="why-content">
+      <p class="section-tag">Warum Epirus FM?</p>
+      <h2 class="section-title">
+        <div class="word"><span>Der</span></div>
+        <div class="word"><span>Unterschied,</span></div>
+        <div class="word"><span>den</span></div>
+        <div class="word"><span>Sie</span></div>
+        <div class="word"><span>spüren.</span></div>
+      </h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        Wir denken nicht in Aufträgen — wir denken in Partnerschaften. Deshalb arbeiten über 90% unserer Kunden seit mehr als 5 Jahren mit uns.
+      </p>
+      <div class="why-points">
+        <div class="why-point">
+          <div class="why-point-icon">⚡</div>
+          <div>
+            <h4>Garantierte Reaktionszeiten</h4>
+            <p>Bei Störungen sind wir in &lt;2 Stunden vor Ort. Unser 24/7-Notdienst ist immer erreichbar — auch am Wochenende und an Feiertagen.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-icon">🎯</div>
+          <div>
+            <h4>Feste Ansprechpartner</h4>
+            <p>Kein Call-Center, kein Wechsel. Sie haben einen dedizierten Objektleiter, der Ihre Immobilie und Ihre Anforderungen in- und auswendig kennt.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-icon">📊</div>
+          <div>
+            <h4>Transparentes Reporting</h4>
+            <p>Monatliche Berichte, digitale Dokumentation aller Leistungen und ein Online-Portal für vollständige Transparenz über alle Maßnahmen.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process">
+  <div class="process-head">
+    <p class="section-tag">Unser Ablauf</p>
+    <h2 class="section-title" style="text-align:center">
+      <div class="word"><span>In</span></div>
+      <div class="word"><span>4</span></div>
+      <div class="word"><span>Schritten</span></div>
+      <div class="word"><span>zum</span></div>
+      <div class="word"><span>Ergebnis</span></div>
+    </h2>
+  </div>
+  <div class="process-grid">
+    <div class="process-step">
+      <div class="process-num">01</div>
+      <h3 class="process-title">Erstgespräch</h3>
+      <p class="process-desc">Kostenloser Beratungstermin — wir analysieren Ihre Anforderungen und Ihr Objekt vor Ort.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">02</div>
+      <h3 class="process-title">Individuelles Angebot</h3>
+      <p class="process-desc">Maßgeschneidertes Leistungsverzeichnis mit transparenten Preisen — innerhalb von 48 Stunden.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">03</div>
+      <h3 class="process-title">Onboarding</h3>
+      <p class="process-desc">Nahtloser Start: Objekteinweisung, Teamvorstellung und Einrichtung aller Prozesse.</p>
+    </div>
+    <div class="process-step">
+      <div class="process-num">04</div>
+      <h3 class="process-title">Laufender Betrieb</h3>
+      <p class="process-desc">Regelmäßige Qualitätschecks, proaktive Kommunikation und kontinuierliche Optimierung.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+  <div class="testi-head">
+    <p class="section-tag">Kundenstimmen</p>
+    <h2 class="section-title">
+      <div class="word"><span>Was</span></div>
+      <div class="word"><span>unsere</span></div>
+      <div class="word"><span>Kunden</span></div>
+      <div class="word"><span>sagen.</span></div>
+    </h2>
+  </div>
+  <div class="testi-track">
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Seit drei Jahren ist Epirus FM unser Partner für das komplette Facility Management unseres Bürokomplexes. Die Zuverlässigkeit und Qualität sind auf einem Niveau, das wir vorher nicht kannten."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">MK</div>
+        <div>
+          <span class="testi-name">Michael Krause</span>
+          <span class="testi-role">Geschäftsführer, Immobilienverwaltung Krause GmbH</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Als Hotelier sind Sauberkeit und Verlässlichkeit nicht verhandelbar. Epirus FM erfüllt beide Anforderungen täglich — und unser fester Ansprechpartner kennt unser Haus wie sein eigenes."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">SB</div>
+        <div>
+          <span class="testi-name">Sandra Becker</span>
+          <span class="testi-role">Hoteldirektorin, Grand Hotel am Park</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Der Winterdienst von Epirus FM hat unsere Parkanlage in der letzten Saison tadellos geräumt — immer vor Dienstbeginn, ohne dass wir auch nur einmal nachfragen mussten."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">TH</div>
+        <div>
+          <span class="testi-name">Thomas Hartmann</span>
+          <span class="testi-role">Facility Manager, Technologiepark Nord</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-card">
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">"Wir haben die Gebäudereinigung für 12 Objekte konsolidiert. Epirus FM hat das Onboarding in unter zwei Wochen abgewickelt — professionell, schnell und ohne Qualitätseinbußen."</p>
+      <div class="testi-author">
+        <div class="testi-avatar">AW</div>
+        <div>
+          <span class="testi-name">Andreas Wolf</span>
+          <span class="testi-role">Head of Real Estate, Handelsgruppe Wolf</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="cta-bg"></div>
+  <div class="cta-inner">
+    <p class="section-tag" style="display:block;text-align:center">Jetzt starten</p>
+    <h2 class="section-title" style="text-align:center">
+      <div class="word"><span>Bereit</span></div>
+      <div class="word"><span>für</span></div>
+      <div class="word"><span>Ihr</span></div>
+      <div class="word"><span>Angebot?</span></div>
+    </h2>
+    <p class="section-sub" style="text-align:center;margin:0 auto 16px">
+      Kostenlose Erstberatung und individuelles Angebot innerhalb von 48 Stunden.
+    </p>
+    <div class="cta-grid">
+      <div class="cta-box">
+        <h3>Direkt anrufen</h3>
+        <p>Unser Team ist werktags von 7–18 Uhr erreichbar. Außerhalb der Geschäftszeiten nimmt unser Notdienst Ihre Anfrage entgegen.</p>
+        <div class="cta-phone">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72c.12 1 .33 1.97.66 2.9a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.93.33 1.9.54 2.9.66A2 2 0 0122 15.92z"/></svg>
+          +49 (0) XX XXXX XXXX
+        </div>
+      </div>
+      <div class="cta-box">
+        <h3>Angebot anfragen</h3>
+        <p>Schildern Sie uns kurz Ihr Objekt und Ihre Anforderungen — wir melden uns binnen 24 Stunden mit einem Angebot.</p>
+        <form class="cta-form" name="kontakt-hauptseite" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="kontakt-hauptseite">
+          <input type="text" placeholder="Name & Unternehmen">
+          <input type="tel" placeholder="Telefonnummer">
+          <select>
+            <option value="" disabled selected>Leistung auswählen</option>
+            <option>Gebäudereinigung</option>
+            <option>Hausmeisterservice</option>
+            <option>Technisches FM</option>
+            <option>Winterdienst</option>
+            <option>Grünflächenpflege</option>
+            <option>Alle Leistungen</option>
+          </select>
+          <button type="submit" class="btn-primary magnetic" style="width:100%;justify-content:center">
+            <span>Anfrage senden</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo">EPIRUS <span>FM</span></div>
+      <p>Professionelles Facility Management für Gewerbeimmobilien und Hotels. Zuverlässig, transparent und kompromisslos in der Qualität.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-link" aria-label="Xing">X</a>
+        <a href="#" class="social-link" aria-label="Facebook">f</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Leistungen</h4>
+      <ul>
+        <li><a href="lp-gebaeudereinigung.html">Gebäudereinigung</a></li>
+        <li><a href="lp-hausmeisterservice.html">Hausmeisterservice</a></li>
+        <li><a href="lp-technisches-fm.html">Technisches FM</a></li>
+        <li><a href="lp-winterdienst.html">Winterdienst</a></li>
+        <li><a href="lp-gruenflaechen.html">Grünflächenpflege</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Branchen</h4>
+      <ul>
+        <li><a href="#">Bürogebäude</a></li>
+        <li><a href="#">Hotels & Hospitality</a></li>
+        <li><a href="#">Einkaufszentren</a></li>
+        <li><a href="#">Logistikimmobilien</a></li>
+        <li><a href="#">Wohnanlagen</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Unternehmen</h4>
+      <ul>
+        <li><a href="#">Über uns</a></li>
+        <li><a href="#">Karriere</a></li>
+        <li><a href="#">Zertifizierungen</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2024 Epirus FM GmbH. Alle Rechte vorbehalten.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Impressum</a>
+      <a href="#">Datenschutz</a>
+      <a href="#">AGB</a>
+    </div>
+  </div>
+</footer>
+
+<!-- CDN Libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
