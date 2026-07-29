@@ -419,7 +419,8 @@
       <div class="cta-box">
         <h3>Angebot anfragen</h3>
         <p>Schildern Sie uns kurz Ihr Objekt, wir melden uns binnen 24 Stunden mit einem maßgeschneiderten Angebot.</p>
-        <form class="cta-form" onsubmit="return false;">
+        <form class="cta-form" name="kontakt-hauptseite" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="kontakt-hauptseite">
           <input type="text" placeholder="Name & Unternehmen">
           <input type="tel" placeholder="Telefonnummer">
           <select>
@@ -567,3 +568,4 @@
 </script>
 </body>
 </html>
+
