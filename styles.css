@@ -88,7 +88,7 @@ ul{list-style:none}
 
 /* ── Custom Cursor — Crosshair ─────────────────────────────── */
 #cursor{
-  position:fixed;top:0;left:0;z-index:9999;
+  position:fixed;top:0;left:0;z-index:999999;
   pointer-events:none;mix-blend-mode:difference;
 }
 .cursor-dot{
