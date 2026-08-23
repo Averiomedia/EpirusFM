@@ -1,20 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 88" height="44">
-  <!-- 3 rote Balken, nach rechts gestaffelt -->
-  <rect x="0"  y="4"  width="72" height="13" rx="1" fill="#D4151A"/>
-  <rect x="16" y="30" width="72" height="13" rx="1" fill="#D4151A"/>
-  <rect x="32" y="56" width="72" height="13" rx="1" fill="#D4151A"/>
+  <!-- Balken: oben breit, mitte schmal, unten breit -->
+  <rect x="0" y="4"  width="72" height="13" rx="1" fill="#D4151A"/>
+  <rect x="0" y="30" width="50" height="13" rx="1" fill="#D4151A"/>
+  <rect x="0" y="56" width="72" height="13" rx="1" fill="#D4151A"/>
   <!-- Senkrechte Trennlinie -->
-  <rect x="116" y="2" width="2.5" height="76" fill="#ffffff"/>
+  <rect x="90" y="2" width="2.5" height="76" fill="#ffffff"/>
   <!-- EPIRUS -->
-  <text x="128" y="58"
-    font-family="'Arial Black','Arial',sans-serif"
-    font-weight="900"
+  <text x="102" y="58"
+    font-family="'Arial','Helvetica',sans-serif"
+    font-weight="800"
     font-size="56"
-    letter-spacing="-2"
+    letter-spacing="-1"
     fill="#ffffff">EPIRUS</text>
   <!-- Facility Management -->
-  <text x="130" y="78"
-    font-family="'Arial','sans-serif'"
+  <text x="104" y="78"
+    font-family="'Arial','Helvetica',sans-serif"
     font-weight="700"
     font-size="13"
     letter-spacing="0.5"
