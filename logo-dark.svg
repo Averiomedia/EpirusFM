@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" height="44">
+  <!-- 3 rote Balken -->
+  <rect x="0"  y="8"  width="68" height="12" fill="#D4151A"/>
+  <rect x="12" y="32" width="68" height="12" fill="#D4151A"/>
+  <rect x="24" y="56" width="68" height="12" fill="#D4151A"/>
+  <!-- Trennlinie -->
+  <rect x="104" y="4" width="3" height="72" fill="#0E1A2B"/>
+  <!-- EPIRUS -->
+  <text x="118" y="58" font-family="Inter,Arial Black,sans-serif" font-weight="900" font-size="54" letter-spacing="-1" fill="#0E1A2B">EPIRUS</text>
+  <!-- Facility Management -->
+  <text x="120" y="78" font-family="Inter,Arial,sans-serif" font-weight="700" font-size="14" fill="#0E1A2B">Facility Management</text>
+</svg>
