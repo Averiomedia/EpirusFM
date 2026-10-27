@@ -139,8 +139,6 @@ html[lang="en"] .k4-chiptext-en{display:inline}
 .k4-halo{fill:rgba(212,21,26,.32);transform-box:fill-box;transform-origin:center;animation:k4Halo 2.1s ease-out infinite}
 @keyframes k4Halo{0%{transform:scale(.5);opacity:.95}100%{transform:scale(2.3);opacity:0}}
 .k4-dot{fill:#D4151A;stroke:#fff;stroke-width:1.8}
-#hero.k4-hero .hero-rating{flex-direction:column;align-items:center;gap:6px;padding:14px 20px;border-radius:18px;text-align:center;font-size:.78rem}
-#hero.k4-hero .hero-rating svg{width:19px;height:19px}
 .floating-google-badge{top:calc(50% - 6cm)}
 #chat-widget #chat-teaser{box-sizing:border-box;max-width:236px;gap:10px;padding:10px 12px 10px 10px;bottom:88px;left:20px;animation:none;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .35s ease,transform .35s ease,visibility .35s}
 #chat-widget #chat-teaser.teaser-show{opacity:1;visibility:visible;transform:none}
@@ -170,9 +168,6 @@ html[lang="en"] .k4-chiptext-en{display:inline}
   .k4-left h1{order:1}
   #hero.k4-hero .hero-title{margin-bottom:14px}
   #hero.k4-hero .hero-sub{order:2;margin:0 0 16px}
-  .k4-left .hero-rating{order:3;margin-top:0;justify-self:start;justify-content:flex-start;width:-moz-fit-content;width:fit-content;gap:8px;padding:8px 14px;font-size:.85rem}
-  .k4-left .hero-rating>span{flex:none}
-  .k4-left .hero-rating .hero-stars{font-size:.9rem;letter-spacing:2px}
   .k4-left .hero-ctas{order:4;margin-top:14px}
   .k4-fig{order:5;margin-top:16px;padding:0 12px}
   .k4-left > p:not(.hero-sub){order:6;margin:26px 0 0!important}
@@ -192,13 +187,7 @@ html[lang="en"] .k4-chiptext-en{display:inline}
 }
 @media (prefers-reduced-motion:reduce){.k2-panel{opacity:1;transform:none;animation:none}.k2-caret,.k2-live i,.k2-cu{animation:none}.k3-ring{animation:none;opacity:.55}.k3-links line{animation:none}.k3-pin{animation:none}.k4-hot{opacity:1;animation:none}.k4-halo{animation:none;opacity:.55}}
 </style>
-<style>
-#hero.k4-hero .hero-rating{flex-direction:row;align-items:center;gap:10px;background:#fff;border:none;color:#1a1a1a;padding:10px 16px;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,.22);margin:30px 0 26px;font-size:.95rem;text-align:left;max-width:none}
-#hero.k4-hero .hero-rating:hover{background:#fff;border-color:transparent;color:#1a1a1a;transform:translateY(-2px)}
-#hero.k4-hero .hero-rating strong{color:#1a1a1a;font-size:1.02rem;font-weight:800}
-#hero.k4-hero .hero-rating svg{width:24px;height:24px}
-#hero.k4-hero .hero-rating .hero-stars{font-size:1.05rem;letter-spacing:3px}
-</style></head>
+</head>
 <body>
 
 <!-- Preloader -->
@@ -295,8 +284,6 @@ html[lang="en"] .k4-chiptext-en{display:inline}
       </h1>
       <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7;margin:0 0 18px;max-width:760px">Epirus Facility Management bietet technisches, infrastrukturelles und kaufmännisches Gebäudemanagement f&#252;r Hotels, B&#252;ro- <br>und Gewerbeimmobilien in Neu-Isenburg, Frankfurt und <br>im Rhein-Main-Gebiet.</p>
       <p class="hero-sub"><strong>Ein Ansprechpartner. Alles aus einer Hand.</strong></p>
-      <!-- HIER AENDERN: Google-Bewertung (Zahl + Anzahl) -->
-    <a class="hero-rating" href="https://www.google.com/maps/search/Epirus+Facility+Management+Neu-Isenburg" target="_blank" rel="noopener" aria-label="19 Google-Bewertungen lesen"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09a6.97 6.97 0 010-4.17V7.07H2.18a11.01 11.01 0 000 9.87l3.66-2.85z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.85c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg><span class="hero-rating-score"><strong>5,0</strong></span><span class="hero-stars" aria-hidden="true">★★★★★</span></a>
     <div class="hero-ctas">
       <a href="#cta" class="btn-primary magnetic">
         <span>Kostenloses Angebot</span>
