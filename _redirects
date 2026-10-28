@@ -1,0 +1,15 @@
+# Netlify-Redirects: alte WordPress-Adressen + Vorlagenreste sauber abfangen
+/uber-uns/ /ueber-uns.html 301
+/impressum/ /impressum.html 301
+/datenschutz/ /datenschutz.html 301
+/wartungsarbeiten/ / 301
+/hallo-welt/ / 301
+/hello-world-1/ / 301
+/hello-world-2/ / 301
+/hello-world-3/ / 301
+# GEO: Sauberadressen (Pfad-Form aus dem Upgrade-Plan) auf die .html-Seiten
+/faq/ /faq.html 301
+/stoerungsmanagement-notdienst/ /lp-stoerungsmanagement-notdienst.html 301
+/facility-management-hotels/ /lp-facility-management-hotels.html 301
+/infrastrukturelles-gebaeudemanagement/ /lp-infrastrukturelles-fm.html 301
+/kaufmaennisches-gebaeudemanagement/ /lp-kaufmaennisches-fm.html 301

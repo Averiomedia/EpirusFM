@@ -2,20 +2,198 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0E1A2B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <title>Epirus FM – Professionelles Facility Management für Gewerbeimmobilien & Hotels</title>
-  <meta name="description" content="Epirus FM – Ihr zuverlässiger Partner für Gebäudereinigung, Hausmeisterservice, technisches Facility Management und Winterdienst. Für Gewerbeimmobilien und Hotels in Deutschland.">
-  <meta name="keywords" content="Facility Management, Gebäudereinigung, Hausmeisterservice, Winterdienst, Gewerbeimmobilien, Hotels, Gebäudemanagement">
-  <meta property="og:title" content="Epirus FM – Facility Management mit System">
-  <meta property="og:description" content="Sichtbar. Persönlich. Transparent. Zuverlässiges Facility Management für Gewerbeimmobilien und Hotels.">
+  <meta name="description" content="Epirus FM – Ihr zuverlässiger Partner für Gebäudereinigung, Hausmeisterservice, technisches Facility Management und Winterdienst. Für Hotels, Büro- und Gewerbeimmobilien in Neu-Isenburg, Frankfurt und im Rhein-Main-Gebiet.">
+  <meta name="keywords" content="Facility Management Neu-Isenburg, Gebäudereinigung Frankfurt, Hausmeisterservice Rhein-Main, Technisches FM, Gebäudemanagement, Winterdienst Neu-Isenburg">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://epirusfm.de/">
+  <meta property="og:title" content="Epirus FM – Facility Management für Gewerbeimmobilien & Hotels">
+  <meta property="og:description" content="Ein Ansprechpartner für Gebäudereinigung, Hausmeisterservice, Technisches FM und mehr. 24/7 Notdienst. 5,0 Sterne auf Google.">
   <meta property="og:type" content="website">
-  <link rel="stylesheet" href="styles.css">
+  <meta property="og:url" content="https://epirusfm.de/">
+  <meta property="og:image" content="https://epirusfm.de/og-image.jpg">
+  <meta property="og:locale" content="de_DE">
+
+  <!-- Schema.org LocalBusiness (GEO/KI-Suche) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "ProfessionalService"],
+    "@id": "https://epirusfm.de/#business",
+    "name": "Epirus Facility Management GmbH",
+    "alternateName": "Epirus FM",
+    "description": "Professionelles Facility Management für Gewerbeimmobilien und Hotels: Gebäudereinigung, Hausmeisterservice, Technisches FM, Winterdienst, Grünflächenpflege und Gebäudemanagement – alles aus einer Hand.",
+    "url": "https://epirusfm.de",
+    "telephone": "+491747192840",
+    "email": "info@epirusfm.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Werner-Heisenberg-Straße 2a",
+      "addressLocality": "Neu-Isenburg",
+      "postalCode": "63263",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 50.0495,
+      "longitude": 8.6942
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Neu-Isenburg" },
+      { "@type": "City", "name": "Frankfurt am Main" },
+      { "@type": "City", "name": "Dreieich" },
+      { "@type": "City", "name": "Langen" },
+      { "@type": "State", "name": "Rhein-Main-Gebiet" }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Sunday"],
+        "opens": "07:00",
+        "closes": "20:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday","Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "19",
+      "bestRating": "5"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Facility Management Leistungen",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gebäudereinigung", "url": "https://epirusfm.de/lp-gebaeudereinigung.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hausmeisterservice", "url": "https://epirusfm.de/lp-hausmeisterservice.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Technisches Facility Management", "url": "https://epirusfm.de/lp-technisches-fm.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Winterdienst", "url": "https://epirusfm.de/lp-winterdienst.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Grünflächenpflege", "url": "https://epirusfm.de/lp-gruenflaechen.html" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gebäudemanagement", "url": "https://epirusfm.de/lp-gebaeudemanagement.html" } }
+      ]
+    },
+    "sameAs": [
+      "https://www.google.com/maps/search/Epirus+Facility+Management+Neu-Isenburg"
+    ]
+  }
+  </script>
+  <!-- Schema.org FAQPage (GEO: direkt zitierfähige Antworten) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie schnell kann ich einen Service anfordern?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sie können unseren Service jederzeit anfordern. Wir antworten Ihnen auf Ihre Anfrage in der Regel während der Betriebszeiten innerhalb von 2 Stunden." }
+      },
+      {
+        "@type": "Question",
+        "name": "Welche Dienstleistungen bieten Sie an?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Epirus Facility Management bietet ganzheitliche Dienstleistungen rund um den technischen und infrastrukturellen Betrieb von Immobilien: Technisches Facility Management, Infrastrukturelles Facility Management, Kaufmännisches Facility Management, Störungsmanagement und Notdienst sowie Sanierungs- und Sonderprojekte." }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie kann ich von der ETA-Methode profitieren?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Als Pionier der ETA-Methode verbindet Epirus Facility Management Effizienz, Transparenz und akutes Handeln. Leistungen, Status und Abläufe werden in Echtzeit sichtbar und nachvollziehbar – für Kontrolle ohne Mehraufwand und Ruhe im Tagesgeschäft." }
+      }
+    ]
+  }
+  </script>
+  <!-- Variante 2 KRASS (Skill ui-ux-pro-max): Headlines „Barlow" - Trust & Authority -->
+  <link rel="preload" href="fonts/barlow-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<style>
+#hero.k4-hero{display:block;background:#0C1520;height:auto;min-height:100vh;padding:160px 5% 100px;overflow:hidden}
+.k4-blueprint{position:absolute;inset:0;background-image:linear-gradient(rgba(46,124,214,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(46,124,214,.09) 1px,transparent 1px);background-size:34px 34px;-webkit-mask-image:linear-gradient(#000 65%,transparent 100%);mask-image:linear-gradient(#000 65%,transparent 100%);pointer-events:none;opacity:.85}
+.k4-wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:88px;max-width:1280px;margin:0 auto;align-items:center}
+.k4-kicker{display:flex;align-items:center;gap:12px;font-size:.72rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:#7FB4E8;margin-bottom:28px}
+.k4-sq{width:11px;height:11px;border:2px solid currentColor;transform:rotate(45deg);flex:0 0 auto}
+#hero.k4-hero .hero-title{color:#fff;text-align:left;margin-bottom:24px}
+@media(min-width:1001px){#hero.k4-hero .hero-title{font-size:clamp(2rem,4.25vw,3.5rem)}}
+#hero.k4-hero .hero-title em{font-style:normal;color:var(--red-l)}
+#hero.k4-hero .hero-sub{margin:0 0 38px;text-align:left;color:rgba(255,255,255,.65);max-width:560px}
+#hero.k4-hero .hero-ctas{justify-content:flex-start}
+.k4-fig{margin:0;position:relative}
+.k4-iso-svg{width:100%;max-width:540px;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,.45))}
+.k4-fig figcaption{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:2px;font-family:ui-monospace,'Cascadia Mono',Consolas,monospace;font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;color:rgba(255,255,255,.42)}
+.k4-cap-sq{width:9px;height:9px;background:var(--red);flex:0 0 auto}
+.k4-hot{opacity:0;animation:k4In .55s ease forwards}
+@keyframes k4In{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.k4-leader{stroke:rgba(240,58,63,.55);stroke-width:1.2;stroke-dasharray:4 5}
+.k4-chip{fill:rgba(12,21,32,.94);stroke:rgba(240,58,63,.55);stroke-width:1}
+.k4-chiptext{font-family:'Barlow',sans-serif;font-size:10.5px;font-weight:600;letter-spacing:1.3px;fill:#E7EEF8}
+.k4-chiptext-en{display:none}
+html[lang="en"] .k4-chiptext:not(.k4-chiptext-en){display:none}
+html[lang="en"] .k4-chiptext-en{display:inline}
+.k4-halo{fill:rgba(212,21,26,.32);transform-box:fill-box;transform-origin:center;animation:k4Halo 2.1s ease-out infinite}
+@keyframes k4Halo{0%{transform:scale(.5);opacity:.95}100%{transform:scale(2.3);opacity:0}}
+.k4-dot{fill:#D4151A;stroke:#fff;stroke-width:1.8}
+.floating-google-badge{top:calc(50% - 6cm)}
+#chat-widget #chat-teaser{box-sizing:border-box;max-width:236px;gap:10px;padding:10px 12px 10px 10px;bottom:88px;left:20px;animation:none;opacity:0;visibility:hidden;transform:translateY(12px);transition:opacity .35s ease,transform .35s ease,visibility .35s}
+#chat-widget #chat-teaser.teaser-show{opacity:1;visibility:visible;transform:none}
+#chat-widget #chat-teaser p{font-size:.76rem;line-height:1.45}
+#chat-widget #chat-teaser .chat-avatar-placeholder{width:34px;height:34px;font-size:.74rem}
+#chat-widget #chat-teaser .chat-avatar-dot{width:10px;height:10px;right:0;bottom:0}
+#chat-widget #chat-teaser-close{width:20px;height:20px;top:-8px;right:-8px}
+#nav{background:rgba(12,21,32,.72);backdrop-filter:blur(14px);box-shadow:0 1px 0 rgba(255,255,255,.1)}
+#nav{transition:transform .4s cubic-bezier(.16,1,.3,1),background var(--med),backdrop-filter var(--med),box-shadow var(--med),height var(--med)}
+#nav.nav-hidden{transform:translateY(-101%)}
+#nav.scrolled{background:rgba(12,21,32,.96);box-shadow:0 1px 0 rgba(255,255,255,.08)!important}
+#nav.scrolled .nav-logo{color:#fff}
+#nav.scrolled .nav-links a{color:rgba(255,255,255,.82)}
+#nav.scrolled .nav-links a:hover{color:var(--red-l)}
+
+
+#stats{background:#0C1520;background-image:linear-gradient(rgba(46,124,214,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(46,124,214,.08) 1px,transparent 1px);background-size:34px 34px}
+@media (max-width:1000px){.k4-wrap{grid-template-columns:1fr;gap:44px}#hero.k4-hero{padding-top:120px}}
+
+/* ── Mobil (<=768px): Hero neu angeordnet ──────────────────────────────────
+   Reihenfolge: Gebaeude-Grafik (FIG. 01) -> H1 -> Intro-Absatz -> Tagline
+   -> CTAs (kompakt, nebeneinander). Intro ohne erzwungene Umbrueche,
+   Luft fuer die Chip-Labels zu den Screen-Raendern. */
+@media (max-width:768px){
+  #hero.k4-hero{padding:88px 5% 130px}
+  .k4-left{display:contents}
+  .k4-wrap{gap:0}
+  .k4-fig{order:1;max-width:310px;margin:0 auto 30px;padding:0 12px}
+  .k4-left h1{order:2}
+  #hero.k4-hero .hero-title{margin-bottom:10px}
+  .k4-left > p:not(.hero-sub){order:3;margin:0 0 10px!important}
+  .k4-left > p:not(.hero-sub) br{display:none}
+  #hero.k4-hero .hero-sub{order:4;margin:0 0 2px}
+  .k4-left .hero-ctas{order:5;margin-top:28px}
+  /* kompakte CTAs nebeneinander statt zwei volle Breiten
+     (styles.css setzt mobil flex-direction:column + width:100% + max-width:320px) */
+  #hero.k4-hero .hero-ctas{gap:8px;flex-wrap:nowrap;flex-direction:row;align-items:stretch}
+  #hero.k4-hero .hero-ctas .btn-primary,
+  #hero.k4-hero .hero-ctas .btn-ghost{
+    flex:1 1 0;min-width:0;width:auto;max-width:none;justify-content:center;
+    padding:13px 5px;font-size:.74rem;gap:5px;white-space:nowrap;
+  }
+  #hero.k4-hero .hero-ctas svg{width:13px;height:13px;flex-shrink:0}
+  /* Chip-Labels auf dem Handy lesbarer (10.5px wuerden skaliert zu klein) */
+  .k4-chiptext{font-size:15px;letter-spacing:.4px}
+  .k4-fig figcaption{margin-top:8px;font-size:.6rem;letter-spacing:.2em}
+}
+@media (prefers-reduced-motion:reduce){.k2-panel{opacity:1;transform:none;animation:none}.k2-caret,.k2-live i,.k2-cu{animation:none}.k3-ring{animation:none;opacity:.55}.k3-links line{animation:none}.k3-pin{animation:none}.k4-hot{opacity:1;animation:none}.k4-halo{animation:none;opacity:.55}}
+</style>
 </head>
 <body>
 
 <!-- Preloader -->
 <div id="preloader">
-  <div class="pre-logo"><img src="logo.png" alt="Epirus FM" style="height:60px;width:auto;display:block"></div>
+  <div class="pre-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:60px;width:auto;display:block"></div>
   <div class="pre-bar-wrap"><div class="pre-bar" id="preBar"></div></div>
   <div class="pre-pct" id="prePct">0%</div>
 </div>
@@ -35,43 +213,141 @@
         Leistungen
         <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
       </a>
-      <ul class="nav-dropdown">
-        <li><a href="lp-gebaeudereinigung.html"><span class="dd-icon">🧹</span>Gebäudereinigung</a></li>
-        <li><a href="lp-hausmeisterservice.html"><span class="dd-icon">🔧</span>Hausmeisterservice</a></li>
-        <li><a href="lp-technisches-fm.html"><span class="dd-icon">⚙️</span>Technisches FM</a></li>
-        <li><a href="lp-winterdienst.html"><span class="dd-icon">❄️</span>Winterdienst</a></li>
-        <li><a href="lp-gruenflaechen.html"><span class="dd-icon">🌿</span>Grünflächenpflege</a></li>
-        <li class="dd-divider"><a href="lp-gebaeudemanagement.html"><span class="dd-icon">🏢</span>Gebäudemanagement</a></li>
-        <li><a href="lp-facility-management.html"><span class="dd-icon">🏗️</span>Facility Management</a></li>
-      </ul>
+            <div class="nav-mega">
+        <div class="nav-mega-inner">
+          <div class="nav-mega-cols">
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Technisches FM</p>
+              <a href="lp-technisches-fm.html">Technisches FM</a>
+              <a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a>
+              <a href="lp-stoerungsmanagement-notdienst.html">St&ouml;rungsmanagement &amp; Notdienst</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Kaufm&auml;nnisch &amp; Management</p>
+              <a href="lp-kaufmaennisches-fm.html">Kaufm&auml;nnisches FM</a>
+              <a href="lp-facility-management.html">Facility Management</a>
+              <a href="lp-facility-management-hotels.html">FM f&uuml;r Hotels</a>
+              <a href="lp-gebaeudemanagement.html">Geb&auml;udemanagement</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Reinigung &amp; Pflege</p>
+              <a href="lp-gebaeudereinigung.html">Geb&auml;udereinigung</a>
+              <a href="lp-gruenflaechen.html">Gr&uuml;nfl&auml;chenpflege</a>
+              <a href="lp-winterdienst.html">Winterdienst</a>
+              <a href="lp-hausmeisterservice.html">Hausmeisterservice</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Service</p>
+              <a href="faq.html">FAQ</a>
+              <a href="kontakt.html">Kontakt &amp; Angebot</a>
+            </div>
+          </div>
+          <a class="nav-mega-card" href="lp-facility-management.html">
+            <img src="nav-card.svg" alt="" width="300" height="180" loading="lazy">
+            <span class="nav-mega-label">&Uuml;bersicht</span>
+            <strong>Facility Management</strong>
+            <span class="nav-mega-card-text">Technik, Kaufm&auml;nnisches und Spezialdienste &ndash; aus einer Hand.</span>
+          </a>
+        </div>
+      </div>
     </li>
-    <li><a href="#why">Über uns</a></li>
-    <li><a href="#process">Ablauf</a></li>
-    <li><a href="#testimonials">Referenzen</a></li>
-    <li><a href="#cta" class="nav-cta magnetic">Angebot anfragen</a></li>
+    <li><a href="ueber-uns.html">Über uns</a></li>
+    <li><a href="kontakt.html" class="nav-cta magnetic">Kontakt</a></li>
+    <li>
+      <button id="lang-toggle" class="nav-lang-btn" title="Switch to English">
+        <span id="lang-flag">🇬🇧</span>
+        <span id="lang-label">EN</span>
+      </button>
+    </li>
   </ul>
   <button class="nav-burger" id="navBurger" aria-label="Menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
-<!-- Hero (dark with red particles) -->
-<section id="hero">
-  <canvas id="hero-canvas"></canvas>
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <div class="hero-tag">
-      <div class="hero-tag-dot"></div>
-      Sichtbar. Persönlich. Transparent.
+<!-- Mobiles Vollbild-Menü (nur <=768px sichtbar) -->
+<div id="mobile-menu" aria-hidden="true">
+  <div class="mm-head">
+    <a href="index.html" class="mm-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:48px;width:auto;display:block"></a>
+    <button class="mm-close" aria-label="Men&uuml; schlie&szlig;en">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav class="mm-nav">
+    <div class="mm-acc">
+      <button class="mm-link mm-acc-btn" aria-expanded="false">
+        Leistungen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="mm-acc-panel">
+        <p class="mm-acc-label">Technisches FM</p>
+        <a href="lp-technisches-fm.html">Technisches FM</a>
+        <a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a>
+        <a href="lp-stoerungsmanagement-notdienst.html">St&ouml;rungsmanagement &amp; Notdienst</a>
+        <p class="mm-acc-label">Kaufm&auml;nnisch &amp; Management</p>
+        <a href="lp-kaufmaennisches-fm.html">Kaufm&auml;nnisches FM</a>
+        <a href="lp-facility-management.html">Facility Management</a>
+        <a href="lp-facility-management-hotels.html">FM f&uuml;r Hotels</a>
+        <a href="lp-gebaeudemanagement.html">Geb&auml;udemanagement</a>
+        <p class="mm-acc-label">Reinigung &amp; Pflege</p>
+        <a href="lp-gebaeudereinigung.html">Geb&auml;udereinigung</a>
+        <a href="lp-gruenflaechen.html">Gr&uuml;nfl&auml;chenpflege</a>
+        <a href="lp-winterdienst.html">Winterdienst</a>
+        <a href="lp-hausmeisterservice.html">Hausmeisterservice</a>
+        <p class="mm-acc-label">Service</p>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt &amp; Angebot</a>
+      </div>
     </div>
-    <h1 class="hero-title">
-      <div class="line"><span>Facility Management</span></div>
-      <div class="line"><span>mit <em>System.</em></span></div>
-    </h1>
-    <p class="hero-sub">
-      Ihr zuverlässiger Partner für Gewerbeimmobilien und Hotels,
-      alle Leistungen aus einer Hand, mit garantierter Qualität und echtem Echtzeit-Tracking.
-    </p>
+    <a class="mm-link" href="ueber-uns.html">&Uuml;ber uns</a>
+    <a class="mm-link" href="faq.html">FAQ</a>
+    <a class="mm-link" href="kontakt.html">Kontakt</a>
+  </nav>
+  <a class="mm-cta" href="kontakt.html">
+    Kostenloses Angebot
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+  <button class="mm-lang" title="Switch to English">
+    <span class="mm-lang-flag">🇬🇧</span>
+    <span class="mm-lang-label">EN</span>
+  </button>
+  <div class="mm-sep"></div>
+  <div class="mm-contact">
+    <a href="tel:+491747192840">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72c.12 1 .33 1.97.66 2.9a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.93.33 1.9.54 2.9.66A2 2 0 0122 15.92z"/></svg>
+      +49 174 7192 840
+    </a>
+    <span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Werner-Heisenberg-Str. 2a<br>63263 Neu-Isenburg
+    </span>
+    <a href="mailto:info@epirusfm.de">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+      info@epirusfm.de
+    </a>
+  </div>
+</div>
+
+<!-- Floating Google Badge -->
+<a href="https://www.google.com/maps/search/Epirus+Facility+Management+Neu-Isenburg" target="_blank" rel="noopener" class="floating-google-badge" id="floatingBadge">
+  <svg viewBox="0 0 24 24" width="22" height="22"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09a6.97 6.97 0 010-4.17V7.07H2.18a11.01 11.01 0 000 9.87l3.66-2.85z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.85c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+  <div class="fgb-inner">
+    <div class="fgb-stars">★★★★★</div>
+    <div class="fgb-score"><strong>5.0</strong> <span>/ 19 Bewertungen</span></div>
+  </div>
+</a>
+
+<!-- Hero (Variante 2: ruhig, gut lesbar - dezente Partikel am Rand, Text auf ruhiger Fläche) -->
+<section id="hero" class="k4-hero">
+  <div class="k4-blueprint" aria-hidden="true"></div>
+  <div class="k4-wrap">
+    <div class="k4-left">
+            <h1 class="hero-title k4-title">
+        <div class="line"><span>Facility Management</span></div>
+        <div class="line"><span>mit <em>System.</em></span></div>
+      </h1>
+      <p style="color:rgba(255,255,255,.78);font-size:1rem;line-height:1.7;margin:0 0 28px;max-width:760px">Epirus Facility Management bietet technisches, infrastrukturelles und <br>kaufmännisches Gebäudemanagement f&#252;r Hotels, B&#252;ro- <br>und Gewerbeimmobilien in Neu-Isenburg, Frankfurt und <br>im Rhein-Main-Gebiet.</p>
+      <p class="hero-sub"><strong>Ein Ansprechpartner. Alles aus einer Hand.</strong></p>
     <div class="hero-ctas">
       <a href="#cta" class="btn-primary magnetic">
         <span>Kostenloses Angebot</span>
@@ -82,14 +358,131 @@
         Jetzt anrufen
       </a>
     </div>
-  </div>
-  <div class="hero-scroll" id="heroScroll">
-    <span>Scroll</span>
-    <div class="scroll-line"></div>
+      
+    </div>
+    <figure class="k4-fig">
+      <svg class="k4-iso-svg" viewBox="0 0 640 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isometrische Darstellung eines Gebaeudes mit markierten Facility-Management-Systemen">
+  <g class="k4-iso">
+    <ellipse cx="352" cy="512" rx="215" ry="44" fill="rgba(0,0,0,.30)"/>
+    <polygon points="320,276 552.1,410 372,514 139.9,380" fill="#101A28" stroke="rgba(140,190,255,.28)" stroke-width="1.5"/>
+    <polygon points="552.1,410 372,514 372,526 552.1,422" fill="#0B1420" stroke="rgba(140,190,255,.22)" stroke-width="1.5"/>
+    <polygon points="139.9,380 372,514 372,526 139.9,392" fill="#0A121C" stroke="rgba(140,190,255,.22)" stroke-width="1.5"/>
+    <polygon points="320,90 510.5,200 372,280 181.4,170" fill="#1B2839" stroke="rgba(140,190,255,.4)" stroke-width="1.5"/>
+    <polygon points="510.5,410 372,490 372,280 510.5,200" fill="#152130" stroke="rgba(140,190,255,.4)" stroke-width="1.5"/>
+    <polygon points="320,236 500.1,340 372,414 191.8,310" fill="rgba(120,170,230,.10)" stroke="rgba(120,170,230,.30)" stroke-width="1"/>
+    <polygon points="320,166 500.1,270 372,344 191.8,240" fill="rgba(120,170,230,.10)" stroke="rgba(120,170,230,.30)" stroke-width="1"/>
+    <polygon points="285.4,360 320,380 320,170 285.4,150" fill="rgba(212,21,26,.16)" stroke="rgba(240,58,63,.55)" stroke-width="1.5"/>
+    <line x1="302.7" y1="370" x2="302.7" y2="160" stroke="rgba(240,58,63,.4)" stroke-width="1" stroke-dasharray="4 5"/>
+    <polygon points="181.4,380 372,490 372,280 181.4,170" fill="rgba(90,140,200,.15)" stroke="rgba(140,190,255,.45)" stroke-width="1.5"/>
+    <polygon points="496.7,394 472.4,408 472.4,382 496.7,368" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="496.7,324 472.4,338 472.4,312 496.7,298" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="496.7,254 472.4,268 472.4,242 496.7,228" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="462,414 437.8,428 437.8,402 462,388" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="462,344 437.8,358 437.8,332 462,318" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="462,274 437.8,288 437.8,262 462,248" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="427.4,434 403.1,448 403.1,422 427.4,408" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="427.4,364 403.1,378 403.1,352 427.4,338" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="427.4,294 403.1,308 403.1,282 427.4,268" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="392.7,454 368.5,468 368.5,442 392.7,428" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="392.7,384 368.5,398 368.5,372 392.7,358" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="392.7,314 368.5,328 368.5,302 392.7,288" fill="rgba(255,255,255,.07)" stroke="rgba(140,190,255,.32)" stroke-width="1"/>
+    <polygon points="195.3,364 221.3,379 221.3,353 195.3,338" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="195.3,294 221.3,309 221.3,283 195.3,268" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="195.3,224 221.3,239 221.3,213 195.3,198" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="236.9,388 262.8,403 262.8,377 236.9,362" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="236.9,318 262.8,333 262.8,307 236.9,292" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="236.9,248 262.8,263 262.8,237 236.9,222" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="278.4,412 304.4,427 304.4,401 278.4,386" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="278.4,342 304.4,357 304.4,331 278.4,316" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="278.4,272 304.4,287 304.4,261 278.4,246" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="320,436 346,451 346,425 320,410" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="320,366 346,381 346,355 320,340" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <polygon points="320,296 346,311 346,285 320,270" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+    <line x1="510.5" y1="340" x2="372" y2="420" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+    <line x1="181.4" y1="310" x2="372" y2="420" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+    <line x1="510.5" y1="270" x2="372" y2="350" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+    <line x1="181.4" y1="240" x2="372" y2="350" stroke="rgba(255,255,255,.14)" stroke-width="1"/>
+    <polygon points="503.6,406 481.1,419 481.1,387 503.6,374" fill="rgba(212,21,26,.32)" stroke="#F03A3F" stroke-width="1.5"/>
+    <polygon points="320,85 376.3,117.5 328.7,145 272.4,112.5" fill="#1F3048" stroke="rgba(140,190,255,.4)" stroke-width="1.5"/>
+    <polygon points="376.3,152.5 328.7,180 328.7,145 376.3,117.5" fill="#162233" stroke="rgba(140,190,255,.35)" stroke-width="1.5"/>
+    <polygon points="272.4,147.5 328.7,180 328.7,145 272.4,112.5" fill="#131E2E" stroke="rgba(140,190,255,.35)" stroke-width="1.5"/>
+    <polygon points="380.6,169 419.6,191.5 380.6,214 341.7,191.5" fill="#1F3048" stroke="rgba(140,190,255,.4)" stroke-width="1.5"/>
+    <polygon points="419.6,217.5 380.6,240 380.6,214 419.6,191.5" fill="#162233" stroke="rgba(140,190,255,.35)" stroke-width="1.5"/>
+    <polygon points="341.7,217.5 380.6,240 380.6,214 341.7,191.5" fill="#131E2E" stroke="rgba(140,190,255,.35)" stroke-width="1.5"/>
+    <line x1="324.3" y1="114.5" x2="324.3" y2="74.5" stroke="rgba(240,58,63,.8)" stroke-width="1.5"/>
+    <circle cx="324.3" cy="74.5" r="3.5" fill="#F03A3F"/>
+    <polygon points="505.3,393 519.2,401 475.9,426 462,418" fill="#1F3048" stroke="rgba(140,190,255,.4)" stroke-width="1.5"/>
+    <polygon points="519.2,425 475.9,450 475.9,426 519.2,401" fill="#162233" stroke="rgba(140,190,255,.35)" stroke-width="1.5"/>
+    <polygon points="462,442 475.9,450 475.9,426 462,418" fill="#131E2E" stroke="rgba(140,190,255,.35)" stroke-width="1.5"/>
+    <g class="k4-hot" style="animation-delay:1.7s">
+      <line x1="324.3" y1="114.5" x2="436" y2="113" class="k4-leader"/>
+      <rect x="424" y="101" width="144" height="24" rx="5" class="k4-chip"/>
+      <text x="496" y="117" text-anchor="middle" class="k4-chiptext">HLK &amp; L&#220;FTUNG</text>
+      <text x="496" y="117" text-anchor="middle" class="k4-chiptext k4-chiptext-en">HVAC SYSTEMS</text>
+      <circle cx="324.3" cy="114.5" r="11" class="k4-halo"/>
+      <circle cx="324.3" cy="114.5" r="5" class="k4-dot"/>
+    </g>
+    <g class="k4-hot" style="animation-delay:2.0s">
+      <line x1="181.4" y1="275" x2="128" y2="275" class="k4-leader"/>
+      <rect x="0" y="263" width="144" height="24" rx="5" class="k4-chip"/>
+      <text x="72" y="279" text-anchor="middle" class="k4-chiptext">AUFZUGTECHNIK</text>
+      <text x="69" y="279" text-anchor="middle" class="k4-chiptext k4-chiptext-en">LIFT SYSTEMS</text>
+      <circle cx="181.4" cy="275" r="11" class="k4-halo"/>
+      <circle cx="181.4" cy="275" r="5" class="k4-dot"/>
+    </g>
+    <g class="k4-hot" style="animation-delay:2.3s">
+      <line x1="492.3" y1="396.5" x2="548" y2="364" class="k4-leader"/>
+      <rect x="476" y="340" width="164" height="24" rx="5" class="k4-chip"/>
+      <text x="558" y="356" text-anchor="middle" class="k4-chiptext">BRANDMELDEANLAGE</text>
+      <text x="557" y="356" text-anchor="middle" class="k4-chiptext k4-chiptext-en">FIRE ALARM SYSTEM</text>
+      <circle cx="492.3" cy="396.5" r="11" class="k4-halo"/>
+      <circle cx="492.3" cy="396.5" r="5" class="k4-dot"/>
+    </g>
+    <g class="k4-hot" style="animation-delay:2.6s">
+      <line x1="490.6" y1="409.5" x2="550" y2="464" class="k4-leader"/>
+      <rect x="484" y="464" width="154" height="24" rx="5" class="k4-chip"/>
+      <text x="561" y="480" text-anchor="middle" class="k4-chiptext">Z&#196;HLER &amp; ZUGANG</text>
+      <text x="554" y="480" text-anchor="middle" class="k4-chiptext k4-chiptext-en">METERS &amp; ACCESS</text>
+      <circle cx="490.6" cy="409.5" r="11" class="k4-halo"/>
+      <circle cx="490.6" cy="409.5" r="5" class="k4-dot"/>
+    </g>
+    <g class="k4-hot" style="animation-delay:2.9s">
+      <line x1="455" y1="300" x2="486" y2="252" class="k4-leader"/>
+      <rect x="476" y="238" width="164" height="24" rx="5" class="k4-chip"/>
+      <text x="558" y="254" text-anchor="middle" class="k4-chiptext">GEB&#196;UDEREINIGUNG</text>
+      <text x="558" y="254" text-anchor="middle" class="k4-chiptext k4-chiptext-en">CLEANING SERVICES</text>
+      <circle cx="455" cy="300" r="11" class="k4-halo"/>
+      <circle cx="455" cy="300" r="5" class="k4-dot"/>
+    </g>
+    <g class="k4-hot" style="animation-delay:3.2s">
+      <line x1="300" y1="458" x2="218" y2="458" class="k4-leader"/>
+      <rect x="0" y="446" width="244" height="24" rx="5" class="k4-chip"/>
+      <text x="122" y="462" text-anchor="middle" class="k4-chiptext">GR&#220;N- &amp; GRAUFL&#196;CHENPFLEGE</text>
+      <text x="112" y="462" text-anchor="middle" class="k4-chiptext k4-chiptext-en">GREEN &amp; HARD SURFACE CARE</text>
+      <circle cx="300" cy="458" r="11" class="k4-halo"/>
+      <circle cx="300" cy="458" r="5" class="k4-dot"/>
+    </g>
+  </g>
+</svg>
+
+      <figcaption><span class="k4-cap-sq"></span>FIG. 01 &mdash; Geb&auml;ude als System</figcaption>
+    </figure>
   </div>
 </section>
 
-<!-- Stats (dark stripe) -->
+<!-- Trust-Marquee: Einsatzgebiet Rhein-Main -->
+<div class="trust-marquee" aria-hidden="true">
+  <div class="trust-track">
+    <span>Frankfurt am Main</span><span>Neu-Isenburg</span><span>Dreieich</span><span>Langen</span><span>Rhein-Main-Gebiet</span><span>24/7 Notdienst</span><span>Alles aus einer Hand</span>
+    <span>Frankfurt am Main</span><span>Neu-Isenburg</span><span>Dreieich</span><span>Langen</span><span>Rhein-Main-Gebiet</span><span>24/7 Notdienst</span><span>Alles aus einer Hand</span>
+  </div>
+</div>
+
+<!-- STATS ============================================================
+     HIER AENDERN: Die 4 Kennzahlen stehen direkt unten in den
+     <span class="stat-num">...</span> Zeilen - einfach Text anpassen,
+     z. B. <span class="stat-num">24/7</span> zu <span class="stat-num">150+</span>.
+     ============================================================== -->
 <section id="stats">
   <div class="stats-grid">
     <div class="stat-item">
@@ -97,7 +490,7 @@
       <span class="stat-label">Erreichbarkeit & Notdienst</span>
     </div>
     <div class="stat-item">
-      <span class="stat-num">5.0 ★</span>
+      <span class="stat-num" style="white-space:nowrap">5.0 ★</span>
       <span class="stat-label">Google Bewertung</span>
     </div>
     <div class="stat-item">
@@ -109,7 +502,85 @@
       <span class="stat-label">Digital & transparent</span>
     </div>
   </div>
+  <!-- GEO 3.1: Kennzahlen zusätzlich als lesbarer Belegtext (nicht nur animierte Zähler) -->
+  <!-- FREIGABE: Zahlen 45 Objekte / 400.000 m² / 24 Hotels / 11 Bürogebäude durch Epirus bestätigen. -->
+  <p style="text-align:center;max-width:880px;margin:36px auto 0;font-size:.95rem;line-height:1.8;color:rgba(255,255,255,.55)">Epirus Facility Management betreut derzeit <strong style="color:#fff">45 Gewerbeobjekte</strong> mit rund <strong style="color:#fff">400.000 m&#178; Fl&#228;che</strong>, darunter <strong style="color:#fff">24 Hotels</strong> und <strong style="color:#fff">11 B&#252;rogeb&#228;ude</strong>. Jeder Einsatz wird digital nachgewiesen - im Kundenportal sehen Sie jederzeit, was in Ihrem Objekt erledigt wurde.</p>
 </section>
+
+<!-- Problem & Relevanz -->
+<section id="problem" style="padding:100px 5%;background:var(--bg)">
+  <div class="container" style="max-width:960px">
+    <p class="section-tag" style="opacity:1;transform:none">Das kennen Sie</p>
+    <h2 class="section-title" style="margin-bottom:48px">
+      <div class="word"><span>Warum</span></div>
+      <div class="word"><span>FM</span></div>
+      <div class="word"><span>so</span></div>
+      <div class="word"><span>oft</span></div>
+      <div class="word"><span><em>nervt.</em></span></div>
+    </h2>
+    <div class="problem-grid">
+      <div class="problem-card">
+        <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+        <h4>Ständig mehrere Ansprechpartner</h4>
+        <p>Reinigung, Hausmeister, Techniker: drei verschiedene Firmen, drei verschiedene Rechnungen, niemand fühlt sich zuständig.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12 7.586 16.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg></div>
+        <h4>Störungen bleiben tagelang offen</h4>
+        <p>Der Aufzug steht still, der Heizkessel meldet Fehler. Der Dienstleister ist erst „nächste Woche" verfügbar.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h4>Keine Transparenz über den Status</h4>
+        <p>Was wurde erledigt? Was steht noch aus? Ohne digitale Rückmeldung ist jeder Auftrag ein Vertrauensvorschuss.</p>
+      </div>
+      <div class="problem-card">
+        <div class="problem-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg></div>
+        <h4>Portale verteilen Ihre Anfrage an fünf Anbieter</h4>
+        <p>Wer über Vergleichsportale sucht, bekommt fünf Rückrufe und muss selbst koordinieren. Das kostet Zeit, die Sie nicht haben.</p>
+      </div>
+    </div>
+    <p class="problem-closer">Epirus löst genau das: <strong>Ein Vertrag. Ein Ansprechpartner. Vollständige Transparenz.</strong></p>
+  </div>
+</section>
+
+<style>
+.problem-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+  margin-bottom:48px;
+}
+@media(max-width:640px){.problem-grid{grid-template-columns:1fr}}
+.problem-card{
+  background:var(--bg-2);
+  border:1.5px solid var(--border);
+  border-radius:16px;
+  padding:32px;
+  transition:border-color .25s,transform .25s;
+}
+.problem-card:hover{
+  border-color:var(--red);
+  transform:translateY(-3px);
+}
+.problem-icon{font-size:2rem;margin-bottom:16px;display:flex;align-items:center;justify-content:center}
+.problem-card h4{
+  font-size:1rem;font-weight:700;
+  color:var(--navy);margin-bottom:10px;
+}
+.problem-card p{
+  font-size:.88rem;color:var(--text-2);line-height:1.75;margin:0;
+}
+.problem-closer{
+  text-align:center;
+  font-size:1.05rem;
+  color:var(--text);
+  background:var(--bg-2);
+  border:1.5px solid var(--border);
+  border-radius:12px;
+  padding:24px 32px;
+}
+</style>
 
 <!-- Services, Sticky Split Scroll -->
 <section id="services" class="ss-section">
@@ -120,7 +591,7 @@
     <div class="ss-left-inner">
       <p class="section-tag" style="opacity:1;transform:none">Unsere Leistungen</p>
       <h2 class="ss-heading">Alles aus<br>einer Hand.</h2>
-      <p class="ss-sub">Von der täglichen Reinigung bis zum technischen Gebäudemanagement, ein Partner, ein Ansprechpartner, ein Versprechen.</p>
+      <p class="ss-sub">Von der täglichen Reinigung bis zum technischen Gebäudemanagement - ein Ansprechpartner für ganzheitliches Facility Management.</p>
       <div class="ss-progress-track"><div class="ss-progress-bar"></div></div>
       <div class="ss-counter"><span class="ss-counter-cur">01</span>&thinsp;/&thinsp;05</div>
     </div>
@@ -130,54 +601,54 @@
   <div class="ss-right">
 
     <!-- 01 Technisches FM -->
-    <div class="ss-card" data-index="1">
+    <a href="lp-technisches-fm.html" class="ss-card" data-index="1">
       <span class="ss-card-num">01</span>
       <p class="ss-card-label">Anlagenwartung</p>
       <h3 class="ss-card-title">Technisches FM</h3>
       <p class="ss-card-desc">Wartung, Inspektion, Instandhaltung und Instandsetzung technischer Anlagen aller Gewerke im Rahmen des Technischen FM's</p>
       <div class="ss-card-tags"><span>HVAC-Wartung</span><span>Anlagenprüfung</span><span>Störungsmanagement</span></div>
-      <a href="lp-technisches-fm.html" class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
+      <span class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </a>
 
     <!-- 02 Hausmeisterservice -->
-    <div class="ss-card" data-index="2">
+    <a href="lp-hausmeisterservice.html" class="ss-card" data-index="2">
       <span class="ss-card-num">02</span>
       <p class="ss-card-label">Objektbetreuung</p>
       <h3 class="ss-card-title">Hausmeister&shy;service</h3>
       <p class="ss-card-desc">Zuverlässige Facility-Techniker für Instandhaltung und reibungslosen Betrieb Ihrer Liegenschaft, 24/7 erreichbar.</p>
       <div class="ss-card-tags"><span>Instandhaltung</span><span>Kleinreparaturen</span><span>24/7 Bereitschaft</span></div>
-      <a href="lp-hausmeisterservice.html" class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
+      <span class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </a>
 
     <!-- 03 Gebäudereinigung -->
-    <div class="ss-card" data-index="3">
+    <a href="lp-gebaeudereinigung.html" class="ss-card" data-index="3">
       <span class="ss-card-num">03</span>
       <p class="ss-card-label">Reinigungsservice</p>
       <h3 class="ss-card-title">Gebäude&shy;reinigung</h3>
-      <p class="ss-card-desc">Unterhalts-, Glas- und Sonderreinigung für Büros, Hotels und Gewerbeimmobilien, täglich zuverlässig, digital dokumentiert.</p>
+      <p class="ss-card-desc">Unterhalts-, Glas- und Sonderreinigung für Büros, Hotels und Gewerbeimmobilien.</p>
       <div class="ss-card-tags"><span>Unterhaltsreinigung</span><span>Glasreinigung</span><span>Sonderreinigung</span></div>
-      <a href="lp-gebaeudereinigung.html" class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
+      <span class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </a>
 
     <!-- 04 Winterdienst -->
-    <div class="ss-card" data-index="4">
+    <a href="lp-winterdienst.html" class="ss-card" data-index="4">
       <span class="ss-card-num">04</span>
       <p class="ss-card-label">Winterdienst</p>
       <h3 class="ss-card-title">Schnee &amp; Eis</h3>
-      <p class="ss-card-desc">Schneeräumung und Streudienst mit garantierten Reaktionszeiten, immer vor Dienstbeginn. Verkehrssicherungspflicht erfüllt.</p>
+      <p class="ss-card-desc">Schneeräumung und Streudienst mit garantierten Reaktionszeiten.</p>
       <div class="ss-card-tags"><span>Schneeräumung</span><span>Streudienst</span><span>Bereitschaftsdienst</span></div>
-      <a href="lp-winterdienst.html" class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
+      <span class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </a>
 
     <!-- 05 Grünflächenpflege -->
-    <div class="ss-card" data-index="5">
+    <a href="lp-gruenflaechen.html" class="ss-card" data-index="5">
       <span class="ss-card-num">05</span>
       <p class="ss-card-label">Außenanlagen</p>
       <h3 class="ss-card-title">Grünflächen&shy;pflege</h3>
       <p class="ss-card-desc">Ganzjährige Pflege von Außenanlagen, vom Frühjahrsschnitt bis zur Wintervorbereitung. Festpreisvertrag möglich.</p>
       <div class="ss-card-tags"><span>Rasenpflege</span><span>Gehölzschnitt</span><span>Jahresvertrag</span></div>
-      <a href="lp-gruenflaechen.html" class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-    </div>
+      <span class="ss-card-link">Mehr erfahren <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </a>
 
     <!-- CTA card -->
     <div class="ss-card ss-card--cta" data-index="6">
@@ -197,15 +668,14 @@
     <div class="why-visual parallax-wrap">
       <div class="parallax-el" style="
         width:100%;height:100%;
-        background:linear-gradient(135deg,var(--bg-3) 0%,var(--bg-2) 100%);
+        background:linear-gradient(135deg,#0B54A6 0%,#0E1A2B 70%);
         display:flex;align-items:center;justify-content:center;
-        font-size:8rem;
-      ">🏢</div>
+      "><svg class="w-illus" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.85)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="16" height="20" x="4" y="2" rx="1"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M8 10h.01M16 10h.01M12 10h.01M8 14h.01M16 14h.01M12 14h.01"/></svg></div>
       <div class="why-badge">
-        <div class="why-badge-icon">🏆</div>
+        <div class="why-badge-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg></div>
         <div class="why-badge-text">
-          <strong>ISO 9001:2015 zertifiziert</strong>
-          <span>Geprüfte Qualität, die Sie schützt</span>
+          <strong>Echtzeit-Tracking</strong>
+          <span>In Deutschland einzigartig</span>
         </div>
       </div>
     </div>
@@ -220,28 +690,36 @@
       </h2>
       <div class="divider"></div>
       <p class="section-sub">
-        Wir denken nicht in Aufträgen, wir denken in Partnerschaften. Deshalb arbeiten über 90 % unserer Kunden seit mehr als 5 Jahren mit uns.
+        Wir denken nicht in Aufträgen, wir denken in Partnerschaften. Deshalb arbeiten viele unserer Kunden seit Jahren mit uns.
       </p>
       <div class="why-points">
         <div class="why-point">
-          <div class="why-point-icon">⚡</div>
+          <div class="why-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
           <div>
             <h4>Garantierte Reaktionszeiten</h4>
             <p>Bei Störungen sind wir in unter 2 Stunden vor Ort. Unser 24/7-Notdienst ist immer erreichbar, auch am Wochenende und an Feiertagen.</p>
           </div>
         </div>
         <div class="why-point">
-          <div class="why-point-icon">📊</div>
+          <div class="why-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" x2="12" y1="20" y2="10"/><line x1="18" x2="18" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="16"/></svg></div>
           <div>
             <h4>Echtzeit-Tracking aller Prozesse</h4>
-            <p>Als einziger FM-Anbieter in Deutschland bieten wir digitales Echtzeit-Tracking. Sie sehen jederzeit, was gerade passiert, transparent und nachvollziehbar.</p>
+            <!-- GEO 3.1: konkretisieren, was das Tracking dokumentiert und was der Auftraggeber sieht. FREIGABE: Tool-Name/Details durch Epirus bestätigen. -->
+            <p>Jeder Einsatz wird digital dokumentiert: Einsatzgrund, Zeitaufwand, Ergebnis und Fotos landen in Ihrem Kundenportal. Sie sehen in Echtzeit, was wann in Ihrem Objekt erledigt wurde - und was noch ansteht.</p>
           </div>
         </div>
         <div class="why-point">
-          <div class="why-point-icon">🎯</div>
+          <div class="why-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
           <div>
             <h4>Feste Ansprechpartner</h4>
             <p>Kein Call-Center, kein Wechsel. Ein dedizierter Objektleiter kennt Ihre Immobilie in und auswendig, vom ersten Tag an.</p>
+          </div>
+        </div>
+        <div class="why-point">
+          <div class="why-point-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg></div>
+          <div>
+            <h4>Direkt: kein Portal, kein Umweg</h4>
+            <p>Wer über Vermittlungsportale anfrägt, erhält Angebote von fünf Anbietern und muss selbst vergleichen. Bei Epirus bekommen Sie einen Rückruf, direkt von uns, nicht von einem Callcenter.</p>
           </div>
         </div>
       </div>
@@ -296,15 +774,17 @@
       <div class="word"><span>sagen.</span></div>
     </h2>
     <!-- Google Rating Badge -->
-    <div class="google-badge">
-      <svg class="google-g" viewBox="0 0 24 24" width="28" height="28"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09a6.97 6.97 0 010-4.17V7.07H2.18a11.01 11.01 0 000 9.87l3.66-2.85z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.85c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-      <div class="google-badge-info">
-        <div class="google-badge-stars">
-          <span class="google-badge-score">5.0</span>
-          <span class="testi-stars">★★★★★</span>
+    <div class="testi-head-row">
+      <a href="https://www.google.com/maps/search/Epirus+Facility+Management+Neu-Isenburg" target="_blank" rel="noopener" class="google-badge">
+        <svg class="google-g" viewBox="0 0 24 24" width="28" height="28"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09a6.97 6.97 0 010-4.17V7.07H2.18a11.01 11.01 0 000 9.87l3.66-2.85z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.85c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <div class="google-badge-info">
+          <div class="google-badge-stars">
+            <span class="google-badge-score">5.0</span>
+            <span class="testi-stars">★★★★★</span>
+          </div>
+          <span class="google-badge-count">19 Rezensionen auf Google</span>
         </div>
-        <span class="google-badge-count">19 Rezensionen auf Google</span>
-      </div>
+      </a>
     </div>
   </div>
   <div class="testi-track">
@@ -347,7 +827,7 @@
 
     <div class="testi-card">
       <div class="testi-stars">★★★★★</div>
-      <p class="testi-text">"Ich bin sehr zufrieden mit den Dienstleistungen von Epirus Facility Management. Das Team war professionell, pünktlich und hat hervorragende Arbeit geleistet. Kann ich nur weiterempfehlen!!!"</p>
+      <p class="testi-text">"Ich bin sehr zufrieden mit den Dienstleistungen von Epirus Facility Management GmbH. Das Team war professionell, pünktlich und hat hervorragende Arbeit geleistet. Kann ich nur weiterempfehlen!!!"</p>
       <div class="testi-author">
         <div class="testi-avatar">SG</div>
         <div>
@@ -393,6 +873,103 @@
   </div>
 </section>
 
+<!-- Kontakt-Feed: Creme-Card im Zwei-Ton-Bereich -->
+
+<!-- FAQ -->
+<section style="padding:100px 5%;background:var(--bg-2);border-top:1.5px solid var(--border)">
+  <div class="container" style="max-width:860px">
+    <p class="section-tag" style="opacity:1;transform:none">FAQ</p>
+    <h2 class="section-title" style="margin-bottom:56px">
+      <div class="word"><span style="transform:none">Häufig gestellte</span></div>
+      <div class="word"><span style="transform:none">Fragen.</span></div>
+    </h2>
+    <div style="display:flex;flex-direction:column;gap:0" id="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Wie schnell kann ich einen Service anfordern?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Sie können unseren Service jederzeit anfordern. Wir antworten Ihnen auf Ihre Anfrage in der Regel während der Betriebszeiten innerhalb von 2 Stunden.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Welche Dienstleistungen bieten Sie an?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Epirus Facility Management bietet ganzheitliche Dienstleistungen rund um den technischen und infrastrukturellen Betrieb von Immobilien. Unser Fokus liegt auf klaren Abläufen, transparenter Steuerung und schneller Reaktion.</p>
+          <p style="margin-top:14px">Zu unseren Leistungen gehören unter anderem:</p>
+          <ul style="margin-top:10px;padding-left:0;list-style:none;display:flex;flex-direction:column;gap:8px">
+            <li style="display:flex;align-items:center;gap:10px"><span style="color:var(--red);font-weight:700">→</span> Technisches Facility Management</li>
+            <li style="display:flex;align-items:center;gap:10px"><span style="color:var(--red);font-weight:700">→</span> Infrastrukturelles Facility Management</li>
+            <li style="display:flex;align-items:center;gap:10px"><span style="color:var(--red);font-weight:700">→</span> Kaufmännisches Facility Management</li>
+            <li style="display:flex;align-items:center;gap:10px"><span style="color:var(--red);font-weight:700">→</span> Störungsmanagement und Notdienst</li>
+            <li style="display:flex;align-items:center;gap:10px"><span style="color:var(--red);font-weight:700">→</span> Sanierungs- und Sonderprojekte</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span>Wie kann ich von der ETA-Methode profitieren?</span>
+          <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Als Pionier der ETA-Methode hat Epirus Facility Management Prozesse geschaffen, die Effizienz, Transparenz und akutes Handeln verbinden.</p>
+          <p style="margin-top:12px">Leistungen, Status und Abläufe werden in Echtzeit sichtbar und nachvollziehbar. So entsteht Kontrolle ohne Mehraufwand und Ruhe im Tagesgeschäft.</p>
+          <p style="margin-top:12px">Wie sich das konkret in Ihrem Objekt anfühlt, lässt sich am besten im direkten Austausch erklären.</p>
+        </div>
+      </div>
+
+    </div>
+    <!-- GEO 3.7: Verweis auf die zentrale FAQ-Seite -->
+    <p style="margin-top:36px;text-align:center;font-size:.92rem"><a href="faq.html" style="color:var(--red);font-weight:700;text-decoration:none">Alle Fragen &amp; Antworten im &#220;berblick &rarr;</a></p>
+  </div>
+</section>
+
+<style>
+.faq-item{border-bottom:1.5px solid var(--border)}
+.faq-item:first-child{border-top:1.5px solid var(--border)}
+.faq-q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:24px 0;background:none;border:none;cursor:pointer;
+  font-family:'Barlow',sans-serif;font-size:1.05rem;font-weight:600;
+  color:var(--navy);text-align:left;
+  transition:color var(--fast);
+}
+.faq-q:hover{color:var(--red)}
+.faq-chevron{flex-shrink:0;transition:transform .3s ease;color:var(--red)}
+.faq-q[aria-expanded="true"] .faq-chevron{transform:rotate(180deg)}
+.faq-a{
+  overflow:hidden;max-height:0;
+  transition:max-height .4s ease, padding .3s ease;
+  font-size:.9rem;color:var(--text-2);line-height:1.8;
+}
+.faq-a.open{max-height:600px;padding-bottom:24px}
+</style>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const answer = item.querySelector('.faq-a');
+    const isOpen = answer.classList.contains('open');
+    // close all
+    document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+    document.querySelectorAll('.faq-q').forEach(b => b.setAttribute('aria-expanded','false'));
+    // open clicked if was closed
+    if (!isOpen) {
+      answer.classList.add('open');
+      btn.setAttribute('aria-expanded','true');
+    }
+  });
+});
+</script>
+
 <!-- CTA (dark stripe) -->
 <section id="cta">
   <div class="cta-bg"></div>
@@ -405,21 +982,26 @@
       <div class="word"><span><em>Angebot?</em></span></div>
     </h2>
     <p class="section-sub" style="text-align:center;margin:0 auto 16px">
-      Kostenlose Erstberatung und individuelles Angebot innerhalb von 48 Stunden.
+      Kostenlose Erstberatung und individuelles Angebot innerhalb von 48 Stunden – für Gewerbeimmobilien und Hotels im Rhein-Main-Gebiet.
     </p>
-    <div class="cta-grid">
+    <div class="cta-grid cta-card">
       <div class="cta-box">
+        <!-- HIER AENDERN: Telefonnummer (2x: Link + Anzeige-Text) -->
         <h3>Direkt anrufen</h3>
         <p>Unser Team ist werktags von 7–18 Uhr erreichbar. Außerhalb der Geschäftszeiten nimmt unser Notdienst Ihre Anfrage entgegen.</p>
         <div class="cta-phone">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72c.12 1 .33 1.97.66 2.9a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.93.33 1.9.54 2.9.66A2 2 0 0122 15.92z"/></svg>
           +49 174 7192 840
         </div>
+        <a class="cta-mail" href="mailto:info@epirusfm.de">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          info@epirusfm.de
+        </a>
       </div>
       <div class="cta-box">
         <h3>Angebot anfragen</h3>
         <p>Schildern Sie uns kurz Ihr Objekt, wir melden uns binnen 24 Stunden mit einem maßgeschneiderten Angebot.</p>
-        <form class="cta-form" name="kontakt-hauptseite" method="POST" data-netlify="true">
+        <form class="cta-form" name="kontakt-hauptseite" method="POST" action="form-handler.php">
   <input type="hidden" name="form-name" value="kontakt-hauptseite">
           <input type="text" placeholder="Name & Unternehmen">
           <input type="tel" placeholder="Telefonnummer">
@@ -430,9 +1012,15 @@
             <option>Technisches FM</option>
             <option>Winterdienst</option>
             <option>Grünflächenpflege</option>
+            <option>St&#246;rungsmanagement &amp; Notdienst</option>
+            <option>FM f&#252;r Hotels</option>
+            <option>Infrastrukturelles FM</option>
+            <option>Kaufm&#228;nnisches FM</option>
             <option>Alle Leistungen</option>
+            <option>Sonstiges</option>
           </select>
-          <label style="display:flex;align-items:flex-start;gap:8px;margin:8px 0;font-size:.78rem;color:rgba(255,255,255,.5);cursor:pointer"><input type="checkbox" required style="margin-top:3px;accent-color:var(--red)"><span>Ich habe die <a href="datenschutz.html" style="color:var(--red-l);text-decoration:underline">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.</span></label>
+          <input type="text" name="sonstiges" class="sonstiges-feld" placeholder="Sonstiges — bitte kurz beschreiben" aria-label="Sonstiges bitte beschreiben">
+          <label style="display:flex;align-items:flex-start;gap:10px;margin:12px 0;font-size:.85rem;color:rgba(255,255,255,.85);cursor:pointer;line-height:1.5"><input type="checkbox" required style="margin-top:3px;accent-color:var(--red)"><span>Ich habe die <a href="datenschutz.html" style="color:var(--red-l);text-decoration:underline">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zu.</span></label>
           <button type="submit" class="btn-primary magnetic" style="width:100%;justify-content:center">
             <span>Anfrage senden</span>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
@@ -444,11 +1032,12 @@
 </section>
 
 <!-- Footer (dark) -->
+
 <footer>
   <div class="footer-grid">
     <div class="footer-brand">
       <div class="nav-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:60px;width:auto;display:block"></div>
-      <p>Professionelles Facility Management für Gewerbeimmobilien und Hotels, sichtbar, persönlich, transparent.</p>
+      <p>Professionelles Facility Management für Gewerbeimmobilien und Hotels in Neu-Isenburg, Frankfurt und im Rhein-Main-Gebiet, sichtbar, persönlich, transparent.</p>
     </div>
     <div class="footer-col">
       <h4>Leistungen</h4>
@@ -458,6 +1047,10 @@
         <li><a href="lp-technisches-fm.html">Technisches FM</a></li>
         <li><a href="lp-winterdienst.html">Winterdienst</a></li>
         <li><a href="lp-gruenflaechen.html">Grünflächenpflege</a></li>
+        <li><a href="lp-stoerungsmanagement-notdienst.html">St&#246;rungsmanagement &amp; Notdienst</a></li>
+        <li><a href="lp-facility-management-hotels.html">FM f&#252;r Hotels</a></li>
+        <li><a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a></li>
+        <li><a href="lp-kaufmaennisches-fm.html">Kaufm&#228;nnisches FM</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -465,14 +1058,15 @@
       <ul>
         <li><a href="tel:+491747192840">+49 174 7192 840</a></li>
         <li><a href="mailto:info@epirusfm.de">info@epirusfm.de</a></li>
+        <li style="font-size:.84rem;color:rgba(255,255,255,.45)">Werner-Heisenberg-Str. 2a<br>63263 Neu-Isenburg</li>
       </ul>
     </div>
     <div class="footer-col">
       <h4>Rechtliches</h4>
       <ul>
+        <li><a href="faq.html">FAQ</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
         <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="agb.html">AGB</a></li>
         <li><a href="#" id="cookie-settings">Cookie-Einstellungen</a></li>
       </ul>
     </div>
@@ -481,6 +1075,281 @@
     <p>© 2026 Epirus FM GmbH. Alle Rechte vorbehalten.</p>
   </div>
 </footer>
+
+<!-- Chat Widget -->
+<div id="chat-widget">
+
+  <!-- Bubble Teaser (shown before opening) -->
+  <div id="chat-teaser">
+    <button id="chat-teaser-close" aria-label="Schließen"><svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <div class="chat-teaser-avatar">
+      <!-- FOTO: src hier auf Geschäftsführer-Foto ändern, z.B. src="team/geschaeftsfuehrer.jpg" -->
+      <div class="chat-avatar-placeholder">GF</div>
+      <span class="chat-avatar-dot"></span>
+    </div>
+    <p>Hallo, haben Sie Fragen? Schreiben Sie uns bitte hier.</p>
+  </div>
+
+  <!-- Toggle Button -->
+  <button id="chat-toggle" aria-label="Chat öffnen">
+    <svg id="chat-icon-open" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+    <svg id="chat-icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:none"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+
+  <!-- Panel -->
+  <div id="chat-panel" aria-hidden="true">
+    <div class="chat-header">
+      <div class="chat-header-avatar-wrap">
+        <div class="chat-avatar-placeholder">GF</div>
+        <span class="chat-avatar-dot"></span>
+      </div>
+      <div class="chat-header-info">
+        <strong>Epirus FM</strong>
+        <span>Antwortet per E-Mail · meist in &lt;24h</span>
+      </div>
+    </div>
+
+    <!-- Form State -->
+    <div id="chat-form-wrap">
+      <div class="chat-bubble-incoming">
+        Hallo! Wie können wir Ihnen helfen? Hinterlassen Sie uns eine Nachricht. Wir melden uns per E-Mail.
+      </div>
+      <form id="chat-form" name="chat-kontakt" method="POST" action="form-handler.php" novalidate>
+        <input type="hidden" name="form-name" value="chat-kontakt">
+        <div class="chat-field">
+          <input type="text" name="name" placeholder="Ihr Name *" required autocomplete="name">
+        </div>
+        <div class="chat-field">
+          <input type="email" name="email" placeholder="Ihre E-Mail *" required autocomplete="email">
+        </div>
+        <div class="chat-field">
+          <textarea name="nachricht" placeholder="Ihre Nachricht *" required rows="3"></textarea>
+        </div>
+        <button type="submit" class="chat-send-btn">
+          <span>Nachricht senden</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <p class="chat-privacy">Mit dem Senden stimmen Sie der Verarbeitung Ihrer Daten gemäß unserer <a href="datenschutz.html">Datenschutzerklärung</a> zu.</p>
+      </form>
+    </div>
+
+    <!-- Success State -->
+    <div id="chat-success" hidden>
+      <div class="chat-bubble-incoming">
+        Vielen Dank für Ihre Nachricht! Wir haben Ihre Anfrage erhalten und melden uns in der Regel innerhalb von 24 Stunden per E-Mail bei Ihnen.
+      </div>
+      <div class="chat-success-info">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Eine Kopie geht an Ihre E-Mail-Adresse.
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* ── Chat Widget ───────────────────────────── */
+#chat-widget{
+  position:fixed;
+  bottom:24px;left:24px;
+  z-index:950;
+}
+
+/* Toggle Button — rot, unten links */
+#chat-toggle{
+  position:relative;
+  width:56px;height:56px;
+  background:var(--red);color:#fff;
+  border:none;border-radius:16px;
+  display:flex;align-items:center;justify-content:center;
+  cursor:pointer;
+  box-shadow:0 4px 20px rgba(212,21,26,.45);
+  transition:background .2s,transform .2s;
+  z-index:951;
+}
+#chat-toggle:hover{background:#b81118;transform:scale(1.06)}
+
+/* Teaser Bubble */
+#chat-teaser{
+  position:fixed;
+  bottom:92px;left:24px;
+  display:flex;align-items:center;gap:12px;
+  background:#fff;
+  border-radius:14px 14px 14px 4px;
+  padding:14px 16px 14px 14px;
+  box-shadow:0 6px 28px rgba(0,0,0,.15);
+  max-width:260px;
+  animation:teaserIn .4s cubic-bezier(.16,1,.3,1) both;
+  z-index:950;
+}
+#chat-teaser.hidden{display:none}
+@keyframes teaserIn{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:translateY(0)}
+}
+#chat-teaser-close{
+  position:absolute;top:-10px;right:-10px;
+  width:22px;height:22px;
+  background:#555;color:#fff;
+  border:none;border-radius:50%;
+  font-size:.65rem;line-height:1;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;
+  padding:0;
+}
+#chat-teaser p{
+  font-size:.8rem;line-height:1.5;color:#222;margin:0;
+}
+.chat-teaser-avatar{position:relative;flex-shrink:0}
+.chat-avatar-placeholder{
+  width:42px;height:42px;border-radius:50%;
+  background:linear-gradient(135deg,#D4151A,#8B0000);
+  color:#fff;font-weight:700;font-size:.85rem;
+  display:flex;align-items:center;justify-content:center;
+  /* FOTO: Ersetze den Platzhalter mit <img> wenn Foto vorhanden */
+}
+.chat-avatar-dot{
+  position:absolute;bottom:1px;right:1px;
+  width:11px;height:11px;
+  background:#22c55e;
+  border:2px solid #fff;
+  border-radius:50%;
+}
+
+/* Panel */
+#chat-panel{
+  position:fixed;
+  bottom:92px;left:24px;
+  width:320px;
+  background:#fff;
+  border-radius:16px;
+  box-shadow:0 8px 40px rgba(0,0,0,.18);
+  overflow:hidden;
+  transform:translateY(12px) scale(.97);
+  opacity:0;
+  pointer-events:none;
+  transition:transform .35s cubic-bezier(.16,1,.3,1),opacity .3s ease;
+  transform-origin:bottom left;
+  z-index:950;
+}
+#chat-panel.open{
+  transform:translateY(0) scale(1);
+  opacity:1;pointer-events:all;
+}
+.chat-header{
+  background:var(--red);
+  padding:16px 18px;
+  display:flex;align-items:center;gap:12px;
+}
+.chat-header-avatar-wrap{position:relative;flex-shrink:0}
+.chat-header-avatar-wrap .chat-avatar-placeholder{width:36px;height:36px;font-size:.75rem}
+.chat-header-avatar-wrap .chat-avatar-dot{bottom:0;right:0}
+.chat-header-info strong{display:block;color:#fff;font-size:.88rem}
+.chat-header-info span{color:rgba(255,255,255,.6);font-size:.72rem}
+#chat-form-wrap,#chat-success{padding:16px 18px 18px}
+.chat-bubble-incoming{
+  background:#f1f3f4;
+  border-radius:4px 14px 14px 14px;
+  padding:12px 14px;
+  font-size:.82rem;line-height:1.6;color:#333;
+  margin-bottom:14px;
+}
+.chat-field{margin-bottom:10px}
+.chat-field input,
+.chat-field textarea{
+  width:100%;padding:10px 12px;
+  border:1.5px solid #e0e0e0;border-radius:10px;
+  font-size:.82rem;font-family:inherit;
+  color:#222;background:#fafafa;
+  outline:none;resize:none;
+  transition:border-color .2s;box-sizing:border-box;
+}
+.chat-field input:focus,
+.chat-field textarea:focus{border-color:var(--red);background:#fff}
+.chat-send-btn{
+  width:100%;display:flex;align-items:center;justify-content:center;gap:8px;
+  background:var(--red);color:#fff;
+  border:none;border-radius:10px;
+  padding:12px;font-size:.85rem;font-weight:700;
+  cursor:pointer;margin-top:4px;transition:background .2s;
+}
+.chat-send-btn:hover{background:#b81118}
+.chat-privacy{font-size:.68rem;color:#aaa;margin-top:8px;line-height:1.5;text-align:center}
+.chat-privacy a{color:#888}
+.chat-success-info{
+  display:flex;align-items:center;gap:8px;
+  font-size:.78rem;color:#666;
+  background:#f8f9fa;border-radius:10px;
+  padding:10px 12px;margin-top:8px;
+}
+.chat-success-info svg{flex-shrink:0;stroke:#888}
+@media(max-width:500px){
+  #chat-widget{bottom:16px;left:16px}
+  #chat-panel{width:calc(100vw - 32px)}
+  #chat-teaser{max-width:calc(100vw - 100px)}
+}
+</style>
+
+<script>
+(function(){
+  const toggle  = document.getElementById('chat-toggle');
+  const panel   = document.getElementById('chat-panel');
+  const teaser  = document.getElementById('chat-teaser');
+  const teaserClose = document.getElementById('chat-teaser-close');
+  const iconOpen  = document.getElementById('chat-icon-open');
+  const iconClose = document.getElementById('chat-icon-close');
+  const form    = document.getElementById('chat-form');
+  const formWrap = document.getElementById('chat-form-wrap');
+  const success  = document.getElementById('chat-success');
+
+  function openPanel() {
+    teaser.classList.add('hidden');
+    panel.classList.add('open');
+    panel.setAttribute('aria-hidden', 'false');
+    iconOpen.style.display  = 'none';
+    iconClose.style.display = 'block';
+  }
+  function closePanel() {
+    panel.classList.remove('open');
+    panel.setAttribute('aria-hidden', 'true');
+    iconOpen.style.display  = 'block';
+    iconClose.style.display = 'none';
+  }
+
+  toggle.addEventListener('click', () => {
+    panel.classList.contains('open') ? closePanel() : openPanel();
+  });
+  teaser.addEventListener('click', (e) => {
+    if (!e.target.closest('#chat-teaser-close')) openPanel();
+  });
+  teaserClose.addEventListener('click', (e) => {
+    e.stopPropagation();
+    teaser.classList.add('hidden');
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('.chat-send-btn span');
+    btn.textContent = 'Wird gesendet…';
+    try {
+      const res = await fetch('form-handler.php', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'application/json', 'X-Requested-With': 'fetch'},
+        body: new URLSearchParams(new FormData(form)).toString()
+      });
+      const data = await res.json().catch(function(){ return {ok:false}; });
+      if (!data.ok) throw new Error('send-failed');
+      formWrap.hidden = true;
+      success.hidden  = false;
+    } catch {
+      btn.textContent = 'Fehler – bitte erneut versuchen';
+    }
+  });
+})();
+</script>
+
+<!-- Google Translate (hidden default bar) -->
+<div id="google_translate_element" style="display:none"></div>
+<!-- Google Translate wird erst nach Marketing-Einwilligung geladen (botprotect.js); -->
+<!-- CSS und JS des Sprach-Buttons liegen zentral in styles.css und main.js. -->
 
 <script src="libs/gsap.min.js"></script>
 <script src="libs/ScrollTrigger.min.js"></script>
@@ -511,7 +1380,7 @@
       </div>
       <div class="cb-toggle-row">
         <label class="cb-switch"><input type="checkbox" id="cb-marketing"><span class="cb-slider"></span></label>
-        <div class="cb-toggle-label"><strong>Marketing &amp; Werbung</strong><span>Google Ads Conversion Tracking &amp; personalisierte Werbung</span></div>
+        <div class="cb-toggle-label"><strong>Marketing &amp; Werbung</strong><span>Google Ads Conversion Tracking, personalisierte Werbung und SprachÜbersetzung (Google Translate)</span></div>
       </div>
     </div>
     <div class="cb-buttons">
@@ -540,6 +1409,7 @@
     }
     window.dataLayer=window.dataLayer||[];
     window.dataLayer.push({'event':'consent_update','gtm_consent':gtm?'granted':'denied','marketing_consent':marketing?'granted':'denied'});
+    try{document.dispatchEvent(new CustomEvent('epirus-consent',{detail:{gtm:gtm,marketing:marketing}}));}catch(e){}
   }
   function saveConsent(gtm,marketing){
     localStorage.setItem(STORAGE_KEY,JSON.stringify({gtm:gtm,marketing:marketing,timestamp:new Date().toISOString(),version:'2.0',expires:Date.now()+EXPIRY_DAYS*86400000}));
@@ -567,10 +1437,10 @@
   if(saved){applyConsent(saved.gtm||false,saved.marketing||false);}else{setTimeout(openBanner,600);}
 })();
 </script>
+
+<script>(function(){var last=window.scrollY;var nav=document.getElementById('nav');var teaser=document.getElementById('chat-teaser');var upd=function(){var y=window.scrollY;if(y>140&&y>last+2){nav.classList.add('nav-hidden')}else if(y<last-2||y<=140){nav.classList.remove('nav-hidden')}last=y;if(teaser){if(y>window.innerHeight*.85){teaser.classList.add('teaser-show')}else{teaser.classList.remove('teaser-show')}}};window.addEventListener('scroll',upd,{passive:true});upd()})();</script>
 </body>
 </html>
-
-
 
 
 
