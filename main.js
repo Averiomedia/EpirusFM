@@ -410,6 +410,57 @@
     if (!burger || !links) return;
     let open = false;
     burger.setAttribute('aria-expanded', 'false');
+
+    /* Variante A: Vollbild-Overlay (#mobile-menu) – z.B. index.html */
+    const overlay = document.getElementById('mobile-menu');
+    if (overlay) {
+      const setOpen = state => {
+        open = state;
+        overlay.classList.toggle('open', open);
+        overlay.setAttribute('aria-hidden', open ? 'false' : 'true');
+        burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+        burger.classList.toggle('is-open', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+        burger.children[0].style.transform = open ? 'translateY(7px) rotate(45deg)' : '';
+        burger.children[1].style.opacity   = open ? '0' : '1';
+        burger.children[2].style.transform = open ? 'translateY(-7px) rotate(-45deg)' : '';
+      };
+      burger.addEventListener('click', () => setOpen(!open));
+      overlay.querySelector('.mm-close').addEventListener('click', () => setOpen(false));
+      // Accordion: Leistungen
+      const acc = overlay.querySelector('.mm-acc');
+      if (acc) {
+        const accBtn = acc.querySelector('.mm-acc-btn');
+        accBtn.addEventListener('click', () => {
+          const state = !acc.classList.contains('open');
+          acc.classList.toggle('open', state);
+          accBtn.setAttribute('aria-expanded', state ? 'true' : 'false');
+        });
+      }
+      // Sprach-Toggle spiegeln (gleiche Logik wie nav-lang-btn)
+      const mmLang = overlay.querySelector('.mm-lang');
+      const navLang = document.getElementById('lang-toggle');
+      if (mmLang && navLang) {
+        mmLang.addEventListener('click', () => navLang.click());
+        const syncLang = () => {
+          const flag = document.getElementById('lang-flag');
+          const label = document.getElementById('lang-label');
+          if (flag)  mmLang.querySelector('.mm-lang-flag').textContent = flag.textContent;
+          if (label) mmLang.querySelector('.mm-lang-label').textContent = label.textContent;
+        };
+        navLang.addEventListener('click', () => setTimeout(syncLang, 50));
+        if (window.MutationObserver) {
+          new MutationObserver(syncLang).observe(navLang, { childList: true, subtree: true });
+        }
+      }
+      // Links schließen das Menü
+      overlay.querySelectorAll('a[href]').forEach(a => a.addEventListener('click', () => setOpen(false)));
+      document.addEventListener('keydown', e => { if (e.key === 'Escape' && open) setOpen(false); });
+      window.addEventListener('resize', () => { if (window.innerWidth > 768 && open) setOpen(false); });
+      return;
+    }
+
+    /* Variante B: altes Verhalten (andere Seiten) */
     burger.addEventListener('click', () => {
       open = !open;
       links.style.cssText = open
