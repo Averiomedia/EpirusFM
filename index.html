@@ -163,15 +163,16 @@ html[lang="en"] .k4-chiptext-en{display:inline}
    -> CTAs (kompakt, nebeneinander). Intro ohne erzwungene Umbrueche,
    Luft fuer die Chip-Labels zu den Screen-Raendern. */
 @media (max-width:768px){
+  #hero.k4-hero{padding:88px 5% 130px}
   .k4-left{display:contents}
   .k4-wrap{gap:0}
-  .k4-fig{order:1;margin:0 0 20px;padding:0 12px}
+  .k4-fig{order:1;max-width:310px;margin:0 auto 12px;padding:0 12px}
   .k4-left h1{order:2}
-  #hero.k4-hero .hero-title{margin-bottom:14px}
-  .k4-left > p:not(.hero-sub){order:3;margin:0 0 14px!important}
+  #hero.k4-hero .hero-title{margin-bottom:10px}
+  .k4-left > p:not(.hero-sub){order:3;margin:0 0 10px!important}
   .k4-left > p:not(.hero-sub) br{display:none}
-  #hero.k4-hero .hero-sub{order:4;margin:0 0 4px}
-  .k4-left .hero-ctas{order:5;margin-top:16px}
+  #hero.k4-hero .hero-sub{order:4;margin:0 0 2px}
+  .k4-left .hero-ctas{order:5;margin-top:12px}
   /* kompakte CTAs nebeneinander statt zwei volle Breiten
      (styles.css setzt mobil flex-direction:column + width:100% + max-width:320px) */
   #hero.k4-hero .hero-ctas{gap:8px;flex-wrap:nowrap;flex-direction:row;align-items:stretch}
