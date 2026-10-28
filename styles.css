@@ -1956,3 +1956,58 @@ body{top:0!important}
   background:rgba(0,0,0,.08);
   border-color:rgba(0,0,0,.25);
 }
+
+/* ============================================================
+   Mobiles Vollbild-Menue ( SEMFLOW-Stil, Epirus-Farben )
+   Markup: <div id="mobile-menu"> nach </nav> auf jeder Seite.
+   Steuerung: main.js (index/datenschutz) bzw. mobile-nav.js.
+   ============================================================ */
+#mobile-menu{display:none}
+@media (max-width:768px){
+  #mobile-menu{
+    display:flex;flex-direction:column;
+    position:fixed;inset:0;z-index:1000;
+    background:#0E1A2B;
+    padding:calc(18px + env(safe-area-inset-top)) calc(22px + env(safe-area-inset-right)) calc(28px + env(safe-area-inset-bottom)) calc(22px + env(safe-area-inset-left));
+    overflow-y:auto;overscroll-behavior:contain;
+    transform:translateX(-100%);
+    transition:transform .35s cubic-bezier(.16,1,.3,1);
+    visibility:hidden;
+  }
+  #mobile-menu.open{transform:translateX(0);visibility:visible}
+  .mm-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px}
+  .mm-close{background:none;border:0;padding:8px;cursor:pointer;color:#fff;line-height:0}
+  .mm-close svg{width:26px;height:26px}
+  .mm-nav{display:flex;flex-direction:column}
+  .mm-link{
+    display:flex;align-items:center;justify-content:space-between;width:100%;
+    background:none;border:0;border-bottom:1px solid rgba(255,255,255,.12);
+    padding:18px 2px;min-height:56px;
+    font-family:inherit;font-size:1.12rem;font-weight:500;color:#fff;
+    text-decoration:none;text-align:left;cursor:pointer;
+  }
+  .mm-link svg{width:20px;height:20px;color:rgba(255,255,255,.55);transition:transform .3s;flex-shrink:0}
+  .mm-acc.open .mm-acc-btn svg{transform:rotate(180deg)}
+  .mm-acc-panel{display:none;flex-direction:column;padding:6px 0 14px}
+  .mm-acc.open .mm-acc-panel{display:flex}
+  .mm-acc-label{margin:14px 2px 4px;font-size:.68rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#7FB4E8}
+  .mm-acc-panel a{padding:11px 2px 11px 14px;font-size:.95rem;color:rgba(255,255,255,.75);text-decoration:none;border-left:2px solid rgba(240,58,63,.5);margin:1px 0}
+  .mm-acc-panel a:hover{color:#fff}
+  .mm-cta{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    margin-top:28px;padding:17px 20px;min-height:56px;
+    background:var(--red);color:#fff;border-radius:8px;
+    font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+    text-decoration:none;
+  }
+  .mm-lang{
+    display:flex;align-items:center;gap:8px;align-self:flex-start;
+    margin-top:18px;padding:9px 14px;min-height:42px;
+    background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:6px;
+    font-family:inherit;font-size:.72rem;font-weight:600;letter-spacing:.1em;color:#fff;cursor:pointer;
+  }
+  .mm-sep{height:1px;background:rgba(255,255,255,.12);margin:26px 0 22px}
+  .mm-contact{display:flex;flex-direction:column;gap:20px}
+  .mm-contact a,.mm-contact span{display:flex;align-items:flex-start;gap:14px;font-size:.98rem;color:rgba(255,255,255,.85);text-decoration:none;line-height:1.5}
+  .mm-contact svg{width:20px;height:20px;color:var(--red-l);flex-shrink:0;margin-top:2px}
+}
