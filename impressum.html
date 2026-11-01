@@ -2,13 +2,17 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0E1A2B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <title>Impressum | Epirus FM</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="fonts/barlow-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
   <style>
     .legal-page{max-width:800px;margin:0 auto;padding:140px 5% 80px}
-    .legal-page h1{font-family:'Inter',sans-serif;font-weight:800;font-size:2.4rem;margin-bottom:32px;color:var(--navy)}
-    .legal-page h2{font-family:'Inter',sans-serif;font-weight:700;font-size:1.2rem;margin:28px 0 12px;color:var(--navy)}
+    .legal-page h1{font-family:'Barlow',sans-serif;font-weight:800;font-size:2.4rem;margin-bottom:32px;color:var(--navy)}
+    .legal-page h2{font-family:'Barlow',sans-serif;font-weight:700;font-size:1.2rem;margin:28px 0 12px;color:var(--navy)}
     .legal-page p,.legal-page li{font-size:.9rem;color:var(--text-2);line-height:1.8}
     .legal-page a{color:var(--red)}
     .legal-placeholder{background:var(--bg-2);border:2px dashed var(--border);border-radius:var(--radius-l);padding:48px;text-align:center;margin:40px 0}
@@ -17,65 +21,130 @@
 </head>
 <body>
 <nav id="nav" class="scrolled">
-  <a href="index.html" class="nav-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:60px;width:auto;display:block"></a>
+  <a href="index.html" class="nav-logo"><img src="logo-dark.svg" alt="Epirus FM" style="height:60px;width:auto;display:block"></a>
   <ul class="nav-links">
     <li><a href="index.html#services">Leistungen</a></li>
     <li><a href="index.html#why">Über uns</a></li>
-    <li><a href="index.html#testimonials">Referenzen</a></li>
+    <li><a href="index.html#testimonials">Bewertungen</a></li>
   </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- Mobiles Vollbild-Menü (nur <=768px sichtbar) -->
+<div id="mobile-menu" aria-hidden="true">
+  <div class="mm-head">
+    <a href="index.html" class="mm-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:48px;width:auto;display:block"></a>
+    <button class="mm-close" aria-label="Men&uuml; schlie&szlig;en">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav class="mm-nav">
+    <div class="mm-acc">
+      <button class="mm-link mm-acc-btn" aria-expanded="false">
+        Leistungen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="mm-acc-panel">
+        <p class="mm-acc-label">Technisches FM</p>
+        <a href="lp-technisches-fm.html">Technisches FM</a>
+        <a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a>
+        <a href="lp-stoerungsmanagement-notdienst.html">St&ouml;rungsmanagement &amp; Notdienst</a>
+        <p class="mm-acc-label">Kaufm&auml;nnisch &amp; Management</p>
+        <a href="lp-kaufmaennisches-fm.html">Kaufm&auml;nnisches FM</a>
+        <a href="lp-facility-management.html">Facility Management</a>
+        <a href="lp-facility-management-hotels.html">FM f&uuml;r Hotels</a>
+        <a href="lp-gebaeudemanagement.html">Geb&auml;udemanagement</a>
+        <p class="mm-acc-label">Reinigung &amp; Pflege</p>
+        <a href="lp-gebaeudereinigung.html">Geb&auml;udereinigung</a>
+        <a href="lp-gruenflaechen.html">Gr&uuml;nfl&auml;chenpflege</a>
+        <a href="lp-winterdienst.html">Winterdienst</a>
+        <a href="lp-hausmeisterservice.html">Hausmeisterservice</a>
+        <p class="mm-acc-label">Service</p>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt &amp; Angebot</a>
+      </div>
+    </div>
+    <a class="mm-link" href="ueber-uns.html">&Uuml;ber uns</a>
+    <a class="mm-link" href="faq.html">FAQ</a>
+    <a class="mm-link" href="kontakt.html">Kontakt</a>
+  </nav>
+  <a class="mm-cta" href="kontakt.html">
+    Kostenloses Angebot
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+  <button class="mm-lang" title="Switch to English">
+    <span class="mm-lang-flag">🇬🇧</span>
+    <span class="mm-lang-label">EN</span>
+  </button>
+  <div class="mm-sep"></div>
+  <div class="mm-contact">
+    <a href="tel:+491747192840">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72c.12 1 .33 1.97.66 2.9a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.93.33 1.9.54 2.9.66A2 2 0 0122 15.92z"/></svg>
+      +49 174 7192 840
+    </a>
+    <span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Werner-Heisenberg-Str. 2a<br>63263 Neu-Isenburg
+    </span>
+    <a href="mailto:info@epirusfm.de">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+      info@epirusfm.de
+    </a>
+  </div>
+</div>
 
 <main class="legal-page">
   <h1>Impressum</h1>
-  <p>Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</p>
-
-  <div class="legal-placeholder">
-    <p><strong>⚠ Platzhalter — Impressum muss vor Go-Live mit den vollständigen Angaben des Unternehmens befüllt werden.</strong></p>
-    <p style="margin-top:16px">Benötigte Angaben: Firmenname, Rechtsform, Geschäftsführer, vollständige Anschrift, Telefon, E-Mail, Handelsregisternummer, Registergericht, USt-IdNr.</p>
-  </div>
-
-  <h2>Unternehmen</h2>
   <p>
-    Epirus FM GmbH<br>
-    [Straße und Hausnummer]<br>
+    Epirus Facility Management GmbH<br>
+    Werner-Heisenberg-Straße 2a<br>
     63263 Neu-Isenburg
   </p>
 
+  <h2>Handelsregister</h2>
+  <p>
+    HRB 59330<br>
+    Registergericht: Amtsgericht Offenbach am Main
+  </p>
+
   <h2>Vertreten durch</h2>
-  <p>[Geschäftsführer Name]</p>
+  <p>Athanasios Ioannou</p>
 
   <h2>Kontakt</h2>
   <p>
-    Telefon: +49 174 7192 840<br>
-    E-Mail: info@epirusfm.de
-  </p>
-
-  <h2>Registereintrag</h2>
-  <p>
-    Registergericht: [Amtsgericht]<br>
-    Registernummer: [HRB-Nummer]
+    Telefon: <a href="tel:+4961027799215">06102 77 99 215</a><br>
+    E-Mail: <a href="mailto:info@epirusfm.de">info@epirusfm.de</a>
   </p>
 
   <h2>Umsatzsteuer-ID</h2>
-  <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: [USt-IdNr.]</p>
+  <p>
+    Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br>
+    DE464797193
+  </p>
 
   <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
-  <p>[Name, Anschrift]</p>
+  <p>Athanasios Ioannou, Anschrift wie oben</p>
 
-  <h2>Streitschlichtung</h2>
-  <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">ec.europa.eu/consumers/odr/</a></p>
+  <h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
   <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+  <p style="margin-top:32px;font-size:.8rem">Quelle: <a href="https://www.e-recht24.de/impressum-generator.html" target="_blank" rel="noopener">eRecht24</a></p>
 </main>
 
 <footer style="background:var(--bg-dark);padding:24px 5%">
   <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;max-width:1280px;margin:0 auto">
     <a href="index.html" class="nav-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:60px;width:auto;display:block"></a>
-    <div style="display:flex;gap:24px"><a href="impressum.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Impressum</a><a href="datenschutz.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Datenschutz</a><a href="#" id="cookie-settings" style="font-size:.78rem;color:rgba(255,255,255,.35)">Cookie-Einstellungen</a></div>
+    <div style="display:flex;gap:24px"><a href="faq.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">FAQ</a><a href="impressum.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Impressum</a><a href="datenschutz.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Datenschutz</a><a href="#" id="cookie-settings" style="font-size:.78rem;color:rgba(255,255,255,.35)">Cookie-Einstellungen</a></div>
     <p style="font-size:.78rem;color:rgba(255,255,255,.3)">© 2026 Epirus FM GmbH</p>
   </div>
 </footer>
+
+<script src="mobile-nav.js"></script>
 </body>
 </html>
+
 
 
 

@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0E1A2B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Kontakt – Epirus FM | Angebot anfragen</title>
+  <meta name="description" content="Kontaktieren Sie Epirus FM für ein kostenloses Erstgespräch. Angebot in 24 Stunden im Rhein-Main-Gebiet. +49 174 7192 840 – info@epirusfm.de">
+  <link rel="canonical" href="https://epirusfm.de/kontakt.html">
+  <meta property="og:title" content="Kontakt – Epirus FM | Angebot anfragen">
+  <meta property="og:description" content="Kontaktieren Sie Epirus FM für ein kostenloses Erstgespräch. Angebot in 24 Stunden im Rhein-Main-Gebiet. +49 174 7192 840 – info@epirusfm.de">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://epirusfm.de/kontakt.html">
+  <meta property="og:locale" content="de_DE">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Epirus Facility Management GmbH","url":"https://epirusfm.de/","telephone":"+491747192840","email":"info@epirusfm.de","address":{"@type":"PostalAddress","streetAddress":"Werner-Heisenberg-Straße 2a","postalCode":"63263","addressLocality":"Neu-Isenburg","addressCountry":"DE"},"areaServed":[{"@type":"City","name":"Neu-Isenburg"},{"@type":"City","name":"Frankfurt am Main"},{"@type":"State","name":"Rhein-Main-Gebiet"}]}
+  </script>
+  <link rel="preload" href="fonts/barlow-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+  <style>
+    .contact-hero {
+      background: var(--bg-dark);
+      padding: 140px 5% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 60% 40%, rgba(212,21,26,.12) 0%, transparent 60%);
+    }
+    .contact-hero-inner { max-width: 700px; position: relative; z-index: 1; }
+    .contact-hero h1 { font-size: clamp(2.5rem, 6vw, 5rem); font-weight: 800; color: #fff; line-height: 1.1; margin-bottom: 24px; }
+    .contact-hero h1 em { color: var(--red); font-style: italic; }
+    .contact-hero p { font-size: 1.05rem; color: rgba(255,255,255,.6); line-height: 1.8; }
+
+    /* Main contact section */
+    .contact-main {
+      padding: 100px 5%;
+      background: var(--bg);
+    }
+    .contact-grid {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 80px;
+      align-items: start;
+    }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+    /* Left: info */
+    .contact-info {}
+    .contact-info h2 { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
+    .contact-info p { color: var(--text-2); line-height: 1.75; margin-bottom: 40px; }
+
+    .contact-methods { display: flex; flex-direction: column; gap: 20px; margin-bottom: 48px; }
+    .contact-method {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 20px;
+      background: var(--bg-2);
+      border-radius: var(--radius-l);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color .3s, transform .2s;
+    }
+    .contact-method:hover { border-color: var(--red); transform: translateX(4px); }
+    .contact-method-icon {
+      width: 44px; height: 44px;
+      border-radius: 10px;
+      background: var(--red);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+    .contact-method-label { font-size: .75rem; color: var(--text-3); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 2px; }
+    .contact-method-value { font-weight: 600; font-size: .95rem; }
+
+    .contact-availability {
+      background: var(--bg-dark);
+      border-radius: var(--radius-l);
+      padding: 24px;
+      color: rgba(255,255,255,.7);
+      font-size: .88rem;
+      line-height: 1.7;
+    }
+    .contact-availability strong { color: #fff; display: block; margin-bottom: 8px; }
+    .avail-row { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,.06); }
+    .avail-row:last-child { border-bottom: none; }
+    .avail-green { color: #4ade80; font-weight: 600; }
+
+    /* Right: form */
+    .contact-form-wrap {
+      background: var(--bg-2);
+      border-radius: var(--radius-l);
+      border: 1px solid var(--border);
+      padding: 40px;
+    }
+    .contact-form-wrap h3 { font-size: 1.3rem; font-weight: 800; margin-bottom: 6px; }
+    .contact-form-wrap p { color: var(--text-2); font-size: .9rem; margin-bottom: 28px; }
+
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 500px) { .form-row { grid-template-columns: 1fr; } }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px 16px;
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg);
+      color: var(--text);
+      font-family: inherit;
+      font-size: .9rem;
+      margin-bottom: 14px;
+      transition: border-color .2s;
+      outline: none;
+    }
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus { border-color: var(--red); }
+    .contact-form textarea { min-height: 120px; resize: vertical; }
+    .contact-form select { appearance: none; cursor: pointer; }
+
+    .form-privacy {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 8px 0 20px;
+      font-size: .8rem;
+      color: var(--text-2);
+      line-height: 1.6;
+    }
+    .form-privacy input { width: auto; margin: 0; margin-top: 2px; accent-color: var(--red); flex-shrink: 0; }
+    .form-privacy a { color: var(--red); }
+
+    .contact-form .btn-primary {
+      width: 100%;
+      justify-content: center;
+      cursor: pointer;
+      border: none;
+    }
+    .form-notice {
+      text-align: center;
+      font-size: .78rem;
+      color: var(--text-3);
+      margin-top: 12px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+
+<!-- Navigation -->
+<nav id="nav" class="scrolled">
+  <a href="index.html" class="nav-logo magnetic">
+    <img src="logo-dark.svg" alt="Epirus FM" style="height:60px;width:auto;display:block">
+  </a>
+  <ul class="nav-links">
+    <li class="nav-dropdown-wrap">
+      <a href="index.html#services" class="nav-dropdown-trigger">
+        Leistungen
+        <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+            <div class="nav-mega">
+        <div class="nav-mega-inner">
+          <div class="nav-mega-cols">
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Technisches FM</p>
+              <a href="lp-technisches-fm.html">Technisches FM</a>
+              <a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a>
+              <a href="lp-stoerungsmanagement-notdienst.html">St&ouml;rungsmanagement &amp; Notdienst</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Kaufm&auml;nnisch &amp; Management</p>
+              <a href="lp-kaufmaennisches-fm.html">Kaufm&auml;nnisches FM</a>
+              <a href="lp-facility-management.html">Facility Management</a>
+              <a href="lp-facility-management-hotels.html">FM f&uuml;r Hotels</a>
+              <a href="lp-gebaeudemanagement.html">Geb&auml;udemanagement</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Reinigung &amp; Pflege</p>
+              <a href="lp-gebaeudereinigung.html">Geb&auml;udereinigung</a>
+              <a href="lp-gruenflaechen.html">Gr&uuml;nfl&auml;chenpflege</a>
+              <a href="lp-winterdienst.html">Winterdienst</a>
+              <a href="lp-hausmeisterservice.html">Hausmeisterservice</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Service</p>
+              <a href="faq.html">FAQ</a>
+              <a href="kontakt.html">Kontakt &amp; Angebot</a>
+            </div>
+          </div>
+          <a class="nav-mega-card" href="lp-facility-management.html">
+            <img src="nav-card.svg" alt="" width="300" height="180" loading="lazy">
+            <span class="nav-mega-label">&Uuml;bersicht</span>
+            <strong>Facility Management</strong>
+            <span class="nav-mega-card-text">Technik, Kaufm&auml;nnisches und Spezialdienste &ndash; aus einer Hand.</span>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li><a href="ueber-uns.html">Über uns</a></li>
+    <li><a href="kontakt.html" class="nav-cta magnetic active">Kontakt</a></li>
+  <li>
+    <button id="lang-toggle" class="nav-lang-btn" title="Switch to English">
+      <span id="lang-flag">&#127468;&#127467;</span>
+      <span id="lang-label">EN</span>
+    </button>
+  </li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- Mobiles Vollbild-Menü (nur <=768px sichtbar) -->
+<div id="mobile-menu" aria-hidden="true">
+  <div class="mm-head">
+    <a href="index.html" class="mm-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:48px;width:auto;display:block"></a>
+    <button class="mm-close" aria-label="Men&uuml; schlie&szlig;en">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav class="mm-nav">
+    <div class="mm-acc">
+      <button class="mm-link mm-acc-btn" aria-expanded="false">
+        Leistungen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="mm-acc-panel">
+        <p class="mm-acc-label">Technisches FM</p>
+        <a href="lp-technisches-fm.html">Technisches FM</a>
+        <a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a>
+        <a href="lp-stoerungsmanagement-notdienst.html">St&ouml;rungsmanagement &amp; Notdienst</a>
+        <p class="mm-acc-label">Kaufm&auml;nnisch &amp; Management</p>
+        <a href="lp-kaufmaennisches-fm.html">Kaufm&auml;nnisches FM</a>
+        <a href="lp-facility-management.html">Facility Management</a>
+        <a href="lp-facility-management-hotels.html">FM f&uuml;r Hotels</a>
+        <a href="lp-gebaeudemanagement.html">Geb&auml;udemanagement</a>
+        <p class="mm-acc-label">Reinigung &amp; Pflege</p>
+        <a href="lp-gebaeudereinigung.html">Geb&auml;udereinigung</a>
+        <a href="lp-gruenflaechen.html">Gr&uuml;nfl&auml;chenpflege</a>
+        <a href="lp-winterdienst.html">Winterdienst</a>
+        <a href="lp-hausmeisterservice.html">Hausmeisterservice</a>
+        <p class="mm-acc-label">Service</p>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt &amp; Angebot</a>
+      </div>
+    </div>
+    <a class="mm-link" href="ueber-uns.html">&Uuml;ber uns</a>
+    <a class="mm-link" href="faq.html">FAQ</a>
+    <a class="mm-link" href="kontakt.html">Kontakt</a>
+  </nav>
+  <a class="mm-cta" href="kontakt.html">
+    Kostenloses Angebot
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+  <button class="mm-lang" title="Switch to English">
+    <span class="mm-lang-flag">🇬🇧</span>
+    <span class="mm-lang-label">EN</span>
+  </button>
+  <div class="mm-sep"></div>
+  <div class="mm-contact">
+    <a href="tel:+491747192840">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72c.12 1 .33 1.97.66 2.9a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.93.33 1.9.54 2.9.66A2 2 0 0122 15.92z"/></svg>
+      +49 174 7192 840
+    </a>
+    <span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Werner-Heisenberg-Str. 2a<br>63263 Neu-Isenburg
+    </span>
+    <a href="mailto:info@epirusfm.de">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+      info@epirusfm.de
+    </a>
+  </div>
+</div>
+<div id="google_translate_element" style="display:none"></div>
+
+<!-- Hero -->
+<section class="contact-hero">
+  <div class="contact-hero-inner">
+    <p class="section-tag" style="opacity:1;transform:none;margin-bottom:24px">Kontakt</p>
+    <h1>Sprechen wir<br><em>miteinander.</em></h1>
+    <p>Kostenloses Erstgespräch, unverbindliches Angebot in 24 Stunden. Einfach anrufen, schreiben oder das Formular ausfüllen.</p>
+  </div>
+</section>
+
+<!-- Main -->
+<section class="contact-main">
+  <div class="contact-grid">
+
+    <!-- Info -->
+    <div class="contact-info">
+      <h2>So erreichen<br>Sie uns.</h2>
+      <p>Wir antworten werktags innerhalb weniger Stunden. Bei dringenden Anliegen erreichen Sie uns telefonisch, auch am Wochenende.</p>
+
+      <div class="contact-methods">
+        <a href="tel:+491747192840" class="contact-method">
+          <div class="contact-method-icon">📞</div>
+          <div>
+            <div class="contact-method-label">Telefon</div>
+            <div class="contact-method-value">+49 174 7192 840</div>
+          </div>
+        </a>
+        <a href="mailto:info@epirusfm.de" class="contact-method">
+          <div class="contact-method-icon">✉️</div>
+          <div>
+            <div class="contact-method-label">E-Mail</div>
+            <div class="contact-method-value">info@epirusfm.de</div>
+          </div>
+        </a>
+        <div class="contact-method" style="cursor:default">
+          <div class="contact-method-icon">📍</div>
+          <div>
+            <div class="contact-method-label">Adresse</div>
+            <div class="contact-method-value">Werner-Heisenberg-Straße 2a<br>63263 Neu-Isenburg</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-availability">
+        <strong>Erreichbarkeit</strong>
+        <div class="avail-row"><span>Mo – Fr</span><span class="avail-green">08:00 – 18:00 Uhr</span></div>
+        <div class="avail-row"><span>Sa – So</span><span class="avail-green">Notdienst 24/7</span></div>
+        <div class="avail-row"><span>Reaktionszeit</span><span class="avail-green">&lt; 2 Stunden</span></div>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-form-wrap">
+      <h3>Angebot anfragen</h3>
+      <p>Füllen Sie das Formular aus. Wir melden uns innerhalb von 24 Stunden mit einem maßgeschneiderten Angebot.</p>
+      <form class="contact-form" name="kontakt-hauptseite" method="POST" action="form-handler.php">
+        <input type="hidden" name="form-name" value="kontakt-hauptseite">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Name *" required>
+          <input type="text" name="unternehmen" placeholder="Unternehmen *" required>
+        </div>
+        <div class="form-row">
+          <input type="tel" name="telefon" placeholder="Telefon *" required>
+          <input type="email" name="email" placeholder="E-Mail">
+        </div>
+        <select name="objekttyp">
+          <option value="" disabled selected>Art des Objekts</option>
+          <option>Bürogebäude</option>
+          <option>Hotel</option>
+          <option>Wohnanlage</option>
+          <option>Einzelhandel</option>
+          <option>Logistik / Produktion</option>
+          <option>Sonstiges</option>
+        </select>
+        <select name="leistung">
+          <option value="" disabled selected>Gewünschte Leistung</option>
+          <option>Technisches Facility Management</option>
+          <option>Hausmeisterservice</option>
+          <option>Gebäudereinigung</option>
+          <option>Winterdienst</option>
+          <option>Grünflächenpflege</option>
+          <option>St&#246;rungsmanagement &amp; Notdienst</option>
+          <option>FM f&#252;r Hotels</option>
+          <option>Infrastrukturelles FM</option>
+          <option>Kaufm&#228;nnisches FM</option>
+          <option>Komplettpaket (alle Leistungen)</option>
+          <option>Sonstiges / Beratung</option>
+        </select>
+        <input type="text" name="sonstiges" class="sonstiges-feld" placeholder="Sonstiges — bitte kurz beschreiben" aria-label="Sonstiges bitte beschreiben">
+        <textarea name="nachricht" placeholder="Ihre Nachricht oder besondere Anforderungen (optional)"></textarea>
+        <label class="form-privacy">
+          <input type="checkbox" required>
+          <span>Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.</span>
+        </label>
+        <button type="submit" class="btn-primary">
+          <span>Jetzt kostenlos anfragen</span>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <p class="form-notice">✓ Kostenlos & unverbindlich &nbsp;·&nbsp; ✓ DSGVO-konform &nbsp;·&nbsp; ✓ Antwort in &lt;24h</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+
+<footer style="background:var(--bg-dark);padding:40px 5%">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;max-width:1280px;margin:0 auto">
+    <a href="index.html" class="nav-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:60px;width:auto;display:block"></a>
+    <div style="display:flex;gap:24px;flex-wrap:wrap">
+      <a href="ueber-uns.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Über uns</a>
+      <a href="kontakt.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Kontakt</a>
+      <a href="faq.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">FAQ</a>
+      <a href="#" id="cookie-settings" style="font-size:.78rem;color:rgba(255,255,255,.35)">Cookie-Einstellungen</a>
+      <a href="impressum.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Impressum</a>
+      <a href="datenschutz.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Datenschutz</a>
+    </div>
+    <p style="font-size:.78rem;color:rgba(255,255,255,.3)">© 2026 Epirus FM GmbH</p>
+  </div>
+</footer>
+
+<!-- DSGVO Cookie Banner -->
+<div id="cb-overlay"></div>
+<div id="cb-banner" role="dialog" aria-modal="true" aria-label="Cookie-Einstellungen">
+  <div class="cb-inner">
+    <div class="cb-top">
+      <div class="cb-text">
+        <p class="cb-title">Ihre Privatsphäre</p>
+        <p>Diese Website verwendet Cookies und ähnliche Technologien. Technisch notwendige Cookies sind immer aktiv. Google Tag Manager und Google Ads Conversion Tracking können Sie einzeln aktivieren. Mehr Infos in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+      </div>
+    </div>
+    <div class="cb-toggles">
+      <div class="cb-toggle-row">
+        <label class="cb-switch"><input type="checkbox" checked disabled><span class="cb-slider"></span></label>
+        <div class="cb-toggle-label"><strong>Technisch notwendig</strong><span>Grundfunktionen der Website, immer aktiv</span></div>
+      </div>
+      <div class="cb-toggle-row">
+        <label class="cb-switch"><input type="checkbox" id="cb-gtm"><span class="cb-slider"></span></label>
+        <div class="cb-toggle-label"><strong>Google Tag Manager</strong><span>Verwaltung von Website-Tags, standardmäßig deaktiviert</span></div>
+      </div>
+      <div class="cb-toggle-row">
+        <label class="cb-switch"><input type="checkbox" id="cb-marketing"><span class="cb-slider"></span></label>
+        <div class="cb-toggle-label"><strong>Marketing &amp; Werbung</strong><span>Google Ads Conversion Tracking, personalisierte Werbung und SprachÜbersetzung (Google Translate)</span></div>
+      </div>
+    </div>
+    <div class="cb-buttons">
+      <button class="cb-btn cb-btn-accept" id="cb-accept-all">Alle akzeptieren</button>
+      <button class="cb-btn cb-btn-save" id="cb-save">Auswahl speichern</button>
+      <button class="cb-btn cb-btn-reject" id="cb-reject-all">Alle ablehnen</button>
+    </div>
+  </div>
+</div>
+<script>
+'use strict';
+(function(){
+  var STORAGE_KEY='epirus_fm_consent';
+  var EXPIRY_DAYS=365;
+  var banner=document.getElementById('cb-banner');
+  var overlay=document.getElementById('cb-overlay');
+  var chkGtm=document.getElementById('cb-gtm');
+  var chkMktg=document.getElementById('cb-marketing');
+  if(!banner||!overlay||!chkGtm||!chkMktg)return;
+  chkMktg.addEventListener('change',function(){if(this.checked)chkGtm.checked=true;});
+  chkGtm.addEventListener('change',function(){if(!this.checked)chkMktg.checked=false;});
+  function applyConsent(gtm,marketing){
+    if(typeof gtag==='function'){
+      gtag('consent','update',{'ad_storage':marketing?'granted':'denied','ad_user_data':marketing?'granted':'denied','ad_personalization':marketing?'granted':'denied','analytics_storage':marketing?'granted':'denied'});
+      gtag('consent','update',{'functionality_storage':marketing?'granted':'denied','personalization_storage':marketing?'granted':'denied','security_storage':'denied'});
+    }
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push({'event':'consent_update','gtm_consent':gtm?'granted':'denied','marketing_consent':marketing?'granted':'denied'});
+    try{document.dispatchEvent(new CustomEvent('epirus-consent',{detail:{gtm:gtm,marketing:marketing}}));}catch(e){}
+  }
+  function saveConsent(gtm,marketing){
+    localStorage.setItem(STORAGE_KEY,JSON.stringify({gtm:gtm,marketing:marketing,timestamp:new Date().toISOString(),version:'2.0',expires:Date.now()+EXPIRY_DAYS*86400000}));
+    applyConsent(gtm,marketing);closeBanner();
+  }
+  function openBanner(){
+    overlay.classList.add('cb-visible');banner.classList.add('cb-visible');
+    requestAnimationFrame(function(){overlay.classList.add('cb-show');banner.classList.add('cb-show');});
+    document.body.style.overflow='hidden';
+  }
+  function closeBanner(){
+    banner.classList.remove('cb-show');overlay.classList.remove('cb-show');
+    setTimeout(function(){banner.classList.remove('cb-visible');overlay.classList.remove('cb-visible');document.body.style.overflow='';},450);
+  }
+  function loadSaved(){
+    try{var raw=localStorage.getItem(STORAGE_KEY);if(!raw)return null;var data=JSON.parse(raw);if(data.expires&&Date.now()>data.expires){localStorage.removeItem(STORAGE_KEY);return null;}return data;}catch(e){return null;}
+  }
+  document.getElementById('cb-accept-all').addEventListener('click',function(){chkGtm.checked=true;chkMktg.checked=true;saveConsent(true,true);});
+  document.getElementById('cb-reject-all').addEventListener('click',function(){chkGtm.checked=false;chkMktg.checked=false;saveConsent(false,false);});
+  document.getElementById('cb-save').addEventListener('click',function(){var gtm=chkGtm.checked;var marketing=chkMktg.checked&&gtm;saveConsent(gtm,marketing);});
+  var settingsLink=document.getElementById('cookie-settings');
+  if(settingsLink){settingsLink.addEventListener('click',function(e){e.preventDefault();var saved=loadSaved();if(saved){chkGtm.checked=saved.gtm||false;chkMktg.checked=saved.marketing||false;}openBanner();});}
+  var saved=loadSaved();
+  if(saved){applyConsent(saved.gtm||false,saved.marketing||false);}else{setTimeout(openBanner,600);}
+})();
+</script>
+
+<script>
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+  const dot = document.querySelector('.cursor-dot'), ring = document.querySelector('.cursor-ring');
+  if (dot && ring) {
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; dot.style.transform=`translate(${mx}px,${my}px)`; });
+    (function a(){ rx+=(mx-rx)*.12; ry+=(my-ry)*.12; ring.style.transform=`translate(${rx}px,${ry}px)`; requestAnimationFrame(a); })();
+  }
+  /* Mobile-Navigation wird von mobile-nav.js gesteuert */
+</script>
+<script src="botprotect.js"></script>
+<script src="mobile-nav.js"></script>
+
+</body>
+</html>
+

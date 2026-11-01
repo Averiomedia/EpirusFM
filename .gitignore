@@ -4,3 +4,13 @@ epirusfm-hell/
 epirusfm-v2/
 *.pyc
 __pycache__/
+
+# Arbeitsablagen / Projektarchiv – nicht deployen
+/2026-10-21/
+/Variante-*/
+/Version-Lila/
+/vorschau-deploy/
+/EpirusFM-Vorschau.zip
+/OFFENE-PUNKTE.md
+/agb.html
+/referenzen.html

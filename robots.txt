@@ -1,0 +1,4 @@
+# VORSCHAU: robots.txt vollstaendig gesperrt, Seite darf nicht indexiert werden.
+# Vor dem Livegang durch die echte robots.txt aus /2026-10-21 ersetzen.
+User-agent: *
+Disallow: /

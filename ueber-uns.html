@@ -1,0 +1,918 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0E1A2B">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Über uns – Epirus FM | Facility Management mit System</title>
+  <meta name="description" content="Epirus FM – Pionier der ETA-Methode. Erfahren Sie mehr über unsere Geschichte und was uns von anderen FM-Anbietern unterscheidet. Mit Sitz in Neu-Isenburg, tätig im Rhein-Main-Gebiet.">
+  <link rel="canonical" href="https://epirusfm.de/ueber-uns.html">
+  <meta property="og:title" content="Über uns – Epirus FM | Facility Management mit System">
+  <meta property="og:description" content="Epirus FM – Pionier der ETA-Methode. Erfahren Sie mehr über unsere Geschichte und was uns von anderen FM-Anbietern unterscheidet. Mit Sitz in Neu-Isenburg, tätig im Rhein-Main-Gebiet.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://epirusfm.de/ueber-uns.html">
+  <meta property="og:locale" content="de_DE">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Epirus Facility Management GmbH","url":"https://epirusfm.de/","telephone":"+491747192840","email":"info@epirusfm.de","address":{"@type":"PostalAddress","streetAddress":"Werner-Heisenberg-Straße 2a","postalCode":"63263","addressLocality":"Neu-Isenburg","addressCountry":"DE"},"areaServed":[{"@type":"City","name":"Neu-Isenburg"},{"@type":"City","name":"Frankfurt am Main"},{"@type":"State","name":"Rhein-Main-Gebiet"}]}
+  </script>
+  <!-- GEO 3.8: Strukturdaten Person Geschäftsführung (FREIGABE: Qualifikationen/Profile ergänzen, sobald freigegeben) -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Athanasios Ioannou","jobTitle":"Geschäftsführer","worksFor":{"@type":"Organization","name":"Epirus Facility Management GmbH","url":"https://epirusfm.de/"}}
+  </script>
+  <link rel="preload" href="fonts/barlow-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+  <style>
+    /* —— Über uns page styles —— */
+    .about-hero {
+      background: var(--bg-dark);
+      padding: 140px 5% 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(212,21,26,.12) 0%, transparent 60%);
+    }
+    .about-hero-inner {
+      max-width: 800px;
+      position: relative;
+      z-index: 1;
+    }
+    .about-hero h1 {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+    .about-hero h1 em { color: var(--red); font-style: italic; }
+    .about-hero p {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,.6);
+      max-width: 560px;
+      line-height: 1.8;
+    }
+
+    /* ETA section */
+    .eta-section {
+      padding: 100px 5%;
+      background: var(--bg);
+    }
+    .eta-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    @media (max-width: 768px) { .eta-grid { grid-template-columns: 1fr; gap: 40px; } }
+    .eta-content { display: flex; flex-direction: column; justify-content: center; }
+    .eta-pillars {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) { .eta-pillars { grid-template-columns: 1fr; } }
+    .eta-pillar {
+      background: var(--bg-2);
+      border-radius: var(--radius-l);
+      padding: 20px 14px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: border-color .3s, transform .3s;
+    }
+    .eta-pillar:hover { border-color: var(--red); transform: translateY(-4px); }
+    .eta-pillar-letter {
+      font-size: 1.9rem;
+      font-weight: 900;
+      color: var(--red);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .eta-pillar h4 { font-size: .9rem; font-weight: 700; margin-bottom: 6px; color: var(--text); }
+    .eta-pillar p { font-size: .8rem; color: var(--text-2); line-height: 1.6; }
+    .eta-visual {
+      background: var(--bg-dark);
+      border-radius: var(--radius-l);
+      padding: 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      height: 100%;
+    }
+    .eta-stat {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .eta-stat-num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--red);
+      min-width: 80px;
+    }
+    .eta-stat-text { font-size: .9rem; color: rgba(255,255,255,.65); line-height: 1.5; }
+    .eta-stat-text strong { color: #fff; display: block; font-size: 1rem; margin-bottom: 2px; }
+
+    /* Timeline */
+    .timeline-section {
+      padding: 100px 5%;
+      background: var(--bg-2);
+    }
+    .timeline-inner { max-width: 800px; margin: 0 auto; }
+    .timeline-head { text-align: center; margin-bottom: 64px; }
+    .timeline {
+      position: relative;
+      padding-left: 40px;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--red), transparent);
+    }
+    .timeline-item {
+      position: relative;
+      padding-bottom: 48px;
+      opacity: 0;
+      transform: translateX(-20px);
+      transition: all .5s ease;
+    }
+    .timeline-item.visible { opacity: 1; transform: none; }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -44px;
+      top: 6px;
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--red);
+      box-shadow: 0 0 0 4px var(--bg-2);
+    }
+    .timeline-year {
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin-bottom: 6px;
+    }
+    .timeline-title { font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 6px; }
+    .timeline-desc { font-size: .9rem; color: var(--text-2); line-height: 1.7; }
+
+
+
+    /* Values */
+    .values-section {
+      padding: 100px 5%;
+      background: var(--bg-dark);
+      position: relative;
+      overflow: hidden;
+    }
+    .values-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 30% 50%, rgba(212,21,26,.08) 0%, transparent 60%);
+    }
+    .values-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .values-head { text-align: center; margin-bottom: 64px; }
+    .values-head .section-title { color: #fff; }
+    .values-grid {
+      max-width: 620px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    @media(max-width:640px){ .values-grid{ grid-template-columns: 1fr; } }
+    .value-card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius-l);
+      padding: 24px;
+      aspect-ratio: 1 / 1;
+      display: flex; flex-direction: column; justify-content: center;
+      transition: background .3s, border-color .3s;
+    }
+    @media(max-width:640px){ .value-card{ aspect-ratio: auto; } }
+    .value-card:hover { background: rgba(212,21,26,.08); border-color: rgba(212,21,26,.3); }
+    .value-icon { font-size: 1.5rem; margin-bottom: 12px; }
+    .value-title { font-weight: 700; font-size: .95rem; color: #fff; margin-bottom: 6px; }
+    .value-desc { font-size: .8rem; color: rgba(255,255,255,.55); line-height: 1.65; }
+
+    /* CTA */
+    .about-cta {
+      padding: 100px 5%;
+      background: var(--bg);
+      text-align: center;
+    }
+    .about-cta h2 { font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; margin-bottom: 16px; }
+    .about-cta p { color: var(--text-2); max-width: 500px; margin: 0 auto 40px; }
+    .about-cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .about-cta-inner { max-width: 720px; margin: 0 auto; }
+
+    /* ── RED recognition effects ── */
+    .aurora { position: absolute; border-radius: 50%; filter: blur(90px); pointer-events: none; z-index: 0; }
+    .aurora.a1 { width: 480px; height: 480px; top: -160px; right: -120px;
+      background: radial-gradient(circle, rgba(212,21,26,.35), transparent 65%);
+      animation: drift1 14s ease-in-out infinite alternate; }
+    .aurora.a2 { width: 380px; height: 380px; bottom: -140px; left: -100px;
+      background: radial-gradient(circle, rgba(240,58,63,.22), transparent 65%);
+      animation: drift2 18s ease-in-out infinite alternate; }
+    @keyframes drift1 { from { transform: translate(0,0); } to { transform: translate(-60px,50px); } }
+    @keyframes drift2 { from { transform: translate(0,0); } to { transform: translate(70px,-40px); } }
+    /* Faktenblock - responsiv (verhindert horizontalen Overflow auf Mobile) */
+    .facts-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px }
+    .facts-grid > div > div { overflow-wrap: anywhere }
+    @media (max-width: 768px) { .facts-grid { grid-template-columns: repeat(2, minmax(0,1fr)) } }
+    @media (max-width: 480px) { .facts-grid { grid-template-columns: 1fr } }
+    .eta-watermark {
+      position: absolute; right: 2%; top: 50%; z-index: 0;
+      font-weight: 800; font-size: clamp(8rem, 22vw, 20rem); line-height: 1;
+      color: transparent; -webkit-text-stroke: 1.5px rgba(255,255,255,.07);
+      pointer-events: none; user-select: none; will-change: transform;
+    }
+    .about-hero h1 em {
+      background: linear-gradient(100deg, #F03A3F, #D4151A, #F03A3F);
+      background-size: 200% auto;
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      animation: shine 5s linear infinite;
+    }
+    @keyframes shine { to { background-position: 200% center; } }
+
+    .marquee { overflow: hidden; background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 16px 0; }
+    .marquee-track { display: flex; gap: 0; width: max-content; animation: slide 30s linear infinite; }
+    .marquee:hover .marquee-track { animation-play-state: paused; }
+    .marquee-track span {
+      display: flex; align-items: center; gap: 26px; padding: 0 13px; white-space: nowrap;
+      font-size: .72rem; letter-spacing: .24em; text-transform: uppercase; font-weight: 700; color: var(--text-3);
+    }
+    .marquee-track span::after { content: ''; width: 7px; height: 7px; border-radius: 50%; background: var(--red); }
+    .marquee-track span:nth-child(even)::after { background: var(--blue); }
+    @keyframes slide { to { transform: translateX(-50%); } }
+
+    .eta-pillar { position: relative; overflow: hidden; }
+    .eta-pillar::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, var(--red), var(--blue));
+      transform: scaleX(0); transform-origin: left; transition: transform .45s ease;
+    }
+    .eta-pillar:hover::before { transform: scaleX(1); }
+    .eta-pillar-letter {
+      background: linear-gradient(180deg, var(--red-l), var(--red-d));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      filter: drop-shadow(0 4px 14px rgba(212,21,26,.35));
+      animation: letterFloat 3.4s ease-in-out infinite;
+    }
+    .eta-pillars .eta-pillar:nth-child(2) .eta-pillar-letter { animation-delay: .45s; }
+    .eta-pillars .eta-pillar:nth-child(3) .eta-pillar-letter { animation-delay: .9s; }
+    @keyframes letterFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+
+    .timeline-progress {
+      position: absolute; left: 0; top: 0; width: 2px; height: 100%;
+      background: linear-gradient(to bottom, var(--red-l), var(--red));
+      box-shadow: 0 0 12px rgba(212,21,26,.55);
+      transform-origin: top; transform: scaleY(0);
+    }
+    .timeline-item::before {
+      background: linear-gradient(135deg, var(--red-l), var(--red-d));
+      transition: box-shadow .35s ease, transform .35s ease;
+    }
+    .timeline-item.visible::before { box-shadow: 0 0 0 4px var(--bg-2), 0 0 18px rgba(212,21,26,.8); }
+    .timeline-item:hover { transform: translateX(6px) !important; }
+    .timeline-year {
+      background: linear-gradient(90deg, var(--red-l), var(--blue-l));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+
+    .value-card { position: relative; overflow: hidden; }
+    .value-card::after {
+      content: ''; position: absolute; inset: 0; pointer-events: none; opacity: 0; transition: opacity .35s ease;
+      background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 50%), rgba(212,21,26,.16), transparent 65%);
+    }
+    .value-card:hover::after { opacity: 1; }
+    .value-card:hover { border-color: rgba(212,21,26,.45); transform: translateY(-4px); }
+
+    .rv { opacity: 0; translate: 0 26px; transition: opacity .7s ease, translate .7s cubic-bezier(.16,1,.3,1), border-color .3s, transform .3s, box-shadow .35s, background .3s; transition-delay: var(--d, 0s); }
+    .rv.on { opacity: 1; translate: 0 0; }
+    .section-tag.on, .section-sub.on { opacity: 1 !important; transform: none !important; }
+    .divider.on { opacity: 1 !important; transform: scaleX(1) !important; }
+
+    .about-cta .btn-primary { position: relative; }
+    .about-cta .btn-primary::after {
+      content: ''; position: absolute; inset: -3px; border-radius: 12px;
+      border: 2px solid rgba(212,21,26,.5); animation: ring 2.4s ease-out infinite; pointer-events: none;
+    }
+    @keyframes ring { 0% { opacity: .8; transform: scale(1); } 100% { opacity: 0; transform: scale(1.08); } }
+
+    @media (prefers-reduced-motion: reduce) {
+      .aurora, .eta-watermark, .marquee-track, .about-hero h1 em, .about-cta .btn-primary::after, .eta-pillar-letter { animation: none !important; }
+      .rv { opacity: 1; translate: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div id="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+
+<!-- Navigation -->
+<nav id="nav" class="scrolled">
+  <a href="index.html" class="nav-logo magnetic">
+    <img src="logo-dark.svg" alt="Epirus FM" style="height:60px;width:auto;display:block">
+  </a>
+  <ul class="nav-links">
+    <li class="nav-dropdown-wrap">
+      <a href="index.html#services" class="nav-dropdown-trigger">
+        Leistungen
+        <svg class="nav-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </a>
+            <div class="nav-mega">
+        <div class="nav-mega-inner">
+          <div class="nav-mega-cols">
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Technisches FM</p>
+              <a href="lp-technisches-fm.html">Technisches FM</a>
+              <a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a>
+              <a href="lp-stoerungsmanagement-notdienst.html">St&ouml;rungsmanagement &amp; Notdienst</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Kaufm&auml;nnisch &amp; Management</p>
+              <a href="lp-kaufmaennisches-fm.html">Kaufm&auml;nnisches FM</a>
+              <a href="lp-facility-management.html">Facility Management</a>
+              <a href="lp-facility-management-hotels.html">FM f&uuml;r Hotels</a>
+              <a href="lp-gebaeudemanagement.html">Geb&auml;udemanagement</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Reinigung &amp; Pflege</p>
+              <a href="lp-gebaeudereinigung.html">Geb&auml;udereinigung</a>
+              <a href="lp-gruenflaechen.html">Gr&uuml;nfl&auml;chenpflege</a>
+              <a href="lp-winterdienst.html">Winterdienst</a>
+              <a href="lp-hausmeisterservice.html">Hausmeisterservice</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Service</p>
+              <a href="faq.html">FAQ</a>
+              <a href="kontakt.html">Kontakt &amp; Angebot</a>
+            </div>
+          </div>
+          <a class="nav-mega-card" href="lp-facility-management.html">
+            <img src="nav-card.svg" alt="" width="300" height="180" loading="lazy">
+            <span class="nav-mega-label">&Uuml;bersicht</span>
+            <strong>Facility Management</strong>
+            <span class="nav-mega-card-text">Technik, Kaufm&auml;nnisches und Spezialdienste &ndash; aus einer Hand.</span>
+          </a>
+        </div>
+      </div>
+    </li>
+    <li><a href="ueber-uns.html" class="active">Über uns</a></li>
+
+    <li><a href="kontakt.html" class="nav-cta magnetic">Kontakt</a></li>
+  <li>
+    <button id="lang-toggle" class="nav-lang-btn" title="Switch to English">
+      <span id="lang-flag">&#127468;&#127467;</span>
+      <span id="lang-label">EN</span>
+    </button>
+  </li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobiles Vollbild-Menü (nur <=768px sichtbar) -->
+<div id="mobile-menu" aria-hidden="true">
+  <div class="mm-head">
+    <a href="index.html" class="mm-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:48px;width:auto;display:block"></a>
+    <button class="mm-close" aria-label="Men&uuml; schlie&szlig;en">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav class="mm-nav">
+    <div class="mm-acc">
+      <button class="mm-link mm-acc-btn" aria-expanded="false">
+        Leistungen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="mm-acc-panel">
+        <p class="mm-acc-label">Technisches FM</p>
+        <a href="lp-technisches-fm.html">Technisches FM</a>
+        <a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a>
+        <a href="lp-stoerungsmanagement-notdienst.html">St&ouml;rungsmanagement &amp; Notdienst</a>
+        <p class="mm-acc-label">Kaufm&auml;nnisch &amp; Management</p>
+        <a href="lp-kaufmaennisches-fm.html">Kaufm&auml;nnisches FM</a>
+        <a href="lp-facility-management.html">Facility Management</a>
+        <a href="lp-facility-management-hotels.html">FM f&uuml;r Hotels</a>
+        <a href="lp-gebaeudemanagement.html">Geb&auml;udemanagement</a>
+        <p class="mm-acc-label">Reinigung &amp; Pflege</p>
+        <a href="lp-gebaeudereinigung.html">Geb&auml;udereinigung</a>
+        <a href="lp-gruenflaechen.html">Gr&uuml;nfl&auml;chenpflege</a>
+        <a href="lp-winterdienst.html">Winterdienst</a>
+        <a href="lp-hausmeisterservice.html">Hausmeisterservice</a>
+        <p class="mm-acc-label">Service</p>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt &amp; Angebot</a>
+      </div>
+    </div>
+    <a class="mm-link" href="ueber-uns.html">&Uuml;ber uns</a>
+    <a class="mm-link" href="faq.html">FAQ</a>
+    <a class="mm-link" href="kontakt.html">Kontakt</a>
+  </nav>
+  <a class="mm-cta" href="kontakt.html">
+    Kostenloses Angebot
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+  <button class="mm-lang" title="Switch to English">
+    <span class="mm-lang-flag">🇬🇧</span>
+    <span class="mm-lang-label">EN</span>
+  </button>
+  <div class="mm-sep"></div>
+  <div class="mm-contact">
+    <a href="tel:+491747192840">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72c.12 1 .33 1.97.66 2.9a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.93.33 1.9.54 2.9.66A2 2 0 0122 15.92z"/></svg>
+      +49 174 7192 840
+    </a>
+    <span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Werner-Heisenberg-Str. 2a<br>63263 Neu-Isenburg
+    </span>
+    <a href="mailto:info@epirusfm.de">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+      info@epirusfm.de
+    </a>
+  </div>
+</div>
+<div id="google_translate_element" style="display:none"></div>
+
+<!-- Hero -->
+<section class="about-hero">
+  <div class="aurora a1" aria-hidden="true"></div>
+  <div class="aurora a2" aria-hidden="true"></div>
+  <div class="eta-watermark" aria-hidden="true">ETA</div>
+  <div class="about-hero-inner">
+    <p class="section-tag" style="opacity:1;transform:none;margin-bottom:24px">Über Epirus FM</p>
+    <h1>Pionier der<br><em>ETA-Methode.</em></h1>
+    <p>Wir sind kein gewöhnlicher FM-Dienstleister. Wir verbinden digitale Effizienz mit menschlicher Präzision und schaffen damit eine Transparenz, die in der Branche einzigartig ist.</p>
+  </div>
+</section>
+
+<!-- Branchen-Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Hotels</span><span>Büros</span><span>Einzelhandel</span><span>Logistik</span><span>Echtzeit-Tracking</span><span>24/7 Notdienst</span>
+    <span>Hotels</span><span>Büros</span><span>Einzelhandel</span><span>Logistik</span><span>Echtzeit-Tracking</span><span>24/7 Notdienst</span>
+  </div>
+</div>
+
+<!-- GEO 3.8: Faktenblock ganz oben - Verantwortliche, Erfahrung, Firmengeschichte -->
+<section style="padding:64px 5%;background:var(--bg-dark);border-bottom:1.5px solid rgba(255,255,255,.06)">
+  <div style="max-width:1080px;margin:0 auto">
+    <p class="section-tag" style="opacity:1;transform:none;margin-bottom:24px">Auf einen Blick</p>
+    <div class="facts-grid">
+      <div style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 28px">
+        <div style="font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:700;margin-bottom:8px">Geschäftsführung</div>
+        <div style="font-weight:700;color:#fff;font-size:1rem">Athanasios Ioannou</div>
+        <div style="font-size:.84rem;color:rgba(255,255,255,.5);margin-top:4px">Geschäftsführer</div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 28px">
+        <div style="font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:700;margin-bottom:8px">Erfahrung</div>
+        <div style="font-weight:700;color:#fff;font-size:1rem">Seit 2013</div>
+        <div style="font-size:.84rem;color:rgba(255,255,255,.5);margin-top:4px">operative Objektbetreuung im Team</div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 28px">
+        <div style="font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:700;margin-bottom:8px">Unternehmen</div>
+        <div style="font-weight:700;color:#fff;font-size:1rem">GmbH seit 2026</div>
+        <div style="font-size:.84rem;color:rgba(255,255,255,.5);margin-top:4px">Gründung 2022 · Amtsgericht Offenbach, HRB 59330</div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 28px">
+        <div style="font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:700;margin-bottom:8px">Objekte</div>
+        <div style="font-weight:700;color:#fff;font-size:1rem">45 Gewerbeobjekte</div>
+        <div style="font-size:.84rem;color:rgba(255,255,255,.5);margin-top:4px">rund 400.000 m² Fläche, davon 24 Hotels, 11 Büros</div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 28px">
+        <div style="font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:700;margin-bottom:8px">Region</div>
+        <div style="font-weight:700;color:#fff;font-size:1rem">Rhein-Main-Gebiet</div>
+        <div style="font-size:.84rem;color:rgba(255,255,255,.5);margin-top:4px">Neu-Isenburg, Frankfurt und Umgebung</div>
+      </div>
+      <div style="background:rgba(255,255,255,.04);border:1.5px solid rgba(255,255,255,.08);border-radius:16px;padding:24px 28px">
+        <div style="font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:700;margin-bottom:8px">Zielgruppe</div>
+        <div style="font-weight:700;color:#fff;font-size:1rem">Gewerbeimmobilien</div>
+        <div style="font-size:.84rem;color:rgba(255,255,255,.5);margin-top:4px">Hotels, Büros, Einzelhandel, Logistik</div>
+      </div>
+    </div>
+    <!-- FREIGABE: Qualifikationen der Geschäftsführung, Mitgliedschaften/Zertifizierungen (falls vorhanden), Belegzeilen (45 Objekte/400.000 m²) durch Epirus bestätigen. -->
+    <p style="margin-top:28px;font-size:.95rem;line-height:1.8;color:rgba(255,255,255,.55);max-width:900px">Epirus Facility Management mit Sitz in Neu-Isenburg wurde 2022 gegründet, ist seit 2026 als GmbH eingetragen (Amtsgericht Offenbach am Main, HRB 59330) und betreut Gewerbeimmobilien im Rhein-Main-Gebiet; das Team arbeitet seit 2013 in der technischen Objektbetreuung. Geschäftsführer ist Athanasios Ioannou.</p>
+  </div>
+</section>
+
+<!-- ETA Methode -->
+<section class="eta-section">
+  <div class="eta-grid">
+    <div class="eta-content">
+      <p class="section-tag">Unser Alleinstellungsmerkmal</p>
+      <h2 class="section-title">
+        <div class="word"><span>Die</span></div>
+        <div class="word"><span>ETA-<em>Methode.</em></span></div>
+      </h2>
+      <div class="divider"></div>
+      <p class="section-sub">
+        ETA steht für <strong>Effizienz, Transparenz und akutes Handeln</strong>. Ein digitales System, das alle Abläufe in Echtzeit sichtbar macht. Für Sie als Auftraggeber, für unser Team vor Ort, für alle Beteiligten.
+      </p>
+
+      <div class="eta-pillars">
+        <div class="eta-pillar">
+          <div class="eta-pillar-letter">E</div>
+          <h4>Effizienz</h4>
+          <p>Optimierte Prozesse und digitale Einsatzplanung senken Kosten und Ausfallzeiten.</p>
+        </div>
+        <div class="eta-pillar">
+          <div class="eta-pillar-letter">T</div>
+          <h4>Transparenz</h4>
+          <p>Lückenlose Dokumentation. Sie sehen jederzeit, was in Ihrem Objekt passiert.</p>
+        </div>
+        <div class="eta-pillar">
+          <div class="eta-pillar-letter">A</div>
+          <h4>Akutes Handeln</h4>
+          <p>Bei Störungen reagieren wir sofort. Kein Ticket-System, kein Warten.</p>
+        </div>
+      </div>
+    </div>
+    <div class="eta-visual">
+      <div class="eta-stat">
+        <div class="eta-stat-num">24/7</div>
+        <div class="eta-stat-text">
+          <strong>Erreichbarkeit</strong>
+          Unser Notdienst ist immer erreichbar, auch an Wochenenden und Feiertagen.
+        </div>
+      </div>
+      <div style="height:1px;background:rgba(255,255,255,.08)"></div>
+      <div class="eta-stat">
+        <div class="eta-stat-num">100%</div>
+        <div class="eta-stat-text">
+          <strong>Digitale Abwicklung</strong>
+          Alle Prozesse digital dokumentiert, von der Auftragserteilung bis zur Abnahme.
+        </div>
+      </div>
+      <div style="height:1px;background:rgba(255,255,255,.08)"></div>
+      <div class="eta-stat">
+        <div class="eta-stat-num">&lt; 2h</div>
+        <div class="eta-stat-text">
+          <strong>Reaktionszeit</strong>
+          Bei Störfällen sind unsere Techniker in unter 2 Stunden vor Ort.
+        </div>
+      </div>
+      <div style="height:1px;background:rgba(255,255,255,.08)"></div>
+      <div class="eta-stat">
+        <div class="eta-stat-num">5.0 ★</div>
+        <div class="eta-stat-text">
+          <strong>Google Bewertung</strong>
+          Unsere Kunden bewerten uns konstant mit Bestnoten.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Unternehmensgeschichte -->
+<section class="timeline-section">
+  <div class="timeline-inner">
+    <div class="timeline-head">
+      <p class="section-tag" style="text-align:center">Unsere Geschichte</p>
+      <h2 class="section-title" style="text-align:center">
+        <div class="word"><span>Einblick</span></div>
+        <div class="word"><span>in</span></div>
+        <div class="word"><span>die</span></div>
+        <div class="word"><span><em>Entwicklung.</em></span></div>
+      </h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-progress" aria-hidden="true"></div>
+      <div class="timeline-item">
+        <div class="timeline-year">2013 – 2016</div>
+        <div class="timeline-title">Technische Basis</div>
+        <div class="timeline-desc">Technische Betreuung von Immobilien und Expertise im Umgang mit Gebäudetechnik – Grundlage der heutigen operativen Kompetenz im Team.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2017</div>
+        <div class="timeline-title">Benchmarking</div>
+        <div class="timeline-desc">Analyse der Marktsituation und Erstellung von möglichen Unternehmensabläufen.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2018</div>
+        <div class="timeline-title">Fokus entsteht</div>
+        <div class="timeline-desc">Analyse der FM-Branche. Klarer Fokus entsteht: Schnelligkeit, Transparenz, messbare Ergebnisse.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2019</div>
+        <div class="timeline-title">Standardisierte Prozesse</div>
+        <div class="timeline-desc">Entwicklung standardisierter Prozesse mit einhergehender Einführung von Qualitätskontrolle und Performance-Messung.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2020</div>
+        <div class="timeline-title">Operative Verantwortung</div>
+        <div class="timeline-desc">Professionalisierung im operativen Management und Verantwortung für mehrere gewerbliche Objekte.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2021</div>
+        <div class="timeline-title">Kaufmännische Steuerung</div>
+        <div class="timeline-desc">Erweiterung um kaufmännische und technische Steuerung mit Dokumentation und klaren Service-Level-Strukturen.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-title">Gründung Epirus FM</div>
+        <div class="timeline-desc">Gründung von Epirus Facility Management und Umsetzung der Methodik in Unternehmensprozesse – Fokus auf Hotellerie und gewerbliche Immobilien.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-title">Skalierung</div>
+        <div class="timeline-desc">Aufbau von Backoffice und Objektsteuerung, erste Partnerschaften über die Region hinaus, Start von Sanierungs- und Projektarbeiten.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-title">Methodik 2.0</div>
+        <div class="timeline-desc">Weiterentwicklung der eigenen Methodik: mehr Transparenz, schnellere Reaktionsprozesse, datenbasierte Leistungsübersichten für Kunden.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2025</div>
+        <div class="timeline-title">Expansion</div>
+        <div class="timeline-desc">Erweiterung auf Büro- und Gewerbeimmobilien, Sanierungs- und Projektgeschäft bundesweit.</div>
+      </div>
+      <!-- GEO 3.8: Firmengeschichte 2026 ergänzt (Rechtsform-Einordnung für KI-Systeme) -->
+      <div class="timeline-item">
+        <div class="timeline-year">2026</div>
+        <div class="timeline-title">GmbH-Eintragung</div>
+        <div class="timeline-desc">Eintragung als Epirus Facility Management GmbH beim Amtsgericht Offenbach am Main (HRB 59330) - Rechtsform und Verantwortung sind fest verankert.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Werte -->
+<section class="values-section">
+  <div class="values-inner">
+    <div class="values-head">
+      <p class="section-tag" style="text-align:center">Unsere Werte</p>
+      <h2 class="section-title" style="text-align:center">
+        <div class="word"><span>Was</span></div>
+        <div class="word"><span>uns</span></div>
+        <div class="word"><span><em>antreibt.</em></span></div>
+      </h2>
+    </div>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon">⚡</div>
+        <div class="value-title">Verlässlichkeit</div>
+        <div class="value-desc">Wir erscheinen pünktlich, liefern was wir versprechen und sind immer erreichbar, auch wenn es mal brennt.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">📊</div>
+        <div class="value-title">Transparenz</div>
+        <div class="value-desc">Keine versteckten Kosten, keine Überraschungen. Alles ist dokumentiert, alles ist nachvollziehbar.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🤝</div>
+        <div class="value-title">Partnerschaft</div>
+        <div class="value-desc">Wir denken nicht in Aufträgen, wir denken in langfristigen Partnerschaften. Ihr Erfolg ist unser Ziel.</div>
+      </div>
+      <div class="value-card">
+        <div class="value-icon">🎯</div>
+        <div class="value-title">Qualität</div>
+        <div class="value-desc">Regelmäßige Qualitätschecks und kontinuierliche Verbesserung sind unser Standard.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="about-cta">
+  <p class="section-tag" style="text-align:center">Jetzt starten</p>
+  <h2>Lernen Sie uns kennen.</h2>
+  <p>Vereinbaren Sie ein kostenloses Erstgespräch. Wir analysieren Ihre Anforderungen und zeigen Ihnen, wie die ETA-Methode Ihr Objekt transformiert.</p>
+  <div class="about-cta-btns">
+    <a href="kontakt.html" class="btn-primary magnetic">
+      <span>Kontakt aufnehmen</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+    <a href="tel:+491747192840" class="btn-ghost-dark magnetic">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72.12 1 .33 1.97.66 2.9a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.93.33 1.9.54 2.9.66A2 2 0 0122 15.92z"/></svg>
+      +49 174 7192 840
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+
+<footer style="background:var(--bg-dark);padding:40px 5%">
+  <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;max-width:1280px;margin:0 auto">
+    <a href="index.html" class="nav-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:60px;width:auto;display:block"></a>
+    <div style="display:flex;gap:24px;flex-wrap:wrap">
+      <a href="ueber-uns.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Über uns</a>
+      <a href="kontakt.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Kontakt</a>
+      <a href="faq.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">FAQ</a>
+      <a href="#" id="cookie-settings" style="font-size:.78rem;color:rgba(255,255,255,.35)">Cookie-Einstellungen</a>
+      <a href="impressum.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Impressum</a>
+      <a href="datenschutz.html" style="font-size:.78rem;color:rgba(255,255,255,.35)">Datenschutz</a>
+    </div>
+    <p style="font-size:.78rem;color:rgba(255,255,255,.3)">© 2026 Epirus FM GmbH</p>
+  </div>
+</footer>
+
+<!-- DSGVO Cookie Banner -->
+<div id="cb-overlay"></div>
+<div id="cb-banner" role="dialog" aria-modal="true" aria-label="Cookie-Einstellungen">
+  <div class="cb-inner">
+    <div class="cb-top">
+      <div class="cb-text">
+        <p class="cb-title">Ihre Privatsphäre</p>
+        <p>Diese Website verwendet Cookies und ähnliche Technologien. Technisch notwendige Cookies sind immer aktiv. Google Tag Manager und Google Ads Conversion Tracking können Sie einzeln aktivieren. Mehr Infos in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+      </div>
+    </div>
+    <div class="cb-toggles">
+      <div class="cb-toggle-row">
+        <label class="cb-switch"><input type="checkbox" checked disabled><span class="cb-slider"></span></label>
+        <div class="cb-toggle-label"><strong>Technisch notwendig</strong><span>Grundfunktionen der Website, immer aktiv</span></div>
+      </div>
+      <div class="cb-toggle-row">
+        <label class="cb-switch"><input type="checkbox" id="cb-gtm"><span class="cb-slider"></span></label>
+        <div class="cb-toggle-label"><strong>Google Tag Manager</strong><span>Verwaltung von Website-Tags, standardmäßig deaktiviert</span></div>
+      </div>
+      <div class="cb-toggle-row">
+        <label class="cb-switch"><input type="checkbox" id="cb-marketing"><span class="cb-slider"></span></label>
+        <div class="cb-toggle-label"><strong>Marketing &amp; Werbung</strong><span>Google Ads Conversion Tracking, personalisierte Werbung und SprachÜbersetzung (Google Translate)</span></div>
+      </div>
+    </div>
+    <div class="cb-buttons">
+      <button class="cb-btn cb-btn-accept" id="cb-accept-all">Alle akzeptieren</button>
+      <button class="cb-btn cb-btn-save" id="cb-save">Auswahl speichern</button>
+      <button class="cb-btn cb-btn-reject" id="cb-reject-all">Alle ablehnen</button>
+    </div>
+  </div>
+</div>
+<script>
+'use strict';
+(function(){
+  var STORAGE_KEY='epirus_fm_consent';
+  var EXPIRY_DAYS=365;
+  var banner=document.getElementById('cb-banner');
+  var overlay=document.getElementById('cb-overlay');
+  var chkGtm=document.getElementById('cb-gtm');
+  var chkMktg=document.getElementById('cb-marketing');
+  if(!banner||!overlay||!chkGtm||!chkMktg)return;
+  chkMktg.addEventListener('change',function(){if(this.checked)chkGtm.checked=true;});
+  chkGtm.addEventListener('change',function(){if(!this.checked)chkMktg.checked=false;});
+  function applyConsent(gtm,marketing){
+    if(typeof gtag==='function'){
+      gtag('consent','update',{'ad_storage':marketing?'granted':'denied','ad_user_data':marketing?'granted':'denied','ad_personalization':marketing?'granted':'denied','analytics_storage':marketing?'granted':'denied'});
+      gtag('consent','update',{'functionality_storage':marketing?'granted':'denied','personalization_storage':marketing?'granted':'denied','security_storage':'denied'});
+    }
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push({'event':'consent_update','gtm_consent':gtm?'granted':'denied','marketing_consent':marketing?'granted':'denied'});
+    try{document.dispatchEvent(new CustomEvent('epirus-consent',{detail:{gtm:gtm,marketing:marketing}}));}catch(e){}
+  }
+  function saveConsent(gtm,marketing){
+    localStorage.setItem(STORAGE_KEY,JSON.stringify({gtm:gtm,marketing:marketing,timestamp:new Date().toISOString(),version:'2.0',expires:Date.now()+EXPIRY_DAYS*86400000}));
+    applyConsent(gtm,marketing);closeBanner();
+  }
+  function openBanner(){
+    overlay.classList.add('cb-visible');banner.classList.add('cb-visible');
+    requestAnimationFrame(function(){overlay.classList.add('cb-show');banner.classList.add('cb-show');});
+    document.body.style.overflow='hidden';
+  }
+  function closeBanner(){
+    banner.classList.remove('cb-show');overlay.classList.remove('cb-show');
+    setTimeout(function(){banner.classList.remove('cb-visible');overlay.classList.remove('cb-visible');document.body.style.overflow='';},450);
+  }
+  function loadSaved(){
+    try{var raw=localStorage.getItem(STORAGE_KEY);if(!raw)return null;var data=JSON.parse(raw);if(data.expires&&Date.now()>data.expires){localStorage.removeItem(STORAGE_KEY);return null;}return data;}catch(e){return null;}
+  }
+  document.getElementById('cb-accept-all').addEventListener('click',function(){chkGtm.checked=true;chkMktg.checked=true;saveConsent(true,true);});
+  document.getElementById('cb-reject-all').addEventListener('click',function(){chkGtm.checked=false;chkMktg.checked=false;saveConsent(false,false);});
+  document.getElementById('cb-save').addEventListener('click',function(){var gtm=chkGtm.checked;var marketing=chkMktg.checked&&gtm;saveConsent(gtm,marketing);});
+  var settingsLink=document.getElementById('cookie-settings');
+  if(settingsLink){settingsLink.addEventListener('click',function(e){e.preventDefault();var saved=loadSaved();if(saved){chkGtm.checked=saved.gtm||false;chkMktg.checked=saved.marketing||false;}openBanner();});}
+  var saved=loadSaved();
+  if(saved){applyConsent(saved.gtm||false,saved.marketing||false);}else{setTimeout(openBanner,600);}
+})();
+</script>
+
+<script>
+  // Nav scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // Timeline animation
+  const items = document.querySelectorAll('.timeline-item');
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: .2 });
+  items.forEach(i => io.observe(i));
+
+  // Cursor
+  const dot = document.querySelector('.cursor-dot');
+  const ring = document.querySelector('.cursor-ring');
+  if (dot && ring) {
+    let mx=0,my=0,rx=0,ry=0;
+    document.addEventListener('mousemove', e => { mx=e.clientX; my=e.clientY; dot.style.transform=`translate(${mx}px,${my}px)`; });
+    (function anim(){ rx+=(mx-rx)*.12; ry+=(my-ry)*.12; ring.style.transform=`translate(${rx}px,${ry}px)`; requestAnimationFrame(anim); })();
+  }
+
+  /* Mobile-Navigation wird von mobile-nav.js gesteuert */
+
+  // RED effects: reveal, timeline progress, watermark parallax, spotlight, magnetic
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finePointer = window.matchMedia('(pointer: fine)').matches;
+
+  // Reveal on scroll (staggered)
+  const rvEls = document.querySelectorAll('.eta-pillar,.value-card,.about-cta h2,.about-cta p,.about-cta-btns');
+  const titleEls = document.querySelectorAll('.section-title');
+  const fadeEls = document.querySelectorAll('.section-tag,.section-sub,.divider');
+  if (reducedMotion) {
+    rvEls.forEach(el => el.classList.add('on'));
+    titleEls.forEach(el => el.classList.add('revealed'));
+    fadeEls.forEach(el => el.classList.add('on'));
+  } else {
+    rvEls.forEach((el, i) => {
+      el.classList.add('rv');
+      el.style.setProperty('--d', ((i % 4) * 0.09) + 's');
+    });
+    const rio = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); rio.unobserve(e.target); } });
+    }, { threshold: .15 });
+    rvEls.forEach(el => rio.observe(el));
+    const tio = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); tio.unobserve(e.target); } });
+    }, { threshold: .2 });
+    titleEls.forEach(el => tio.observe(el));
+    const fio = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); fio.unobserve(e.target); } });
+    }, { threshold: .2 });
+    fadeEls.forEach(el => fio.observe(el));
+  }
+
+  // Timeline progress + watermark parallax (one rAF scroll handler)
+  const tlSec = document.querySelector('.timeline-section');
+  const tlBar = document.querySelector('.timeline-progress');
+  const wm = document.querySelector('.eta-watermark');
+  if (!reducedMotion && (tlBar || wm)) {
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        if (tlSec && tlBar) {
+          const r = tlSec.getBoundingClientRect();
+          const p = Math.min(1, Math.max(0, (window.innerHeight * 0.75 - r.top) / r.height));
+          tlBar.style.transform = 'scaleY(' + p.toFixed(3) + ')';
+        }
+        if (wm) wm.style.transform = 'translateY(' + (window.scrollY * -0.06).toFixed(1) + 'px)';
+        ticking = false;
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  // Value spotlight follows mouse
+  if (finePointer && !reducedMotion) {
+    document.querySelectorAll('.value-card').forEach(card => {
+      card.addEventListener('mousemove', e => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+
+    // Magnetic buttons
+    document.querySelectorAll('.magnetic').forEach(el => {
+      el.addEventListener('mousemove', e => {
+        const r = el.getBoundingClientRect();
+        el.style.transform = 'translate(' + ((e.clientX - r.left - r.width / 2) * 0.18).toFixed(1) + 'px,' + ((e.clientY - r.top - r.height / 2) * 0.18).toFixed(1) + 'px)';
+      });
+      el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+    });
+  }
+</script>
+<script src="botprotect.js"></script>
+<script src="mobile-nav.js"></script>
+
+</body>
+</html>
+
