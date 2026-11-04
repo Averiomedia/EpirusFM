@@ -389,6 +389,50 @@
     @media (max-width: 600px) {
       .jobs-grid { grid-template-columns: 1fr; }
     }
+
+    /* —— Karriere Hero: Text links, FIG. 02 rechts —— */
+    .about-hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 56px;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+    .about-hero .about-hero-inner { max-width: none; }
+    .kar-fig { margin: 0; }
+    .kar-fig svg {
+      width: 100%; height: auto; max-width: 540px;
+      display: block; margin: 0 auto;
+    }
+    .kar-fig figcaption {
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      margin-top: 4px;
+      font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+      font-size: .66rem; letter-spacing: .26em; text-transform: uppercase;
+      color: rgba(255,255,255,.42);
+    }
+    .kar-cap-sq { width: 7px; height: 7px; background: var(--red-l); display: inline-block; }
+    .kar-chip { fill: rgba(14,26,43,.88); stroke: rgba(140,190,255,.35); stroke-width: 1; }
+    .kar-chiptext {
+      font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+      font-size: 11.5px; letter-spacing: .14em; fill: rgba(255,255,255,.78);
+    }
+    .kar-leader { stroke: rgba(240,58,63,.7); stroke-width: 1.2; }
+    .kar-dot { fill: #F03A3F; }
+    .kar-halo {
+      fill: none; stroke: rgba(240,58,63,.55); stroke-width: 1.5;
+      animation: karPulse 2.6s ease-in-out infinite;
+    }
+    @keyframes karPulse { 0%,100% { opacity: .3; } 50% { opacity: .85; } }
+    @media (prefers-reduced-motion: reduce) { .kar-halo { animation: none; } }
+    @media (max-width: 900px) {
+      .about-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+      .kar-fig { max-width: 340px; margin: 0 auto; }
+      .kar-fig figcaption { font-size: .6rem; letter-spacing: .2em; }
+    }
 </style>
 </head>
 <body>
@@ -530,10 +574,65 @@
 <section class="about-hero">
   <div class="aurora a1" aria-hidden="true"></div>
   <div class="aurora a2" aria-hidden="true"></div>
-  <div class="about-hero-inner">
-    <p class="section-tag" style="opacity:1;transform:none;margin-bottom:24px">Karriere bei Epirus FM</p>
-    <h1>Arbeiten bei<br><em>Epirus FM.</em></h1>
-    <p>Wir wachsen mit unseren Objekten und suchen Menschen, die Verantwortung &uuml;bernehmen &ndash; im Büro, im Au&szlig;endienst und auf den Objekten im Rhein-Main-Gebiet.</p>
+  <div class="about-hero-grid">
+    <div class="about-hero-inner">
+      <p class="section-tag" style="opacity:1;transform:none;margin-bottom:24px">Karriere bei Epirus FM</p>
+      <h1>Arbeiten bei<br><em>Epirus FM.</em></h1>
+      <p>Wir wachsen mit unseren Objekten und suchen Menschen, die Verantwortung &uuml;bernehmen &ndash; im Büro, im Au&szlig;endienst und auf den Objekten im Rhein-Main-Gebiet.</p>
+    </div>
+
+    <figure class="kar-fig">
+      <svg viewBox="0 0 560 470" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Isometrische Darstellung: drei Figuren auf einer Fl&auml;che, eine rot hervorgehoben mit Pluszeichen – wir stellen ein">
+        <ellipse cx="280" cy="420" rx="205" ry="38" fill="rgba(0,0,0,.30)"/>
+        <polygon points="280,250 465,357 280,464 95,357" fill="#101A28" stroke="rgba(140,190,255,.28)" stroke-width="1.5"/>
+        <polygon points="465,357 280,464 280,476 465,369" fill="#0B1420" stroke="rgba(140,190,255,.22)" stroke-width="1.5"/>
+        <polygon points="95,357 280,464 280,476 95,369" fill="#0A121C" stroke="rgba(140,190,255,.22)" stroke-width="1.5"/>
+        <line x1="187" y1="303" x2="373" y2="411" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+        <line x1="373" y1="303" x2="187" y2="411" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+        <line x1="280" y1="250" x2="280" y2="464" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+        <line x1="95" y1="357" x2="465" y2="357" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+        <polygon points="144,386 156,379 168,386 156,393" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+        <polygon points="404,390 416,383 428,390 416,397" fill="rgba(255,255,255,.09)" stroke="rgba(140,190,255,.34)" stroke-width="1"/>
+
+        <!-- Figur A: Technik -->
+        <polygon points="159,352 185,337 211,352 185,367" fill="#1B2839" stroke="rgba(140,190,255,.4)" stroke-width="1.5"/>
+        <rect x="172" y="294" width="26" height="56" rx="12" fill="#1F3048" stroke="rgba(140,190,255,.4)" stroke-width="1.5"/>
+        <circle cx="185" cy="280" r="12" fill="#1F3048" stroke="rgba(140,190,255,.45)" stroke-width="1.5"/>
+        <g>
+          <line x1="173" y1="280" x2="140" y2="256" class="kar-leader"/>
+          <rect x="6" y="244" width="134" height="24" rx="5" class="kar-chip"/>
+          <text x="73" y="260" text-anchor="middle" class="kar-chiptext">TECHNIK</text>
+          <circle cx="173" cy="280" r="10" class="kar-halo"/>
+          <circle cx="173" cy="280" r="4" class="kar-dot"/>
+        </g>
+
+        <!-- Figur B: Vertrieb -->
+        <polygon points="349,352 375,337 401,352 375,367" fill="#1B2839" stroke="rgba(140,190,255,.4)" stroke-width="1.5"/>
+        <rect x="362" y="294" width="26" height="56" rx="12" fill="#1F3048" stroke="rgba(140,190,255,.4)" stroke-width="1.5"/>
+        <circle cx="375" cy="280" r="12" fill="#1F3048" stroke="rgba(140,190,255,.45)" stroke-width="1.5"/>
+        <g>
+          <line x1="387" y1="280" x2="420" y2="256" class="kar-leader"/>
+          <rect x="420" y="244" width="134" height="24" rx="5" class="kar-chip"/>
+          <text x="487" y="260" text-anchor="middle" class="kar-chiptext">VERTRIEB</text>
+          <circle cx="387" cy="280" r="10" class="kar-halo"/>
+          <circle cx="387" cy="280" r="4" class="kar-dot"/>
+        </g>
+
+        <!-- Figur C: Wir stellen ein (rot hervorgehoben) -->
+        <polygon points="254,400 280,385 306,400 280,415" fill="rgba(212,21,26,.12)" stroke="rgba(240,58,63,.55)" stroke-width="1.5"/>
+        <rect x="267" y="342" width="26" height="56" rx="12" fill="rgba(212,21,26,.16)" stroke="#F03A3F" stroke-width="1.5"/>
+        <circle cx="280" cy="328" r="12" fill="rgba(212,21,26,.22)" stroke="#F03A3F" stroke-width="1.5"/>
+        <line x1="271" y1="306" x2="289" y2="306" stroke="#F03A3F" stroke-width="2" stroke-linecap="round"/>
+        <line x1="280" y1="297" x2="280" y2="315" stroke="#F03A3F" stroke-width="2" stroke-linecap="round"/>
+        <g>
+          <line x1="296" y1="314" x2="356" y2="208" class="kar-leader"/>
+          <rect x="356" y="196" width="190" height="24" rx="5" class="kar-chip"/>
+          <text x="451" y="212" text-anchor="middle" class="kar-chiptext">VERST&#196;RKUNG GESUCHT</text>
+          <circle cx="296" cy="314" r="4" class="kar-dot"/>
+        </g>
+      </svg>
+      <figcaption><span class="kar-cap-sq"></span>FIG. 02 &mdash; Menschen als System</figcaption>
+    </figure>
   </div>
 </section>
 
