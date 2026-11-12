@@ -11,17 +11,17 @@ Was wir besprochen haben / entschieden:
 3. Chatbot: wir machen keine KI-Lösung, sondern vorgefertigte Fragen mit vorgefertigten Antworten – beantwortet wird dann per WhatsApp Business oder über das Kontaktformular. Die Liste mit Fragen und Antworten schickst du mir noch.
 4. Shop: geht so weiter, wie besprochen – ganz ohne Warenkorb, Bestellung per Anfrage. Reihenfolge: erst die Bilder.
 5. Video (animiertes Kurzvideo): ich übernehme. Du schickst mir die Unterlagen zum Vertriebsablauf, daraus entstehen Skript, Animation mit Figuren in unseren Farben, Sprechertext, Untertitel und der Einbau auf der Website. Unser Preis dafür: 1.200 € netto inkl. einer Korrekturrunde.
-6. Standortkarte: wir machen die Variante Rhein-Main – unsere Kernkompetenz-Region, nicht die ganze Bundesrepublik. Jede Fahne bekommt den Ortsnamen, die Kernorte um Frankfurt werden hervorgehoben. Kundenlogos auf der Karte nur, wenn dafür die Auftragsbestätigung der jeweiligen Kunden vorliegt – das besprechen wir noch einmal.
+6. Standortkarte: eingebaut auf der Startseite direkt hinter den Kennzahlen – Deutschlandkarte mit blass-roter Hervorhebung unserer Kernregion Rhein-Main um Frankfurt, jede Fahne mit Ortsnamen, unsere Zentrale in Neu-Isenburg markiert. Kundenlogos auf der Karte nur, wenn dafür die Auftragsbestätigung der jeweiligen Kunden vorliegt – das besprechen wir noch einmal. Die finale Objektliste (welche Orte genau auf die Karte sollen) schickst du mir noch.
 7. Reiter „Wissen" wird zur FAQ – die Einwand-Fragen gehören dort hin, wo sie auch für Google sichtbar sind. Die Fragen und Antworten dafür folgen noch von dir.
-8. Leistungsseite: die Buttons im Kopfbereich werden animiert und führen zur Leistungsseite.
-9. Bewerbung: wie besprochen kurze Stellenkarten statt langer Beschreibungen.
+8. Buttons im Kopfbereich: wir haben besprochen, dass keine animierten Zusatz-Buttons gebaut werden – hier ist nichts mehr zu tun.
+9. Bewerbung: kurze Stellenkarten statt langer Beschreibungen, ein Klick führt zur neuen Bewerbungsseite mit Formular.
+10. Kaufmännisches FM ist mittlerweile komplett umgesetzt: Seite gelöscht, alle Verweise in Navigation, Footer, Sitemap und FAQ bereinigt.
 
-Was ich als Nächstes umsetze:
-- Kaufmännisches FM komplett entfernen (Seite, Navigation, Sitemap, Texte)
-- Bewerbungsseite mit Formular erstellen und die Karriereseite straffen
-- Animation für die Buttons im Kopfbereich
-- Karte auf Rhein-Main umbauen, Ortsfahnen mit Beschriftung, Kernorte hervorgehoben
-- Chat-Widget um die vorgefertigten Fragen + WhatsApp-Weg erweitern (sobald deine Liste da ist)
+Was ich umgesetzt habe:
+- Kaufmännisches FM komplett entfernt (Seite, Navigation, Sitemap, Texte, FAQ) – erledigt
+- Bewerbungsseite mit Formular erstellt (Stelle wird per Klick vorgewählt) und alle Stellenkarten dorthin umgeleitet – erledigt; das Straffen der Karriereseite mit kurzen Karten mache ich, sobald deine neuen Karriere-Texte da sind
+- Karte auf der Startseite eingebaut: Deutschland mit hervorgehobener Kernregion Rhein-Main, Ortsfahnen mit Beschriftung, Zentrale Neu-Isenburg
+- Shop als eigene Seite mit 10 Artikeln, Filter und Detail-Ansicht – als Menüpunkt auf allen Seiten verlinkt, bis die echten Fotos da sind, noch ohne Indexierung
 
 Was ich von dir brauche:
 
@@ -38,6 +38,8 @@ Was ich von dir brauche:
 5. Video-Unterlagen zum Vertriebsablauf
 6. WhatsApp-Business-Nummer für den Chat-Antwortweg
 7. Kundenlogos + Auftragsbestätigung für die Karten-Fahnen – wann können wir darüber sprechen?
+8. Neue Karriere-Texte (du hattest gesagt, sie kommen) – daraus straffe ich die Karriereseite auf kurze Stellenkarten
+9. Kurze Rückfrage: Auf der Hotels-Seite gibt es eine Gewerk-Karte mit „Reporting" (Kostenübersicht, Leistungsnachweise, Maßnahmenplanung). Gehört die Karte mit raus, oder nur der Text mit „kaufmännische Steuerung"? Vorläufig habe ich den Text auf „transparentes Reporting" umformuliert.
 
 Vor dem Livegang noch zu klären (kurz):
 - Der Auftragsverarbeitungsvertrag mit All-Inkl ist noch nicht unterschrieben – bitte unterschrieben zurückgeben
