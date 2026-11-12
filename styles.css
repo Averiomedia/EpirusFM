@@ -1094,7 +1094,7 @@ footer{
   display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:60px;
 }
 .lp-benefits-grid>*{min-width:0}
-/* Abgrenzung FM-Steuerung vs. Hausverwaltung (lp-kaufmaennisches-fm) */
+/* Abgrenzung FM-Steuerung vs. Hausverwaltung */
 .abgrenzung-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:960px}
 .abgrenzung-grid>*{min-width:0}
 @media(max-width:768px){.abgrenzung-grid{grid-template-columns:1fr}}
