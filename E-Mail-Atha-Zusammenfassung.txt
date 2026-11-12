@@ -1,0 +1,52 @@
+Betreff: Zusammenfassung unseres Gesprächs – offene Punkte & nächste Schritte
+
+Hallo Atha,
+
+schön, dass wir gesprochen haben. Hier die Zusammenfassung, damit wir beide den gleichen Stand haben – und was jeweils als Nächstes zu tun ist.
+
+Was wir besprochen haben / entschieden:
+
+1. Kaufmännisches Gebäudemanagement fliegt raus – eigene Seite und alle Verweise werden entfernt.
+2. Karriereseite: keine ausführlichen Stellenbeschreibungen, sondern eine eigene Bewerbungsseite (Bewerbungsfunnel) mit Formular. Die 11 Stellen bleiben als kurze Karten, ein Klick führt zur Bewerbung.
+3. Chatbot: wir machen keine KI-Lösung, sondern vorgefertigte Fragen mit vorgefertigten Antworten – beantwortet wird dann per WhatsApp Business oder über das Kontaktformular. Die Liste mit Fragen und Antworten schickst du mir noch.
+4. Shop: geht so weiter, wie besprochen – ganz ohne Warenkorb, Bestellung per Anfrage. Reihenfolge: erst die Bilder.
+5. Video (animiertes Kurzvideo): ich übernehme. Du schickst mir die Unterlagen zum Vertriebsablauf, daraus entstehen Skript, Animation mit Figuren in unseren Farben, Sprechertext, Untertitel und der Einbau auf der Website. Unser Preis dafür: 1.200 € netto inkl. einer Korrekturrunde.
+6. Standortkarte: wir machen die Variante Rhein-Main – unsere Kernkompetenz-Region, nicht die ganze Bundesrepublik. Jede Fahne bekommt den Ortsnamen, die Kernorte um Frankfurt werden hervorgehoben. Kundenlogos auf der Karte nur, wenn dafür die Auftragsbestätigung der jeweiligen Kunden vorliegt – das besprechen wir noch einmal.
+7. Reiter „Wissen" wird zur FAQ – die Einwand-Fragen gehören dort hin, wo sie auch für Google sichtbar sind. Die Fragen und Antworten dafür folgen noch von dir.
+8. Leistungsseite: die Buttons im Kopfbereich werden animiert und führen zur Leistungsseite.
+9. Bewerbung: wie besprochen kurze Stellenkarten statt langer Beschreibungen.
+
+Was ich als Nächstes umsetze:
+- Kaufmännisches FM komplett entfernen (Seite, Navigation, Sitemap, Texte)
+- Bewerbungsseite mit Formular erstellen und die Karriereseite straffen
+- Animation für die Buttons im Kopfbereich
+- Karte auf Rhein-Main umbauen, Ortsfahnen mit Beschriftung, Kernorte hervorgehoben
+- Chat-Widget um die vorgefertigten Fragen + WhatsApp-Weg erweitern (sobald deine Liste da ist)
+
+Was ich von dir brauche:
+
+1. Bilder für den Shop – bitte nach dieser Vorgabe fotografieren:
+   - Format: quadratisch, 1200 × 1200 Pixel (JPG oder PNG, max. 300 KB)
+   - Hintergrund: einheitlich hell (weiß oder hellgrau)
+   - Licht: Tageslicht, kein Blitz
+   - Das ganze Produkt im Bild, rundum etwas Luft
+   - Ein Foto pro Artikel reicht für den Start
+
+2. Q&A-Liste: deine vorgefertigten Fragen mit Antworten (für Chat und FAQ)
+3. Rückmeldung zu den Gewerbeobjekt-Zahlen – die aktuell eingebauten Zahlen (45 Objekte, 400.000 m², 24 Hotels, 11 Büros) stimmen nicht, ich brauche die korrekten
+4. Rückmeldung zu den Leistungen in FIG 01 auf der Startseite
+5. Video-Unterlagen zum Vertriebsablauf
+6. WhatsApp-Business-Nummer für den Chat-Antwortweg
+7. Kundenlogos + Auftragsbestätigung für die Karten-Fahnen – wann können wir darüber sprechen?
+
+Vor dem Livegang noch zu klären (kurz):
+- Der Auftragsverarbeitungsvertrag mit All-Inkl ist noch nicht unterschrieben – bitte unterschrieben zurückgeben
+- Wo läuft die E-Mail-Adresse info@epirusfm.de (All-Inkl oder anderer Anbieter)?
+- Telefonnummer: Festnetz und Notdienst-Mobil – führen wir beide?
+- Google Tag Manager-ID für das Tracking
+- Logo: die Originaldatei als SVG/PNG exportieren lassen
+
+Melde dich gerne, wenn zu einem Punkt Fragen sind.
+
+Viele Grüße
+Marie

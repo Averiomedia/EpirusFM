@@ -1,0 +1,718 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<!-- FREIGABE-SHOP: Beispielinweis entfernen, wenn echte Fotos/Daten stehen -->
+<!-- FREIGABE: noindex entfernen + shop.html in sitemap.xml eintragen, wenn echte Fotos/Daten stehen -->
+<meta name="description" content="Werbeartikel und Bekleidung von Epirus FM - Kugelschreiber, Trinkflaschen, T-Shirts und mehr. Bestellung per Anfrage, Angebot in der Regel innerhalb von 24 Stunden.">
+<meta property="og:title" content="Shop - Werbeartikel &amp; Bekleidung | Epirus FM">
+<meta property="og:description" content="Werbeartikel und Bekleidung von Epirus FM - als hochwertige Produktbuehne, Bestellung per Anfrage.">
+<meta property="og:type" content="website">
+<title>Shop - Werbeartikel &amp; Bekleidung | Epirus FM GmbH</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Reveal-Overrides: styles.css setzt opacity:0 (JS-Scroll-Reveal, hier keins) */
+.section-tag,.section-title,.section-sub,.divider{opacity:1;transform:none}
+
+/* ---- Intro ---- */
+.shop-intro{background:var(--bg-2);text-align:center}
+.shop-intro .inner{max-width:780px;margin:0 auto}
+.shop-intro .section-title{font-size:clamp(1.9rem,4vw,3rem)}
+.shop-intro .section-sub{font-size:1rem;color:var(--text-2);line-height:1.8;max-width:64ch;margin:0 auto}
+.shop-intro .divider{margin-left:auto;margin-right:auto}
+.var-note{display:flex;gap:10px;align-items:flex-start;margin-top:28px;font-size:.87rem;line-height:1.65;color:var(--text-2);background:var(--bg);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:10px;padding:14px 16px;text-align:left}
+.var-note strong{color:var(--navy)}
+
+/* ---- Shop ---- */
+.shop-sec{background:var(--bg);padding-top:clamp(56px,7vw,90px)}
+.shop-head{display:flex;flex-wrap:wrap;gap:20px;align-items:flex-end;justify-content:space-between;margin-bottom:34px}
+.shop-head .section-title{font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:0}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{font-size:.8rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:9px 18px;border-radius:999px;border:1px solid var(--border);background:var(--bg-2);color:var(--text-2);cursor:pointer;transition:.2s}
+.chip:hover{border-color:var(--border-h)}
+.chip.on{background:var(--navy);border-color:var(--navy);color:#fff}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));gap:24px}
+.card{background:var(--bg-2);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s var(--transition),box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-m);border-color:var(--border-h)}
+.card.hide{display:none}
+.card-img{position:relative;aspect-ratio:1/1;background:var(--bg-3);display:flex;align-items:center;justify-content:center;padding:14%}
+.card-img svg{width:100%;height:100%}
+.badge{position:absolute;top:12px;left:12px;font-size:.62rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;background:var(--red);color:#fff;padding:4px 10px;border-radius:999px}
+.badge.dark{background:var(--navy)}
+.card-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+.card-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3);margin-bottom:7px}
+.card-name{font-family:'Barlow',sans-serif;font-weight:800;font-size:1.06rem;color:var(--navy);margin-bottom:7px;line-height:1.25}
+.card-desc{font-size:.83rem;line-height:1.6;color:var(--text-2);flex:1}
+.card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:16px;gap:10px}
+.price{font-family:'Barlow',sans-serif;font-weight:800;font-size:1.12rem;color:var(--navy)}
+.price small{display:block;font-size:.64rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3)}
+.detail-btn{font-size:.78rem;font-weight:700;letter-spacing:.05em;padding:9px 16px;border-radius:999px;background:var(--navy);color:#fff;border:none;cursor:pointer;transition:.2s;white-space:nowrap}
+.detail-btn:hover{background:var(--red)}
+
+/* ---- Bestellweg ---- */
+.steps-sec{background:var(--bg-2)}
+.steps-sec .section-title{font-size:clamp(1.7rem,3.4vw,2.4rem);text-align:center}
+.steps-sec .section-tag{text-align:center;display:block}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:1080px;margin:44px auto 0}
+.step{background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:28px 24px;position:relative}
+.step-num{font-family:'Barlow',sans-serif;font-weight:800;font-size:.8rem;letter-spacing:.14em;color:var(--red);margin-bottom:12px;display:block}
+.step h3{font-family:'Barlow',sans-serif;font-weight:800;font-size:1.15rem;color:var(--navy);margin-bottom:9px}
+.step p{font-size:.87rem;line-height:1.7;color:var(--text-2)}
+
+/* ---- Modal ---- */
+.modal{position:fixed;inset:0;background:rgba(14,26,43,.72);display:none;align-items:center;justify-content:center;padding:24px;z-index:200}
+.modal.open{display:flex}
+.modal-box{background:var(--bg);border-radius:18px;max-width:560px;width:100%;max-height:88vh;overflow:auto;padding:34px 32px 30px;position:relative;box-shadow:var(--shadow-l)}
+.modal-close{position:absolute;top:14px;right:16px;background:var(--bg-2);border:1px solid var(--border);width:34px;height:34px;border-radius:50%;font-size:1.1rem;cursor:pointer;color:var(--navy);line-height:1}
+.modal-close:hover{background:var(--red);color:#fff;border-color:var(--red)}
+.modal-cat{font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:8px}
+.modal-name{font-family:'Barlow',sans-serif;font-weight:800;font-size:1.6rem;color:var(--navy);margin-bottom:10px}
+.modal-price{font-family:'Barlow',sans-serif;font-weight:800;font-size:1.3rem;color:var(--navy);margin-bottom:16px}
+.modal-desc{font-size:.92rem;line-height:1.75;color:var(--text-2);margin-bottom:18px}
+.modal-specs{list-style:none;margin:0 0 22px;padding:0;font-size:.87rem;color:var(--text-2)}
+.modal-specs li{padding:8px 0;border-bottom:1px dashed var(--border);display:flex;justify-content:space-between;gap:14px}
+.modal-specs li b{color:var(--navy);font-weight:700;text-align:right}
+.modal-note{font-size:.78rem;line-height:1.6;color:var(--text-3);background:var(--bg-2);border-radius:10px;padding:12px 14px;margin-bottom:20px}
+.modal-cta{display:flex;gap:12px;flex-wrap:wrap}
+.modal-cta .btn-primary,.modal-cta .btn-ghost-dark{padding:14px 30px;font-size:.88rem}
+.modal-cta button{background:transparent;cursor:pointer}
+
+@media(max-width:640px){
+  .shop-head{flex-direction:column;align-items:flex-start}
+  .modal-box{padding:30px 22px 26px}
+}
+</style>
+</head>
+<body>
+
+<div id="cursor"><div class="cursor-dot"></div><div class="cursor-ring"></div></div>
+<nav id="nav" class="scrolled">
+  <a href="index.html" class="nav-logo"><img src="logo-dark.svg" alt="Epirus FM" style="height:60px;width:auto;display:block"></a>
+  <ul class="nav-links">
+    <li class="nav-dropdown-wrap">
+        <span class="nav-dropdown-trigger">Alle Leistungen <svg class="nav-chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></span>
+              <div class="nav-mega">
+        <div class="nav-mega-inner">
+          <div class="nav-mega-cols">
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Technisches FM</p>
+              <a href="lp-technisches-fm.html">Technisches FM</a>
+              <a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a>
+              <a href="lp-stoerungsmanagement-notdienst.html">St&ouml;rungsmanagement &amp; Notdienst</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Kaufm&auml;nnisch &amp; Management</p>
+              <a href="lp-kaufmaennisches-fm.html">Kaufm&auml;nnisches FM</a>
+              <a href="lp-facility-management.html">Facility Management</a>
+              <a href="lp-facility-management-hotels.html">FM f&uuml;r Hotels</a>
+              <a href="lp-gebaeudemanagement.html">Geb&auml;udemanagement</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Reinigung &amp; Pflege</p>
+              <a href="lp-gebaeudereinigung.html">Geb&auml;udereinigung</a>
+              <a href="lp-gruenflaechen.html">Gr&uuml;nfl&auml;chenpflege</a>
+              <a href="lp-winterdienst.html">Winterdienst</a>
+              <a href="lp-hausmeisterservice.html">Hausmeisterservice</a>
+            </div>
+            <div class="nav-mega-col">
+              <p class="nav-mega-label">Service</p>
+              <a href="faq.html">FAQ</a>
+              <a href="kontakt.html">Kontakt &amp; Angebot</a>
+            </div>
+          </div>
+          <a class="nav-mega-card" href="lp-facility-management.html">
+            <img src="nav-card.svg" alt="" width="300" height="180" loading="lazy">
+            <span class="nav-mega-label">&Uuml;bersicht</span>
+            <strong>Facility Management</strong>
+            <span class="nav-mega-card-text">Technik, Kaufm&auml;nnisches und Spezialdienste &ndash; aus einer Hand.</span>
+          </a>
+        </div>
+      </div>
+      </li>
+    <li><a href="index.html#why">Über uns</a></li>
+    <li><a href="karriere.html">Karriere</a></li>
+    <li><a href="shop.html" class="active">Shop</a></li>
+    <li><a href="kontakt.html" class="nav-cta magnetic">Termin vereinbaren</a></li>
+  <li>
+    <button id="lang-toggle" class="nav-lang-btn" title="Switch to English">
+      <span id="lang-flag">&#127468;&#127467;</span>
+      <span id="lang-label">EN</span>
+    </button>
+  </li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobiles Vollbild-Menü (nur <=768px sichtbar) -->
+<div id="mobile-menu" aria-hidden="true">
+  <div class="mm-head">
+    <a href="index.html" class="mm-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:48px;width:auto;display:block"></a>
+    <button class="mm-close" aria-label="Men&uuml; schlie&szlig;en">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <nav class="mm-nav">
+    <div class="mm-acc">
+      <button class="mm-link mm-acc-btn" aria-expanded="false">
+        Leistungen
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+      </button>
+      <div class="mm-acc-panel">
+        <p class="mm-acc-label">Technisches FM</p>
+        <a href="lp-technisches-fm.html">Technisches FM</a>
+        <a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a>
+        <a href="lp-stoerungsmanagement-notdienst.html">St&ouml;rungsmanagement &amp; Notdienst</a>
+        <p class="mm-acc-label">Kaufm&auml;nnisch &amp; Management</p>
+        <a href="lp-kaufmaennisches-fm.html">Kaufm&auml;nnisches FM</a>
+        <a href="lp-facility-management.html">Facility Management</a>
+        <a href="lp-facility-management-hotels.html">FM f&uuml;r Hotels</a>
+        <a href="lp-gebaeudemanagement.html">Geb&auml;udemanagement</a>
+        <p class="mm-acc-label">Reinigung &amp; Pflege</p>
+        <a href="lp-gebaeudereinigung.html">Geb&auml;udereinigung</a>
+        <a href="lp-gruenflaechen.html">Gr&uuml;nfl&auml;chenpflege</a>
+        <a href="lp-winterdienst.html">Winterdienst</a>
+        <a href="lp-hausmeisterservice.html">Hausmeisterservice</a>
+        <p class="mm-acc-label">Service</p>
+        <a href="faq.html">FAQ</a>
+        <a href="kontakt.html">Kontakt &amp; Angebot</a>
+      </div>
+    </div>
+    <a class="mm-link" href="ueber-uns.html">&Uuml;ber uns</a>
+    <a class="mm-link" href="karriere.html">Karriere</a>
+    <a class="mm-link" href="shop.html">Shop</a>
+    <a class="mm-link" href="faq.html">FAQ</a>
+    <a class="mm-link" href="kontakt.html">Kontakt</a>
+  </nav>
+  <a class="mm-cta" href="kontakt.html">
+    Termin vereinbaren
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+  </a>
+  <button class="mm-lang" title="Switch to English">
+    <span class="mm-lang-flag">🇬🇧</span>
+    <span class="mm-lang-label">EN</span>
+  </button>
+  <div class="mm-sep"></div>
+  <div class="mm-contact">
+    <a href="tel:+491747192840">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.72A2 2 0 012 .9h3a2 2 0 012 1.72c.12 1 .33 1.97.66 2.9a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.93.33 1.9.54 2.9.66A2 2 0 0122 15.92z"/></svg>
+      +49 174 7192 840
+    </a>
+    <span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Werner-Heisenberg-Str. 2a<br>63263 Neu-Isenburg
+    </span>
+    <a href="mailto:info@epirusfm.de">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
+      info@epirusfm.de
+    </a>
+  </div>
+</div>
+<div id="google_translate_element" style="display:none"></div>
+
+
+
+<!-- ========== INTRO ========== -->
+<section class="shop-intro">
+  <div class="inner">
+    <p class="section-tag">Shop</p>
+    <h1 class="section-title">Sortiment, das <em>gro&szlig;</em> wirkt.</h1>
+    <div class="divider"></div>
+    <p class="section-sub">
+      Werbesachen und ausgew&auml;hlte Bekleidungsst&uuml;cke als hochwertige Produktb&uuml;hne:
+      Kategorien, saubere Raster, Detailansichten mit Gr&ouml;&szlig;en und Preisen &ndash;
+      bestellt wird wie gewohnt per Anfrage. Der Auftritt wirkt wie ein großes Sortiment,
+      ohne Warenkorb und ohne Zahlungsabwicklung.
+    </p>
+    <div class="var-note">
+      <span><strong>Bewusst ohne Warenkorb:</strong> Ein echter Checkout br&auml;chte AGB,
+      Widerrufsbelehrung und Zahlungsanbieter zur&uuml;ck (die AGB-Seite wurde entfernt).
+      Hier gen&uuml;gt &bdquo;Anfrage senden&ldquo; &ndash; rechtlich sauber, technisch wartungsfrei.<br><strong>Bilder und Preise sind Beispiele:</strong> die finalen Artikel- und Fotodaten folgen.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========== SHOP ========== -->
+<section class="shop-sec">
+  <div class="shop-head">
+    <div>
+      <p class="section-tag">Sortiment</p>
+      <h2 class="section-title">Ausgew&auml;hlte Artikel</h2>
+    </div>
+    <div class="chips" role="tablist">
+      <button class="chip on" data-f="all">Alle</button>
+      <button class="chip" data-f="werb">Werbeartikel</button>
+      <button class="chip" data-f="klamotten">Bekleidung</button>
+    </div>
+  </div>
+
+  <div class="grid" id="grid">
+
+    <!-- 01 Kugelschreiber -->
+    <article class="card" data-cat="werb">
+      <div class="card-img">
+        <span class="badge">Bestseller</span>
+        <svg viewBox="0 0 200 200" aria-label="Kugelschreiber">
+          <g transform="rotate(35 100 100)">
+            <path d="M92 168 L100 194 L108 168 Z" fill="#6E85A0"/>
+            <rect x="88" y="126" width="24" height="44" rx="4" fill="#0E1A2B"/>
+            <rect x="88" y="46" width="24" height="82" fill="#F5F8FF"/>
+            <rect x="88" y="46" width="24" height="82" fill="none" stroke="#0E1A2B" stroke-width="5"/>
+            <rect x="88" y="64" width="24" height="14" fill="#D4151A"/>
+            <path d="M92 46 q8 -26 16 0" fill="#D4151A"/>
+          </g>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Werbeartikel</p>
+        <h3 class="card-name">Kugelschreiber &bdquo;Epirus Line&ldquo;</h3>
+        <p class="card-desc">Metallkugelschreiber mit Gummigriff, Logo-Druck in Rot oder Navy.</p>
+        <div class="card-foot">
+          <span class="price">1,20&nbsp;&euro;<small>ab 100 St&uuml;ck</small></span>
+          <button class="detail-btn" data-cat="Werbeartikel" data-name="Kugelschreiber &bdquo;Epirus Line&ldquo;" data-price="1,20 &euro; &middot; ab 100 St&uuml;ck" data-desc="Metallkugelschreiber mit Gummigriff und Druck in unseren Markenfarben. Der Klassiker f&uuml;r Messen, Termine und Objektbesichtigungen." data-specs="Material:Metall, Gummigriff |Bedruckung:1-farbig Rot oder Navy |Mindestmenge:100 St&uuml;ck">Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 Notizblock -->
+    <article class="card" data-cat="werb">
+      <div class="card-img">
+        <svg viewBox="0 0 200 200" aria-label="Notizblock">
+          <rect x="58" y="42" width="92" height="126" rx="7" fill="#0E1A2B"/>
+          <rect x="66" y="50" width="84" height="126" rx="6" fill="#F5F8FF" stroke="#0E1A2B" stroke-width="4"/>
+          <g fill="#6E85A0">
+            <circle cx="74" cy="60" r="4"/><circle cx="74" cy="82" r="4"/><circle cx="74" cy="104" r="4"/><circle cx="74" cy="126" r="4"/><circle cx="74" cy="148" r="4"/>
+          </g>
+          <g stroke="#E8EDF4" stroke-width="4">
+            <path d="M88 74h50"/><path d="M88 96h50"/><path d="M88 118h34"/>
+          </g>
+          <rect x="128" y="50" width="12" height="126" fill="#D4151A"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Werbeartikel</p>
+        <h3 class="card-name">Notizblock A5</h3>
+        <p class="card-desc">100 g/m&sup2;, 80 Blatt, Fadenheftung und rotes Bindungsgummi.</p>
+        <div class="card-foot">
+          <span class="price">4,90&nbsp;&euro;<small>St&uuml;ckpreis</small></span>
+          <button class="detail-btn" data-cat="Werbeartikel" data-name="Notizblock A5" data-price="4,90 &euro; &middot; St&uuml;ckpreis" data-desc="Hochwertiger Notizblock mit Fadenheftung, dezentem Logo-Pr&auml;gung und rotem Bindungsgummi &ndash; f&uuml;r Hausverwaltungen, Objektbetreuer und interne Notizen." data-specs="Format:A5, 80 Blatt |Papier:100 g/m&sup2; |Bedruckung:Pr&auml;gung oder 1-farbig">Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 03 Trinkflasche -->
+    <article class="card" data-cat="werb">
+      <div class="card-img">
+        <span class="badge dark">Neu</span>
+        <svg viewBox="0 0 200 200" aria-label="Trinkflasche">
+          <rect x="88" y="24" width="24" height="26" rx="5" fill="#D4151A"/>
+          <rect x="92" y="48" width="16" height="16" fill="#0E1A2B"/>
+          <path d="M76 78 q0 -16 16 -16 h16 q16 0 16 16 v86 a18 18 0 0 1 -18 18 h-12 a18 18 0 0 1 -18 -18 z" fill="#0E1A2B"/>
+          <rect x="76" y="102" width="48" height="36" fill="#F5F8FF"/>
+          <rect x="86" y="112" width="28" height="6" rx="3" fill="#D4151A"/>
+          <rect x="90" y="124" width="20" height="5" rx="2.5" fill="#6E85A0"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Werbeartikel</p>
+        <h3 class="card-name">Stahltrinkflasche 500&nbsp;ml</h3>
+        <p class="card-desc">Isolierflasche aus Edelstahl, Lasergravur des Logos.</p>
+        <div class="card-foot">
+          <span class="price">12,90&nbsp;&euro;<small>ab 25 St&uuml;ck</small></span>
+          <button class="detail-btn" data-cat="Werbeartikel" data-name="Stahltrinkflasche 500 ml" data-price="12,90 &euro; &middot; ab 25 St&uuml;ck" data-desc="Doppelwandige Isolierflasche aus Edelstahl, 500 ml, mit Lasergravur. H&auml;lt Getr&auml;nke kalt oder warm &ndash; praktisch auf dem Objekt und im Au&szlig;endienst." data-specs="Volumen:500 ml |Material:Edelstahl, doppelwandig |Bedruckung:Lasergravur">Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 04 Tasse -->
+    <article class="card" data-cat="werb">
+      <div class="card-img">
+        <svg viewBox="0 0 200 200" aria-label="Keramiktasse">
+          <path d="M140 78 h16 a24 24 0 0 1 0 48 h-16" fill="none" stroke="#0E1A2B" stroke-width="10"/>
+          <path d="M52 60 h92 v70 a26 26 0 0 1 -26 26 h-40 a26 26 0 0 1 -26 -26 z" fill="#F5F8FF" stroke="#0E1A2B" stroke-width="6"/>
+          <rect x="52" y="118" width="92" height="24" fill="#D4151A"/>
+          <path d="M52 60 h92" stroke="#0E1A2B" stroke-width="6"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Werbeartikel</p>
+        <h3 class="card-name">Keramiktasse 300&nbsp;ml</h3>
+        <p class="card-desc">Glanzkeramik mit Vollton-Druck, sp&uuml;lmaschinenfest.</p>
+        <div class="card-foot">
+          <span class="price">6,50&nbsp;&euro;<small>ab 36 St&uuml;ck</small></span>
+          <button class="detail-btn" data-cat="Werbeartikel" data-name="Keramiktasse 300 ml" data-price="6,50 &euro; &middot; ab 36 St&uuml;ck" data-desc="Glanzkeramiktasse mit Volltondruck in Rot oder Navy, sp&uuml;lmaschinenfest. Das Geschenk f&uumr;r feste Ansprechpartner und Neukunden." data-specs="Volumen:300 ml |Material:Glanzkeramik |Bedruckung:Vollton, 1-farbig">Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 05 Stofftasche -->
+    <article class="card" data-cat="werb">
+      <div class="card-img">
+        <svg viewBox="0 0 200 200" aria-label="Stofftasche">
+          <path d="M74 76 v-16 a26 26 0 0 1 52 0 v16" fill="none" stroke="#0E1A2B" stroke-width="8"/>
+          <rect x="50" y="76" width="100" height="94" rx="8" fill="#E8EDF4" stroke="#0E1A2B" stroke-width="6"/>
+          <rect x="86" y="106" width="28" height="28" rx="6" fill="#D4151A"/>
+          <rect x="94" y="114" width="12" height="12" rx="3" fill="#fff"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Werbeartikel</p>
+        <h3 class="card-name">Stofftasche Baumwolle</h3>
+        <p class="card-desc">140&nbsp;g/m&sup2;, bedruckt, tragbar f&uuml;r Unterlagen & Prospekte.</p>
+        <div class="card-foot">
+          <span class="price">5,90&nbsp;&euro;<small>ab 50 St&uuml;ck</small></span>
+          <button class="detail-btn" data-cat="Werbeartikel" data-name="Stofftasche Baumwolle" data-price="5,90 &euro; &middot; ab 50 St&uuml;ck" data-desc="Robuste Baumwolltasche mit langen Henkeln, 140 g/m&sup2;, 1-farbig bedruckt. F&uuml;r Messen, Give-aways und Objekttermine." data-specs="Material:Baumwolle, 140 g/m&sup2; |Ma&szlig;e:38 &times; 42 cm |Bedruckung:1-farbig">Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 06 Cap -->
+    <article class="card" data-cat="werb">
+      <div class="card-img">
+        <svg viewBox="0 0 200 200" aria-label="Cap">
+          <path d="M46 124 q54 -74 108 0 z" fill="#0E1A2B"/>
+          <path d="M154 124 q40 2 46 16 q-30 12 -46 -2 z" fill="#D4151A"/>
+          <path d="M46 124 q54 -14 108 0" fill="none" stroke="#1A2C44" stroke-width="5"/>
+          <circle cx="100" cy="70" r="7" fill="#D4151A"/>
+          <path d="M78 124 v-36" stroke="#1A2C44" stroke-width="4"/>
+          <path d="M122 124 v-36" stroke="#1A2C44" stroke-width="4"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Werbeartikel</p>
+        <h3 class="card-name">Cap bestickt</h3>
+        <p class="card-desc">6-Panels, verstellbar, Logo als Stickerei in Weiß oder Rot.</p>
+        <div class="card-foot">
+          <span class="price">14,90&nbsp;&euro;<small>ab 25 St&uuml;ck</small></span>
+          <button class="detail-btn" data-cat="Werbeartikel" data-name="Cap bestickt" data-price="14,90 &euro; &middot; ab 25 St&uuml;ck" data-desc="Uni-Cap aus Baumwolltwill, 6 Panels, Klettverschluss. Logo als Stickerei &ndash; f&uuml;r Au&szlig;endienst, Events und Team-Auftritt." data-specs="Material:Baumwolltwill |Verstellung:Klett, one size |Bedruckung:Stickerei">Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 07 T-Shirt -->
+    <article class="card" data-cat="klamotten">
+      <div class="card-img">
+        <span class="badge">Beliebt</span>
+        <svg viewBox="0 0 200 200" aria-label="T-Shirt">
+          <path d="M64 40 L36 58 L24 96 L52 106 L60 92 L60 172 L140 172 L140 92 L148 106 L176 96 L164 58 L136 40 Q100 60 64 40 Z" fill="#D4151A"/>
+          <path d="M64 40 Q100 60 136 40" fill="none" stroke="#A80E12" stroke-width="5"/>
+          <rect x="88" y="92" width="24" height="24" rx="5" fill="#fff" opacity=".92"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Bekleidung</p>
+        <h3 class="card-name">T-Shirt Baumwolle</h3>
+        <p class="card-desc">180&nbsp;g/m&sup2;, Gr&ouml;&szlig;en S&ndash;XXL, Bruststick klein.</p>
+        <div class="card-foot">
+          <span class="price">19,90&nbsp;&euro;<small>inkl. Stick</small></span>
+          <button class="detail-btn" data-cat="Bekleidung" data-name="T-Shirt Baumwolle" data-price="19,90 &euro; &middot; inkl. Stick" data-desc="Feines Rundstrickt-Shirt aus 100 % Baumwolle, 180 g/m&sup2;, mit kleinem Bruststick links. Farben: Navy, Rot, Weiß." data-specs="Gr&ouml;&szlig;en:S &ndash; XXL |Material:100 % Baumwolle, 180 g/m&sup2; |Stick:Brust links, 6 cm |Farben:Navy / Rot / Wei&szlig;">Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 08 Poloshirt -->
+    <article class="card" data-cat="klamotten">
+      <div class="card-img">
+        <svg viewBox="0 0 200 200" aria-label="Poloshirt">
+          <path d="M64 40 L36 58 L24 96 L52 106 L60 92 L60 172 L140 172 L140 92 L148 106 L176 96 L164 58 L136 40 Q100 60 64 40 Z" fill="#0E1A2B"/>
+          <path d="M84 44 L100 64 L116 44 L108 40 L100 52 L92 40 Z" fill="#F5F8FF"/>
+          <path d="M100 64 L100 96" stroke="#F5F8FF" stroke-width="5"/>
+          <circle cx="100" cy="72" r="3.5" fill="#D4151A"/>
+          <circle cx="100" cy="86" r="3.5" fill="#D4151A"/>
+          <rect x="112" y="104" width="22" height="22" rx="5" fill="#D4151A"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Bekleidung</p>
+        <h3 class="card-name">Poloshirt</h3>
+        <p class="card-desc">Piqué, Gr&ouml;&szlig;en S&ndash;XXL, Logo-Stick am Brustbereich.</p>
+        <div class="card-foot">
+          <span class="price">29,90&nbsp;&euro;<small>inkl. Stick</small></span>
+          <button class="detail-btn" data-cat="Bekleidung" data-name="Poloshirt" data-price="29,90 &euro; &middot; inkl. Stick" data-desc="Piqu&eacute;-Polo aus Baumwolle, zwei Kn&ouml;pfe, versteifter Kragen. Der repr&auml;sentative Auftritt f&uuml;r Empfang, Beratung und Objekttermine." data-specs="Gr&ouml;&szlig;en:S &ndash; XXL |Material:Baumwoll-Piqu&eacute; |Stick:Brust links, 8 cm |Farben:Navy / Rot">Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 09 Hoodie -->
+    <article class="card" data-cat="klamotten">
+      <div class="card-img">
+        <span class="badge dark">Neu</span>
+        <svg viewBox="0 0 200 200" aria-label="Hoodie">
+          <path d="M70 44 L36 62 L26 102 L52 110 L58 98 L58 174 L142 174 L142 98 L148 110 L174 102 L164 62 L130 44 Q100 34 70 44 Z" fill="#6E85A0"/>
+          <path d="M70 44 Q100 74 130 44 Q116 62 100 64 Q84 62 70 44 Z" fill="#3A4D66"/>
+          <path d="M92 64 L90 90 M108 64 L110 90" stroke="#F5F8FF" stroke-width="5" stroke-linecap="round"/>
+          <path d="M74 138 h52 v20 h-52 z" fill="#3A4D66"/>
+          <rect x="88" y="112" width="24" height="18" rx="4" fill="#D4151A"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Bekleidung</p>
+        <h3 class="card-name">Hoodie</h3>
+        <p class="card-desc">320&nbsp;g/m&sup2;, Kengtasche, Rumpfstick in Rot.</p>
+        <div class="card-foot">
+          <span class="price">44,90&nbsp;&euro;<small>inkl. Stick</small></span>
+          <button class="detail-btn" data-cat="Bekleidung" data-name="Hoodie" data-price="44,90 &euro; &middot; inkl. Stick" data-desc="Kapuzenpullover mit Flauschinnenfutter, Rumpf- oder Bruststick w&auml;hlbar. F&uuml;r kalte Objekttermine und den Au&szlig;endienst im Winter." data-specs="Gr&ouml;&szlig;en:S &ndash; XXL |Material:80 % Baumwolle, 320 g/m&sup2; |Stick:Brust oder Rumpf |Farben:Anthrazit / Navy">Details</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- 10 Softshell -->
+    <article class="card" data-cat="klamotten">
+      <div class="card-img">
+        <svg viewBox="0 0 200 200" aria-label="Softshelljacke">
+          <path d="M70 42 L34 62 L24 104 L52 114 L60 100 L60 176 L140 176 L140 100 L148 114 L176 104 L166 62 L130 42 L100 56 Z" fill="#0E1A2B"/>
+          <path d="M100 56 L100 176" stroke="#F5F8FF" stroke-width="5"/>
+          <path d="M70 42 L86 74 L100 56 L114 74 L130 42" fill="none" stroke="#1A2C44" stroke-width="6"/>
+          <circle cx="100" cy="84" r="4" fill="#D4151A"/>
+          <circle cx="100" cy="112" r="4" fill="#D4151A"/>
+          <circle cx="100" cy="140" r="4" fill="#D4151A"/>
+          <rect x="64" y="130" width="20" height="6" rx="3" fill="#D4151A"/>
+          <rect x="116" y="130" width="20" height="6" rx="3" fill="#D4151A"/>
+        </svg>
+      </div>
+      <div class="card-body">
+        <p class="card-cat">Bekleidung</p>
+        <h3 class="card-name">Softshelljacke</h3>
+        <p class="card-desc">Wind- & wasserabweisend, Gr&ouml;&szlig;en S&ndash;XXL, Mehrfachstick.</p>
+        <div class="card-foot">
+          <span class="price">79,90&nbsp;&euro;<small>inkl. Stick</small></span>
+          <button class="detail-btn" data-cat="Bekleidung" data-name="Softshelljacke" data-price="79,90 &euro; &middot; inkl. Stick" data-desc="Weiche Softshelljacke, wind- und wasserabweisend, atmungsaktiv, mit Brust- und R&uuml;ckenstick. Der Wetter-Auftritt f&uuml;r das ganze Team." data-specs="Gr&ouml;&szlig;en:S &ndash; XXL |Material:Softshell, windabweisend |Stick:Brust + R&uuml;cken m&ouml;glich |Farben:Navy / Schwarz">Details</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ========== BESTELLWEG ========== -->
+<section class="steps-sec">
+  <p class="section-tag">Ablauf</p>
+  <h2 class="section-title">Bestellen &ndash; ganz einfach</h2>
+  <div class="steps">
+    <div class="step">
+      <span class="step-num">01</span>
+      <h3>Artikel w&auml;hlen</h3>
+      <p>Detailansicht &ouml;ffnen, Gr&ouml;&szlig;e und Menge festlegen &ndash; so wie hier in der Demo.</p>
+    </div>
+    <div class="step">
+      <span class="step-num">02</span>
+      <h3>Anfrage senden</h3>
+      <p>Ein Klick auf &bdquo;Anfrage senden&ldquo; &ouml;ffnet das Kontaktformular mit dem Artikel als Vorbelegung.</p>
+    </div>
+    <div class="step">
+      <span class="step-num">03</span>
+      <h3>Angebot in 24 Stunden</h3>
+      <p>Epirus best&auml;tigt Verf&uuml;gbarkeit, Lieferzeit und Preis &ndash; Versand direkt ans Objekt oder per Post.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FUSS / CHECKLISTE ========== -->
+
+
+<!-- Detail-Modal -->
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <button class="modal-close" id="mClose" aria-label="Schlie&szlig;en">&times;</button>
+    <p class="modal-cat" id="mCat"></p>
+    <h3 class="modal-name" id="mName"></h3>
+    <p class="modal-price" id="mPrice"></p>
+    <p class="modal-desc" id="mDesc"></p>
+    <ul class="modal-specs" id="mSpecs"></ul>
+    <p class="modal-note">Ohne Warenkorb: Mit einem Klick auf &bdquo;Anfrage senden&ldquo; wird das Kontaktformular mit diesem Artikel vorbelegt &ndash; Epirus antwortet mit einem Festpreis-Angebot.</p>
+    <div class="modal-cta">
+      <a href="kontakt.html" class="btn-primary"><span>Anfrage senden</span></a>
+      <button class="btn-ghost-dark" id="mBack"><span>Weiter ansehen</span></button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Kategorie-Filter
+var chips = document.querySelectorAll('.chip');
+var cards = document.querySelectorAll('#grid .card');
+chips.forEach(function (c) {
+  c.addEventListener('click', function () {
+    chips.forEach(function (x) { x.classList.remove('on'); });
+    c.classList.add('on');
+    var f = c.dataset.f;
+    cards.forEach(function (card) {
+      card.classList.toggle('hide', f !== 'all' && card.dataset.cat !== f);
+    });
+  });
+});
+
+// Detail-Modal
+var modal = document.getElementById('modal');
+function openModal(btn) {
+  document.getElementById('mCat').textContent = btn.dataset.cat;
+  document.getElementById('mName').innerHTML = btn.dataset.name;
+  document.getElementById('mPrice').innerHTML = btn.dataset.price;
+  document.getElementById('mDesc').innerHTML = btn.dataset.desc;
+  var ul = document.getElementById('mSpecs');
+  ul.innerHTML = '';
+  btn.dataset.specs.split('|').forEach(function (row) {
+    var p = row.split(':');
+    var li = document.createElement('li');
+    li.innerHTML = '<span>' + p[0] + '</span><b>' + (p[1] || '') + '</b>';
+    ul.appendChild(li);
+  });
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.querySelectorAll('.detail-btn').forEach(function (b) {
+  b.addEventListener('click', function () { openModal(b); });
+});
+document.getElementById('mClose').addEventListener('click', closeModal);
+document.getElementById('mBack').addEventListener('click', closeModal);
+modal.addEventListener('click', function (e) { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeModal(); });
+</script>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo"><img src="logo-white.svg" alt="Epirus FM" style="height:60px;width:auto;display:block"></div>
+      <p>Professionelles Facility Management f&#252;r Gewerbeimmobilien und Hotels, sichtbar, pers&#246;nlich, transparent.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Leistungen</h4>
+      <ul>
+        <li><a href="lp-gebaeudereinigung.html">Geb&#228;udereinigung</a></li>
+        <li><a href="lp-hausmeisterservice.html">Hausmeisterservice</a></li>
+        <li><a href="lp-technisches-fm.html">Technisches FM</a></li>
+        <li><a href="lp-winterdienst.html">Winterdienst</a></li>
+        <li><a href="lp-gruenflaechen.html">Gr&#252;nfl&#228;chenpflege</a></li>
+        <li><a href="lp-stoerungsmanagement-notdienst.html">St&#246;rungsmanagement &amp; Notdienst</a></li>
+        <li><a href="lp-facility-management-hotels.html">FM f&#252;r Hotels</a></li>
+        <li><a href="lp-infrastrukturelles-fm.html">Infrastrukturelles FM</a></li>
+        <li><a href="lp-kaufmaennisches-fm.html">Kaufm&#228;nnisches FM</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontakt</h4>
+      <ul>
+        <li><a href="tel:+491747192840">+49 174 7192 840</a></li>
+        <li><a href="mailto:info@epirusfm.de">info@epirusfm.de</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Rechtliches</h4>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="#" id="cookie-settings">Cookie-Einstellungen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&#169; 2026 Epirus FM GmbH. Alle Rechte vorbehalten.</p>
+  </div>
+</footer>
+
+<script src="libs/gsap.min.js"></script>
+<script src="libs/ScrollTrigger.min.js"></script>
+<script src="libs/lenis.min.js"></script>
+<script>
+gsap.registerPlugin(ScrollTrigger);
+const lenis=new Lenis({lerp:.08});lenis.on('scroll',ScrollTrigger.update);gsap.ticker.add(t=>lenis.raf(t*1000));gsap.ticker.lagSmoothing(0);
+const nav=document.getElementById('nav');nav.classList.add('scrolled');
+ScrollTrigger.create({start:80,onEnter:()=>nav.classList.add('scrolled')});
+if(window.innerWidth>768){const cursor=document.getElementById('cursor');const dot=cursor.querySelector('.cursor-dot');const ring=cursor.querySelector('.cursor-ring');let mx=0,my=0,rx=0,ry=0;document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});gsap.ticker.add(()=>{rx+=(mx-rx)*.12;ry+=(my-ry)*.12;dot.style.left=mx+'px';dot.style.top=my+'px';ring.style.left=rx+'px';ring.style.top=ry+'px';});document.querySelectorAll('a,button,.benefit-card').forEach(el=>{el.addEventListener('mouseenter',()=>document.body.classList.add('cursor-hover'));el.addEventListener('mouseleave',()=>document.body.classList.remove('cursor-hover'));});}
+document.querySelectorAll('.magnetic').forEach(el=>{el.addEventListener('mousemove',e=>{const r=el.getBoundingClientRect();gsap.to(el,{x:(e.clientX-r.left-r.width/2)*.3,y:(e.clientY-r.top-r.height/2)*.3,duration:.35,ease:'power2.out'});});el.addEventListener('mouseleave',()=>gsap.to(el,{x:0,y:0,duration:.6,ease:'elastic.out(1,.4)'}));});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const h=a.getAttribute('href');const t=(h&&h.length>1)?document.querySelector(h):null;if(t){e.preventDefault();lenis.scrollTo(t,{offset:-80});}});});
+gsap.utils.toArray('.benefit-card').forEach((el,i)=>{gsap.from(el,{opacity:0,y:40,duration:.8,ease:'power3.out',delay:(i%3)*.1,scrollTrigger:{trigger:el,start:'top 88%',once:true}});});
+</script>
+
+<!-- DSGVO Cookie Banner -->
+<div id="cb-overlay"></div>
+<div id="cb-banner" role="dialog" aria-modal="true" aria-label="Cookie-Einstellungen">
+  <div class="cb-inner">
+    <div class="cb-top">
+      <div class="cb-text">
+        <p class="cb-title">Ihre Privatsphäre</p>
+        <p>Diese Website verwendet Cookies und ähnliche Technologien. Technisch notwendige Cookies sind immer aktiv. Google Tag Manager und Google Ads Conversion Tracking können Sie einzeln aktivieren. Mehr Infos in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+      </div>
+    </div>
+    <div class="cb-toggles">
+      <div class="cb-toggle-row">
+        <label class="cb-switch"><input type="checkbox" checked disabled><span class="cb-slider"></span></label>
+        <div class="cb-toggle-label"><strong>Technisch notwendig</strong><span>Grundfunktionen der Website, immer aktiv</span></div>
+      </div>
+      <div class="cb-toggle-row">
+        <label class="cb-switch"><input type="checkbox" id="cb-gtm"><span class="cb-slider"></span></label>
+        <div class="cb-toggle-label"><strong>Google Tag Manager</strong><span>Verwaltung von Website-Tags, standardmäßig deaktiviert</span></div>
+      </div>
+      <div class="cb-toggle-row">
+        <label class="cb-switch"><input type="checkbox" id="cb-marketing"><span class="cb-slider"></span></label>
+        <div class="cb-toggle-label"><strong>Marketing &amp; Werbung</strong><span>Google Ads Conversion Tracking, personalisierte Werbung und SprachÜbersetzung (Google Translate)</span></div>
+      </div>
+    </div>
+    <div class="cb-buttons">
+      <button class="cb-btn cb-btn-accept" id="cb-accept-all">Alle akzeptieren</button>
+      <button class="cb-btn cb-btn-save" id="cb-save">Auswahl speichern</button>
+      <button class="cb-btn cb-btn-reject" id="cb-reject-all">Alle ablehnen</button>
+    </div>
+  </div>
+</div>
+<script>
+'use strict';
+(function(){
+  var STORAGE_KEY='epirus_fm_consent';
+  var EXPIRY_DAYS=365;
+  var banner=document.getElementById('cb-banner');
+  var overlay=document.getElementById('cb-overlay');
+  var chkGtm=document.getElementById('cb-gtm');
+  var chkMktg=document.getElementById('cb-marketing');
+  if(!banner||!overlay||!chkGtm||!chkMktg)return;
+  chkMktg.addEventListener('change',function(){if(this.checked)chkGtm.checked=true;});
+  chkGtm.addEventListener('change',function(){if(!this.checked)chkMktg.checked=false;});
+  function applyConsent(gtm,marketing){
+    if(typeof gtag==='function'){
+      gtag('consent','update',{'ad_storage':marketing?'granted':'denied','ad_user_data':marketing?'granted':'denied','ad_personalization':marketing?'granted':'denied','analytics_storage':marketing?'granted':'denied'});
+      gtag('consent','update',{'functionality_storage':marketing?'granted':'denied','personalization_storage':marketing?'granted':'denied','security_storage':'denied'});
+    }
+    window.dataLayer=window.dataLayer||[];
+    window.dataLayer.push({'event':'consent_update','gtm_consent':gtm?'granted':'denied','marketing_consent':marketing?'granted':'denied'});
+    try{document.dispatchEvent(new CustomEvent('epirus-consent',{detail:{gtm:gtm,marketing:marketing}}));}catch(e){}
+  }
+  function saveConsent(gtm,marketing){
+    localStorage.setItem(STORAGE_KEY,JSON.stringify({gtm:gtm,marketing:marketing,timestamp:new Date().toISOString(),version:'2.0',expires:Date.now()+EXPIRY_DAYS*86400000}));
+    applyConsent(gtm,marketing);closeBanner();
+  }
+  function openBanner(){
+    overlay.classList.add('cb-visible');banner.classList.add('cb-visible');
+    requestAnimationFrame(function(){overlay.classList.add('cb-show');banner.classList.add('cb-show');});
+    document.body.style.overflow='hidden';
+  }
+  function closeBanner(){
+    banner.classList.remove('cb-show');overlay.classList.remove('cb-show');
+    setTimeout(function(){banner.classList.remove('cb-visible');overlay.classList.remove('cb-visible');document.body.style.overflow='';},450);
+  }
+  function loadSaved(){
+    try{var raw=localStorage.getItem(STORAGE_KEY);if(!raw)return null;var data=JSON.parse(raw);if(data.expires&&Date.now()>data.expires){localStorage.removeItem(STORAGE_KEY);return null;}return data;}catch(e){return null;}
+  }
+  document.getElementById('cb-accept-all').addEventListener('click',function(){chkGtm.checked=true;chkMktg.checked=true;saveConsent(true,true);});
+  document.getElementById('cb-reject-all').addEventListener('click',function(){chkGtm.checked=false;chkMktg.checked=false;saveConsent(false,false);});
+  document.getElementById('cb-save').addEventListener('click',function(){var gtm=chkGtm.checked;var marketing=chkMktg.checked&&gtm;saveConsent(gtm,marketing);});
+  var settingsLink=document.getElementById('cookie-settings');
+  if(settingsLink){settingsLink.addEventListener('click',function(e){e.preventDefault();var saved=loadSaved();if(saved){chkGtm.checked=saved.gtm||false;chkMktg.checked=saved.marketing||false;}openBanner();});}
+  var saved=loadSaved();
+  if(saved){applyConsent(saved.gtm||false,saved.marketing||false);}else{setTimeout(openBanner,600);}
+})();
+</script>
+<script src="botprotect.js"></script>
+<script src="mobile-nav.js"></script>
+
+
+</body>
+</html>
