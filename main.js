@@ -544,7 +544,9 @@
 
   /* ── Init All ───────────────────────────────────────────── */
   function initAnimations() {
-    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+    gsap.registerPlugin(ScrollTrigger);
+    /* ScrollToPlugin nur, wenn eingebunden (nur index.html) */
+    if (typeof ScrollToPlugin !== 'undefined') gsap.registerPlugin(ScrollToPlugin);
     initLenis();
     initNav();
     initHero();
