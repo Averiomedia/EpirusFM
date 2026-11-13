@@ -12,4 +12,5 @@
 /stoerungsmanagement-notdienst/ /lp-stoerungsmanagement-notdienst.html 301
 /facility-management-hotels/ /lp-facility-management-hotels.html 301
 /infrastrukturelles-gebaeudemanagement/ /lp-infrastrukturelles-fm.html 301
-/kaufmaennisches-gebaeudemanagement/ /lp-kaufmaennisches-fm.html 301
+# Kaufmaennisches FM fliegt raus (12.11.2026) -> auf die FM-Uebersichtsseite
+/kaufmaennisches-gebaeudemanagement/ /lp-facility-management.html 301
