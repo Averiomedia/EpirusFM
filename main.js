@@ -84,7 +84,9 @@
   }
 
   /* ── Lenis Smooth Scroll ────────────────────────────────── */
-  let lenis;
+  /* var statt let: initAnimations() kann auf Seiten ohne Preloader
+     vor dieser Zeile laufen (TDZ-Fehler "cannot access lenis") */
+  var lenis;
   function initLenis() {
     lenis = new Lenis({ lerp: 0.08, smoothWheel: true });
     lenis.on('scroll', ScrollTrigger.update);
