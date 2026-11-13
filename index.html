@@ -1193,7 +1193,7 @@ document.querySelectorAll('.faq-q').forEach(btn => {
       <div class="chat-avatar-placeholder">GF</div>
       <span class="chat-avatar-dot"></span>
     </div>
-    <p>Hallo, haben Sie Fragen? Schreiben Sie uns bitte hier.</p>
+    <p>Hallo, Sie haben Fragen? Wir antworten hier direkt.</p>
   </div>
 
   <!-- Toggle Button -->
@@ -1211,15 +1211,36 @@ document.querySelectorAll('.faq-q').forEach(btn => {
       </div>
       <div class="chat-header-info">
         <strong>Epirus FM</strong>
-        <span>Antwortet per E-Mail · meist in &lt;24h</span>
+        <span>Antwort per WhatsApp oder E-Mail &middot; meist in &lt;24h</span>
       </div>
     </div>
 
-    <!-- Form State -->
-    <div id="chat-form-wrap">
+    <!-- Reiter: Fragen (Q&A) | Wissen (-> FAQ) -->
+    <div class="chat-tabs" role="tablist">
+      <button type="button" class="chat-tab on" id="chat-tab-qa" role="tab" aria-selected="true">Fragen</button>
+      <a class="chat-tab" id="chat-tab-wissen" href="faq.html" role="tab">Wissen</a>
+    </div>
+
+    <!-- Q&A State -->
+    <div id="chat-qa-wrap">
       <div class="chat-bubble-incoming">
-        Hallo! Wie können wir Ihnen helfen? Hinterlassen Sie uns eine Nachricht. Wir melden uns per E-Mail.
+        Hallo! W&auml;hlen Sie eine Frage &ndash; Sie bekommen die Antwort sofort hier. Nicht dabei? Schreiben Sie uns einfach unten.
       </div>
+
+      <!-- AUSTAUSCH: Platzhalter-Fragen/-Antworten bis die Q&A-Liste von Atha da ist (OFFENE-PUNKTE Sec 7) -->
+      <div class="chat-quick" id="chatQuick">
+        <button type="button" class="chat-q">Was kostet Facility Management?</button>
+        <button type="button" class="chat-q">Wie schnell sind Sie bei einer St&ouml;rung da?</button>
+        <button type="button" class="chat-q">Welche Gewerke &uuml;bernehmen Sie?</button>
+        <button type="button" class="chat-q">Wo sind Sie t&auml;tig?</button>
+        <button type="button" class="chat-q">Wie startet die Zusammenarbeit?</button>
+      </div>
+
+      <!-- Antwortbereich (JS befuellt) -->
+      <div class="chat-answer" id="chatAnswer" hidden></div>
+
+      <div class="chat-or"><span>oder direkt schreiben</span></div>
+
       <form id="chat-form" name="chat-kontakt" method="POST" action="form-handler.php" novalidate>
         <input type="hidden" name="form-name" value="chat-kontakt">
         <div class="chat-field">
@@ -1325,6 +1346,9 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   position:fixed;
   bottom:92px;left:24px;
   width:320px;
+  max-height:calc(100vh - 130px);
+  overflow-y:auto;
+  overscroll-behavior:contain;
   background:#fff;
   border-radius:16px;
   box-shadow:0 8px 40px rgba(0,0,0,.18);
@@ -1350,7 +1374,77 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 .chat-header-avatar-wrap .chat-avatar-dot{bottom:0;right:0}
 .chat-header-info strong{display:block;color:#fff;font-size:.88rem}
 .chat-header-info span{color:rgba(255,255,255,.6);font-size:.72rem}
-#chat-form-wrap,#chat-success{padding:16px 18px 18px}
+#chat-success{padding:16px 18px 18px}
+
+/* Reiter: Fragen | Wissen */
+.chat-tabs{
+  display:flex;gap:6px;
+  padding:12px 18px 0;
+  border-bottom:1px solid #eee;
+}
+.chat-tab{
+  font-family:'Barlow',sans-serif;
+  font-size:.78rem;font-weight:700;
+  letter-spacing:.04em;
+  color:#888;background:none;
+  border:none;border-bottom:2px solid transparent;
+  padding:6px 4px 10px;margin-right:14px;
+  cursor:pointer;text-decoration:none;
+  transition:color .2s,border-color .2s;
+}
+.chat-tab:hover{color:#333}
+.chat-tab.on{color:var(--red);border-bottom-color:var(--red)}
+#chat-qa-wrap{padding:16px 18px 18px}
+
+/* Schnellfragen */
+.chat-quick{display:flex;flex-direction:column;gap:8px;margin-bottom:14px}
+.chat-q{
+  text-align:left;
+  background:#fff;
+  border:1.5px solid #e6e8eb;
+  border-radius:10px;
+  padding:9px 12px;
+  font-size:.8rem;font-family:inherit;line-height:1.4;
+  color:#222;cursor:pointer;
+  transition:border-color .2s,background .2s;
+}
+.chat-q:hover{border-color:var(--red);background:#fdf3f3}
+.chat-q.on{border-color:var(--red);background:#fdf3f3;font-weight:600}
+
+/* Antwortbereich */
+.chat-answer{margin-bottom:14px}
+.chat-bubble-out{
+  background:#fff;
+  border:1.5px solid #e6e8eb;
+  border-radius:14px 4px 14px 14px;
+  padding:12px 14px;
+  font-size:.82rem;line-height:1.6;color:#333;
+  margin-bottom:10px;
+}
+.chat-bubble-out strong{display:block;margin-bottom:4px;color:var(--navy)}
+.chat-cta-row{display:flex;gap:8px;flex-wrap:wrap}
+.chat-cta{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.76rem;font-weight:700;
+  border-radius:9px;padding:8px 12px;
+  text-decoration:none;cursor:pointer;
+  border:1.5px solid transparent;
+  transition:background .2s,border-color .2s;
+}
+.chat-cta-wa{background:#25D366;color:#fff}
+.chat-cta-wa:hover{background:#1eb855}
+.chat-cta-form{background:#fff;color:var(--red);border-color:var(--red)}
+.chat-cta-form:hover{background:var(--red);color:#fff}
+.chat-cta-faq{background:#fff;color:#555;border-color:#ddd}
+.chat-cta-faq:hover{border-color:#999}
+
+/* Trenner "oder direkt schreiben" */
+.chat-or{
+  display:flex;align-items:center;gap:10px;
+  margin:4px 0 12px;
+}
+.chat-or::before,.chat-or::after{content:'';flex:1;height:1px;background:#eee}
+.chat-or span{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:#aaa}
 .chat-bubble-incoming{
   background:#f1f3f4;
   border-radius:4px 14px 14px 14px;
@@ -1403,7 +1497,7 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   const iconOpen  = document.getElementById('chat-icon-open');
   const iconClose = document.getElementById('chat-icon-close');
   const form    = document.getElementById('chat-form');
-  const formWrap = document.getElementById('chat-form-wrap');
+  const qaWrap  = document.getElementById('chat-qa-wrap');
   const success  = document.getElementById('chat-success');
 
   function openPanel() {
@@ -1443,12 +1537,55 @@ document.querySelectorAll('.faq-q').forEach(btn => {
       });
       const data = await res.json().catch(function(){ return {ok:false}; });
       if (!data.ok) throw new Error('send-failed');
-      formWrap.hidden = true;
+      qaWrap.hidden = true;
       success.hidden  = false;
     } catch {
       btn.textContent = 'Fehler – bitte erneut versuchen';
     }
   });
+
+  /* ── Schnellfragen (Q&A) ──────────────────────────────
+     AUSTAUSCH: Diese Platzhalter-Antworten werden ersetzt,
+     sobald die Q&A-Liste von Atha da ist (OFFENE-PUNKTE Sec 7).
+     Antwortweg: WhatsApp-Business oder Kontaktformular – kein KI-Chat.
+     FREIGABE: WhatsApp-Nummer bestaetigen (aktuell Platzhalter =
+     Website-Handynummer). */
+  var QA = [
+    { f: 'Was kostet Facility Management?',
+      a: 'Die Kosten richten sich nach Objektgr&ouml;&szlig;e, Leistungsumfang und Intervallen. Nach der Objektbegehung erhalten Sie ein transparentes Festpreis-Angebot &ndash; in der Regel innerhalb von 48 Stunden.' },
+    { f: 'Wie schnell sind Sie bei einer St&ouml;rung da?',
+      a: 'F&uuml;r Vertragskunden gilt der 24/7-Notdienst &ndash; auch am Wochenende und an Feiertagen. St&ouml;rungen melden Sie telefonisch oder &uuml;ber das Kontaktformular; wir koordinieren die Gewerke und melden uns mit dem weiteren Vorgehen.' },
+    { f: 'Welche Gewerke &uuml;bernehmen Sie?',
+      a: 'Technisches FM (Anlagenwartung), infrastrukturelles FM (Reinigung, Hausmeister, Gr&uuml;n- und Winterdienst) sowie St&ouml;rungsmanagement und Notdienst &ndash; dazu Sanierungs- und Sonderprojekte. Alles aus einer Hand, mit einem Ansprechpartner.' },
+    { f: 'Wo sind Sie t&auml;tig?',
+      a: 'Unsere Zentrale steht in Neu-Isenburg, die Kernregion liegt im Rhein-Main-Gebiet um Frankfurt. Wir betreuten derzeit 45 Gewerbeobjekte bundesweit &ndash; von Hamburg bis M&uuml;nchen.' },
+    { f: 'Wie startet die Zusammenarbeit?',
+      a: 'Schritt 1: Objektbegehung vor Ort. Schritt 2: transparentes Festpreis-Angebot innerhalb von 48 Stunden. Schritt 3: Vertragsstart mit digitalem Reporting nach unserer ETA-Methode.' }
+  ];
+  var WA = 'https://wa.me/491747192840?text=' + encodeURIComponent('Hallo Epirus FM, ich habe eine Frage: ');
+
+  var quickWrap = document.getElementById('chatQuick');
+  var answer    = document.getElementById('chatAnswer');
+  if (quickWrap && answer) {
+    quickWrap.addEventListener('click', function (e) {
+      var btn = e.target.closest('.chat-q');
+      if (!btn) return;
+      var idx = Array.prototype.indexOf.call(quickWrap.querySelectorAll('.chat-q'), btn);
+      if (idx < 0 || !QA[idx]) return;
+      quickWrap.querySelectorAll('.chat-q').forEach(function (b) { b.classList.remove('on'); });
+      btn.classList.add('on');
+      answer.hidden = false;
+      answer.innerHTML =
+        '<div class="chat-bubble-out"><strong>' + QA[idx].f + '</strong>' + QA[idx].a + '</div>' +
+        '<div class="chat-cta-row">' +
+          '<a class="chat-cta chat-cta-wa" href="' + WA + encodeURIComponent(QA[idx].f) + '" target="_blank" rel="noopener">' +
+            '<svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>' +
+            'Per WhatsApp fragen</a>' +
+          '<a class="chat-cta chat-cta-form" href="kontakt.html">' +
+            'Zum Kontaktformular</a>' +
+        '</div>';
+    });
+  }
 })();
 </script>
 
